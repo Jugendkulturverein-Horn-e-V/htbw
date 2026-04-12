@@ -1,0 +1,283 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Self-hosted fonts */
+@font-face {
+  font-family: 'Frente H1';
+  src: url('/assets/fonts/FrenteH1-Regular.woff2') format('woff2'),
+       url('/assets/fonts/FrenteH1-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-Regular.woff2') format('woff2'),
+       url('/assets/fonts/Inter-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-Medium.woff2') format('woff2'),
+       url('/assets/fonts/Inter-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-SemiBold.woff2') format('woff2'),
+       url('/assets/fonts/Inter-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets/fonts/Inter-Bold.woff2') format('woff2'),
+       url('/assets/fonts/Inter-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-htbw-cream text-htbw-brown font-body;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-htbw-green;
+  }
+
+  a {
+    @apply text-htbw-green hover:text-htbw-pink transition-colors duration-200;
+  }
+}
+
+/* Component styles */
+@layer components {
+  /* Sticker card effect */
+  .sticker-card {
+    @apply bg-white rounded-lg p-4 shadow-sticker transition-all duration-300;
+    transform: rotate(var(--rotation, -1deg));
+  }
+
+  .sticker-card:hover {
+    @apply shadow-sticker-hover;
+    transform: rotate(0deg) translateY(-4px);
+  }
+
+  /* Button styles */
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-medium transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-htbw-pink text-white hover:bg-htbw-pink-dark;
+  }
+
+  .btn-secondary {
+    @apply bg-htbw-green text-white hover:bg-htbw-green-dark;
+  }
+
+  .btn-outline {
+    @apply border-2 border-htbw-green text-htbw-green hover:bg-htbw-green hover:text-white;
+  }
+
+  /* Section styles */
+  .section {
+    @apply py-16 md:py-24 px-4 md:px-8;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-5xl mb-8 text-center;
+  }
+
+  /* Watercolor blob decorations */
+  .watercolor-blob {
+    @apply absolute pointer-events-none opacity-60;
+  }
+
+  /* Cookie banner */
+  .cookie-banner {
+    @apply fixed bottom-0 left-0 right-0 bg-htbw-green text-white p-4 z-50 transform translate-y-full transition-transform duration-300;
+  }
+
+  .cookie-banner.visible {
+    @apply translate-y-0;
+  }
+
+  /* YouTube placeholder */
+  .youtube-placeholder {
+    @apply relative bg-htbw-brown/10 rounded-lg flex flex-col items-center justify-center p-8 text-center;
+  }
+
+  /* Festival map interactive areas */
+  .map-area {
+    @apply cursor-pointer transition-opacity duration-200;
+  }
+
+  .map-area:hover,
+  .map-area.active {
+    @apply opacity-100;
+  }
+
+  .map-area:not(.active):not(:hover) {
+    @apply opacity-70;
+  }
+
+  /* Accordion for FAQ */
+  .accordion-item {
+    @apply border-b border-htbw-brown/20;
+  }
+
+  .accordion-trigger {
+    @apply w-full py-4 text-left font-medium text-htbw-green flex items-center justify-between;
+  }
+
+  .accordion-content {
+    @apply overflow-hidden transition-all duration-300;
+    max-height: 0;
+  }
+
+  .accordion-content.open {
+    max-height: 500px;
+  }
+
+  /* Mobile menu */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f5edda; /* htbw-cream */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 40; /* Above everything except modals */
+    overflow-y: auto;
+  }
+
+  .mobile-menu.open {
+    transform: translateX(0);
+  }
+  
+  /* Ensure header stays above mobile menu when closed */
+  header {
+    position: fixed;
+    z-index: 30;
+  }
+
+  /* Past artists year tabs */
+  .year-tab {
+    @apply px-4 py-2 rounded-full font-medium transition-all duration-200;
+  }
+
+  .year-tab.active {
+    @apply bg-htbw-green text-white;
+  }
+
+  .year-tab:not(.active) {
+    @apply bg-htbw-brown/10 text-htbw-brown hover:bg-htbw-brown/20;
+  }
+
+  /* Video modal */
+  .video-modal {
+    @apply fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300;
+  }
+
+  .video-modal.open {
+    @apply opacity-100 pointer-events-auto;
+  }
+
+  /* Post-festival thank you banner */
+  .thank-you-banner {
+    @apply bg-htbw-pink text-white py-12 md:py-20 text-center;
+  }
+
+  /* Countdown timer */
+  .countdown {
+    @apply flex gap-4 md:gap-8 justify-center;
+  }
+
+  .countdown-item {
+    @apply flex flex-col items-center;
+  }
+
+  .countdown-number {
+    @apply text-4xl md:text-6xl font-heading text-htbw-pink;
+  }
+
+  .countdown-label {
+    @apply text-sm md:text-base text-htbw-brown/70 uppercase tracking-wider;
+  }
+}
+
+/* Animation utilities */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .sticker-card:hover {
+    transform: none;
+  }
+
+  .watercolor-blob {
+    animation: none !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title or config.siteName }} | {{ config.siteName }}</title>
+  <meta name="description" content="{{ description or config.siteDescription }}">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ title or config.siteName }}">
+  <meta property="og:description" content="{{ description or config.siteDescription }}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  
+  <!-- Preload fonts -->
+  <link rel="preload" href="/assets/fonts/FrenteH1-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="min-h-screen flex flex-col">
+  {% include "header.njk" %}
+  
+  <main id="main-content" class="flex-grow">
+    {{ content | safe }}
+  </main>
+  
+  {% include "footer.njk" %}
+  {% include "cookie-banner.njk" %}
+  {% include "video-modal.njk" %}
+  
+  <!-- JavaScript -->
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

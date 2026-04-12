@@ -1,0 +1,70 @@
+{
+  "2025": [
+    {
+      "name": "Artist 2025 A",
+      "image": "/assets/images/past-artists/2025-a-placeholder.jpg",
+      "alt": "Artist 2025 A auf der Bühne beim Horn to be Wild 2025",
+      "youtubeVideoId": null
+    },
+    {
+      "name": "Artist 2025 B",
+      "image": "/assets/images/past-artists/2025-b-placeholder.jpg",
+      "alt": "Artist 2025 B beim Horn to be Wild 2025",
+      "youtubeVideoId": "dQw4w9WgXcQ"
+    },
+    {
+      "name": "Artist 2025 C",
+      "image": "/assets/images/past-artists/2025-c-placeholder.jpg",
+      "alt": "Artist 2025 C live Performance 2025",
+      "youtubeVideoId": null
+    }
+  ],
+  "2024": [
+    {
+      "name": "Artist 2024 A",
+      "image": "/assets/images/past-artists/2024-a-placeholder.jpg",
+      "alt": "Artist 2024 A beim Horn to be Wild 2024",
+      "youtubeVideoId": null
+    },
+    {
+      "name": "Artist 2024 B",
+      "image": "/assets/images/past-artists/2024-b-placeholder.jpg",
+      "alt": "Artist 2024 B auf der Hauptbühne 2024",
+      "youtubeVideoId": "dQw4w9WgXcQ"
+    }
+  ],
+  "2023": [
+    {
+      "name": "Artist 2023 A",
+      "image": "/assets/images/past-artists/2023-a-placeholder.jpg",
+      "alt": "Artist 2023 A beim Horn to be Wild 2023",
+      "youtubeVideoId": null
+    },
+    {
+      "name": "Artist 2023 B",
+      "image": "/assets/images/past-artists/2023-b-placeholder.jpg",
+      "alt": "Artist 2023 B Performance beim HTBW 2023",
+      "youtubeVideoId": null
+    },
+    {
+      "name": "Artist 2023 C",
+      "image": "/assets/images/past-artists/2023-c-placeholder.jpg",
+      "alt": "Artist 2023 C live im Bürgerpark 2023",
+      "youtubeVideoId": "dQw4w9WgXcQ"
+    }
+  ],
+  "2022": [
+    {
+      "name": "Artist 2022 A",
+      "image": "/assets/images/past-artists/2022-a-placeholder.jpg",
+      "alt": "Artist 2022 A beim Horn to be Wild 2022",
+      "youtubeVideoId": null
+    },
+    {
+      "name": "Artist 2022 B",
+      "image": "/assets/images/past-artists/2022-b-placeholder.jpg",
+      "alt": "Artist 2022 B auf der Bühne 2022",
+      "youtubeVideoId": null
+    }
+  ]
+}

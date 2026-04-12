@@ -1,0 +1,19 @@
+<!-- Video Modal for YouTube embeds -->
+<div id="video-modal" class="video-modal no-print" role="dialog" aria-modal="true" aria-labelledby="video-modal-title">
+  <div class="relative w-full max-w-4xl">
+    <button 
+      type="button"
+      id="video-modal-close"
+      class="absolute -top-12 right-0 text-white hover:text-htbw-pink transition-colors"
+      aria-label="Video schließen"
+    >
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+    <h2 id="video-modal-title" class="sr-only">Video</h2>
+    <div id="video-container" class="relative bg-black rounded-lg overflow-hidden" style="padding-bottom: 56.25%;">
+      <!-- YouTube iframe will be injected here -->
+    </div>
+  </div>
+</div>

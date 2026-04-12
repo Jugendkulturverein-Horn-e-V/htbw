@@ -1,0 +1,65 @@
+{
+  "areas": [
+    {
+      "id": "area-hauptbuehne",
+      "name": "Hauptbühne",
+      "description": "Das Herzstück des Festivals - hier treten unsere Headliner auf.",
+      "icon": "music"
+    },
+    {
+      "id": "area-waldlichtung",
+      "name": "Waldlichtung",
+      "description": "Intime Atmosphäre unter den Bäumen für akustische Acts.",
+      "icon": "trees"
+    },
+    {
+      "id": "area-waldbuehne",
+      "name": "Waldbühne",
+      "description": "Die Late-Night Location für elektronische Musik.",
+      "icon": "sparkles"
+    },
+    {
+      "id": "area-food-1",
+      "name": "Essensmeile",
+      "description": "Regionale und internationale Köstlichkeiten von lokalen Anbietern.",
+      "icon": "utensils"
+    },
+    {
+      "id": "area-bar",
+      "name": "Getränkestände",
+      "description": "Erfrischende Getränke und lokale Bierspezialitäten.",
+      "icon": "beer"
+    },
+    {
+      "id": "area-eingang",
+      "name": "Eingang & Kasse",
+      "description": "Willkommen beim Horn to be Wild! Hier holt ihr eure Bändchen ab.",
+      "icon": "ticket"
+    },
+    {
+      "id": "area-fahrrad",
+      "name": "Fahrradparkplatz",
+      "description": "Kostenloser, bewachter Fahrradparkplatz direkt am Eingang.",
+      "icon": "bike"
+    },
+    {
+      "id": "area-toiletten",
+      "name": "Sanitäranlagen",
+      "description": "Barrierefreie Toiletten und Waschgelegenheiten.",
+      "icon": "restroom"
+    },
+    {
+      "id": "area-merch",
+      "name": "Merchandise",
+      "description": "Erinnerungsstücke und das offizielle HTBW 2026 Abschluss-Shirt.",
+      "icon": "shirt"
+    },
+    {
+      "id": "area-info",
+      "name": "Info-Punkt",
+      "description": "Fragen? Verlorene Sachen? Hier seid ihr richtig.",
+      "icon": "info"
+    }
+  ],
+  "googleMapsUrl": "https://maps.google.com/?q=Bürgerpark+Bremen"
+}

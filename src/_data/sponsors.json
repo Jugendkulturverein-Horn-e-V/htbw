@@ -1,0 +1,49 @@
+{
+  "sponsors": [
+    {
+      "id": "hauptsponsor",
+      "name": "Hauptsponsor Bremen",
+      "logo": "/assets/images/sponsors/hauptsponsor-placeholder.svg",
+      "alt": "Logo des Hauptsponsors Bremen",
+      "url": null,
+      "tier": "gold"
+    },
+    {
+      "id": "sponsor-zwei",
+      "name": "Bremer Brauerei",
+      "logo": "/assets/images/sponsors/brauerei-placeholder.svg",
+      "alt": "Logo der Bremer Brauerei",
+      "url": "https://example.com",
+      "tier": "silver"
+    },
+    {
+      "id": "sponsor-drei",
+      "name": "Kulturamt Bremen",
+      "logo": "/assets/images/sponsors/kulturamt-placeholder.svg",
+      "alt": "Logo des Kulturamts Bremen",
+      "url": "https://example.com",
+      "tier": "silver"
+    },
+    {
+      "id": "sponsor-vier",
+      "name": "Lokaler Partner",
+      "logo": "/assets/images/sponsors/partner-placeholder.svg",
+      "alt": "Logo des lokalen Partners",
+      "url": null,
+      "tier": "bronze"
+    },
+    {
+      "id": "sponsor-fuenf",
+      "name": "Medienpartner",
+      "logo": "/assets/images/sponsors/medien-placeholder.svg",
+      "alt": "Logo des Medienpartners",
+      "url": "https://example.com",
+      "tier": "bronze"
+    }
+  ],
+  "tiers": {
+    "gold": "Hauptpartner",
+    "silver": "Partner",
+    "bronze": "Unterstützer"
+  }
+}

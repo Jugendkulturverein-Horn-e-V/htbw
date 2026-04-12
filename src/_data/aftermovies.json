@@ -1,0 +1,32 @@
+{
+  "aftermovies": [
+    {
+      "year": 2025,
+      "title": "Horn to be Wild 2025 - Aftermovie",
+      "youtubeThumbnail": "/assets/images/aftermovies/2025-thumb-placeholder.jpg",
+      "youtubeVideoId": "dQw4w9WgXcQ",
+      "alt": "Vorschaubild des Aftermovies 2025 - Festivalgäste beim Tanzen im Sonnenuntergang"
+    },
+    {
+      "year": 2024,
+      "title": "Horn to be Wild 2024 - Aftermovie",
+      "youtubeThumbnail": "/assets/images/aftermovies/2024-thumb-placeholder.jpg",
+      "youtubeVideoId": "dQw4w9WgXcQ",
+      "alt": "Vorschaubild des Aftermovies 2024 - Menschenmenge vor der Hauptbühne"
+    },
+    {
+      "year": 2023,
+      "title": "Horn to be Wild 2023 - Aftermovie",
+      "youtubeThumbnail": "/assets/images/aftermovies/2023-thumb-placeholder.jpg",
+      "youtubeVideoId": "dQw4w9WgXcQ",
+      "alt": "Vorschaubild des Aftermovies 2023 - Festivalgelände im Bürgerpark"
+    },
+    {
+      "year": 2022,
+      "title": "Horn to be Wild 2022 - Aftermovie",
+      "youtubeThumbnail": "/assets/images/aftermovies/2022-thumb-placeholder.jpg",
+      "youtubeVideoId": "dQw4w9WgXcQ",
+      "alt": "Vorschaubild des Aftermovies 2022 - Künstler auf der Waldbühne"
+    }
+  ]
+}

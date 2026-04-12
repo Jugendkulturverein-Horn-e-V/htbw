@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ein letztes Mal | Horn to be Wild</title>
+  <meta name="description" content="Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikfestivals im Bürgerpark. Sei dabei beim großen Finale!">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ein letztes Mal">
+  <meta property="og:description" content="Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikfestivals im Bürgerpark. Sei dabei beim großen Finale!">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  
+  <!-- Preload fonts -->
+  <link rel="preload" href="/assets/fonts/FrenteH1-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="min-h-screen flex flex-col">
+  <header class="fixed top-0 left-0 right-0 z-30 bg-htbw-cream/95 backdrop-blur-sm border-b border-htbw-brown/10">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <nav class="flex items-center justify-between h-16 md:h-20">
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-2 text-htbw-green hover:text-htbw-pink" aria-label="Horn to be Wild - Zur Startseite">
+        <img 
+          src="/assets/images/logo/htbw-logo-placeholder.svg" 
+          alt="" 
+          class="h-10 md:h-12 w-auto"
+          aria-hidden="true"
+        >
+        <span class="font-heading text-xl md:text-2xl hidden sm:block">HTBW</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex items-center gap-6 lg:gap-8" role="menubar">
+        
+          <li role="none">
+            
+              <a 
+                href="/" 
+                role="menuitem"
+                class="text-htbw-brown hover:text-htbw-green font-medium text-htbw-green"
+                
+              >
+                Home
+              </a>
+            
+          </li>
+        
+          <li role="none">
+            
+              <a 
+                href="/#acts" 
+                role="menuitem"
+                class="text-htbw-brown hover:text-htbw-green font-medium"
+                data-anchor="true"
+              >
+                Acts
+              </a>
+            
+          </li>
+        
+          <li role="none">
+            
+              <a 
+                href="/ueber-uns/" 
+                role="menuitem"
+                class="text-htbw-brown hover:text-htbw-green font-medium"
+                
+              >
+                Über uns
+              </a>
+            
+          </li>
+        
+          <li role="none">
+            
+              <a 
+                href="/faq/" 
+                role="menuitem"
+                class="text-htbw-brown hover:text-htbw-green font-medium"
+                
+              >
+                FAQ
+              </a>
+            
+          </li>
+        
+          <li role="none">
+            
+              <a 
+                href="/blog/" 
+                role="menuitem"
+                class="text-htbw-brown hover:text-htbw-green font-medium"
+                
+              >
+                Blog
+              </a>
+            
+          </li>
+        
+          <li role="none">
+            
+              <a 
+                href="https://lokalemomente.de/htbw" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                role="menuitem"
+                class="btn btn-primary text-sm"
+              >
+                Tickets
+                <span class="sr-only">(öffnet in neuem Tab)</span>
+              </a>
+            
+          </li>
+        
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <button 
+        type="button"
+        id="mobile-menu-toggle"
+        class="md:hidden p-2 text-htbw-green hover:text-htbw-pink"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Menü öffnen"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path class="menu-icon-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          <path class="menu-icon-close hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu md:hidden" aria-hidden="true">
+    <div class="flex flex-col h-full pt-20 px-6 pb-8">
+      <!-- Close Button -->
+      <button 
+        type="button"
+        id="mobile-menu-close"
+        class="absolute top-4 right-4 p-2 text-htbw-green hover:text-htbw-pink"
+        aria-label="Menü schließen"
+      >
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+      
+      <ul class="flex flex-col gap-4" role="menu">
+        
+          <li role="none">
+            
+              <a 
+                href="/" 
+                role="menuitem"
+                class="block py-3 text-xl font-heading text-htbw-green hover:text-htbw-pink"
+                data-close-menu
+              >
+                Home
+              </a>
+            
+          </li>
+        
+          <li role="none">
+            
+              <a 
+                href="/#acts" 
+                role="menuitem"
+                class="block py-3 text-xl font-heading text-htbw-green hover:text-htbw-pink"
+                data-close-menu
+              >
+                Acts
+              </a>
+            
+          </li>
+        
+          <li role="none">
+            
+              <a 
+                href="/ueber-uns/" 
+                role="menuitem"
+                class="block py-3 text-xl font-heading text-htbw-green hover:text-htbw-pink"
+                data-close-menu
+              >
+                Über uns
+              </a>
+            
+          </li>
+        
+          <li role="none">
+            
+              <a 
+                href="/faq/" 
+                role="menuitem"
+                class="block py-3 text-xl font-heading text-htbw-green hover:text-htbw-pink"
+                data-close-menu
+              >
+                FAQ
+              </a>
+            
+          </li>
+        
+          <li role="none">
+            
+              <a 
+                href="/blog/" 
+                role="menuitem"
+                class="block py-3 text-xl font-heading text-htbw-green hover:text-htbw-pink"
+                data-close-menu
+              >
+                Blog
+              </a>
+            
+          </li>
+        
+          <li role="none">
+            
+              <a 
+                href="https://lokalemomente.de/htbw" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                role="menuitem"
+                class="block py-3 text-xl font-heading text-htbw-pink"
+              >
+                Tickets
+                <span class="sr-only">(öffnet in neuem Tab)</span>
+              </a>
+            
+          </li>
+        
+      </ul>
+
+      <!-- Social Links in Mobile Menu -->
+      <div class="mt-auto pt-8 border-t border-htbw-brown/20">
+        <p class="text-sm text-htbw-brown/70 mb-4">Folge uns:</p>
+        <div class="flex gap-4">
+          <a href="https://instagram.com/horntobewild" target="_blank" rel="noopener noreferrer" class="text-htbw-green hover:text-htbw-pink" aria-label="Instagram (öffnet in neuem Tab)">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="https://facebook.com/horntobewild" target="_blank" rel="noopener noreferrer" class="text-htbw-green hover:text-htbw-pink" aria-label="Facebook (öffnet in neuem Tab)">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="https://youtube.com/@horntobewild" target="_blank" rel="noopener noreferrer" class="text-htbw-green hover:text-htbw-pink" aria-label="YouTube (öffnet in neuem Tab)">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Spacer to account for fixed header -->
+<div class="h-16 md:h-20" aria-hidden="true"></div>
+
+  
+  <main id="main-content" class="flex-grow">
+    
+
+<section data-post-festival class="thank-you-banner hidden">
+  <div class="max-w-4xl mx-auto px-4">
+    <h1 class="font-heading text-4xl md:text-6xl mb-6">Danke!</h1>
+    <p class="text-xl md:text-2xl text-white/90 leading-relaxed text-pretty">
+      Danke für 11 wilde Jahre! Ihr wart das Herz von Horn to be Wild. Wir sehen uns auf der Tanzfläche des Lebens.
+    </p>
+  </div>
+</section>
+
+
+<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden" data-pre-festival>
+  
+  <div class="watercolor-blob -top-20 -left-20 w-64 h-64 animate-float" aria-hidden="true">
+    <img src="/assets/images/watercolor/splash-green-1.png" alt="" class="w-full h-full object-contain">
+  </div>
+  <div class="watercolor-blob -bottom-10 -right-10 w-48 h-48 animate-float-slow" aria-hidden="true">
+    <img src="/assets/images/watercolor/splash-pink-1.png" alt="" class="w-full h-full object-contain">
+  </div>
+
+  <div class="relative z-10 text-center px-4 py-16 md:py-24">
+    
+    <div class="mb-8" data-animate>
+      <img 
+        src="/assets/images/logo/htbw-logo-main.svg" 
+        alt="Horn to be Wild Festival Logo" 
+        class="w-48 md:w-64 h-auto mx-auto"
+      >
+    </div>
+
+    
+    <h1 class="font-heading text-5xl md:text-7xl lg:text-8xl text-htbw-green mb-4 text-balance" data-animate>
+      Ein letztes Mal
+    </h1>
+
+    <p class="text-xl md:text-2xl text-htbw-brown mb-4" data-animate>
+      Die finale Ausgabe des Horn to be Wild Festivals
+    </p>
+
+    <p class="text-lg text-htbw-brown/70 mb-8" data-animate>
+      05. September 2026 | Bürgerpark Bremen
+    </p>
+
+    
+    <div id="countdown" class="countdown mb-12" data-animate aria-live="polite" aria-label="Countdown zum Festival">
+      
+    </div>
+
+    
+    <div data-animate>
+      <a 
+        href="https://lokalemomente.de/htbw" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="btn btn-primary text-lg px-8 py-4"
+      >
+        Jetzt Ticket sichern
+        <span class="sr-only">(öffnet in neuem Tab)</span>
+      </a>
+      <p class="text-sm text-htbw-brown/60 mt-3">
+        Powered by Lokale Momente
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="section bg-htbw-green text-white" data-animate>
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="font-heading text-3xl md:text-4xl text-white mb-6 text-balance">
+      11 Jahre. Unzählige Erinnerungen. Ein letztes Mal.
+    </h2>
+    <p class="text-lg md:text-xl text-white/90 leading-relaxed text-pretty">
+      11 Jahre lang haben wir gemeinsam im Bürgerpark gefeiert, getanzt und unvergessliche Momente geschaffen. 2026 wird es Zeit, Abschied zu nehmen - aber nicht ohne ein letztes, großartiges Fest.
+    </p>
+  </div>
+</section>
+
+
+<section class="py-8 bg-htbw-cream border-y border-htbw-brown/10">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <div class="flex flex-wrap items-center justify-center gap-4 md:gap-8 text-center">
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-htbw-pink" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+        </svg>
+        <span class="font-medium text-htbw-brown">05. September 2026</span>
+      </div>
+      <span class="hidden md:block text-htbw-brown/30">|</span>
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-htbw-pink" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+        </svg>
+        <span class="font-medium text-htbw-brown">Bürgerpark Bremen</span>
+      </div>
+      <span class="hidden md:block text-htbw-brown/30">|</span>
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-htbw-pink" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/>
+        </svg>
+        <span class="font-medium text-htbw-brown">11. Ausgabe</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="acts" class="section">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="section-title" data-animate>Line-Up 2026</h2>
+    
+    
+    
+    <div class="flex flex-wrap justify-center gap-2 mb-12" role="tablist" aria-label="Bühnenfilter">
+      <button 
+        class="year-tab active" 
+        role="tab"
+        aria-selected="true"
+        data-stage="all"
+      >
+        Alle
+      </button>
+      
+      <button 
+        class="year-tab" 
+        role="tab"
+        aria-selected="false"
+        data-stage="hauptbuehne"
+      >
+        Hauptbühne
+      </button>
+      
+      <button 
+        class="year-tab" 
+        role="tab"
+        aria-selected="false"
+        data-stage="waldlichtung"
+      >
+        Waldlichtung
+      </button>
+      
+      <button 
+        class="year-tab" 
+        role="tab"
+        aria-selected="false"
+        data-stage="waldbuehne"
+      >
+        Waldbühne
+      </button>
+      
+    </div>
+    
+
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+      
+        
+        <article class="sticker-card" data-animate data-stage-card="hauptbuhne">
+          
+          <div class="aspect-square relative overflow-hidden rounded-lg mb-4">
+            <img 
+              src="/assets/images/artists/headliner-placeholder.jpg" 
+              alt="Headliner 2026 Bandfoto"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            >
+            
+          </div>
+
+          
+          <div>
+            <span class="inline-block px-2 py-1 text-xs font-medium bg-htbw-pink/10 text-htbw-pink rounded mb-2">
+              Indie Rock
+            </span>
+            <h3 class="font-heading text-2xl text-htbw-green mb-1">Headliner 2026</h3>
+            <p class="text-sm text-htbw-brown/70 mb-3">
+              22:00 Uhr | Hauptbühne
+            </p>
+            <p class="text-htbw-brown text-sm leading-relaxed mb-4">
+              Der krönende Abschluss unserer letzten Ausgabe.
+            </p>
+
+            
+            <div class="flex gap-3">
+              
+              
+            </div>
+          </div>
+        </article>
+        
+      
+        
+        <article class="sticker-card" data-animate data-stage-card="hauptbuhne">
+          
+          <div class="aspect-square relative overflow-hidden rounded-lg mb-4">
+            <img 
+              src="/assets/images/artists/band-eins-placeholder.jpg" 
+              alt="Band Eins live auf der Bühne"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            >
+            
+          </div>
+
+          
+          <div>
+            <span class="inline-block px-2 py-1 text-xs font-medium bg-htbw-pink/10 text-htbw-pink rounded mb-2">
+              Elektro Pop
+            </span>
+            <h3 class="font-heading text-2xl text-htbw-green mb-1">Band Eins</h3>
+            <p class="text-sm text-htbw-brown/70 mb-3">
+              20:00 Uhr | Hauptbühne
+            </p>
+            <p class="text-htbw-brown text-sm leading-relaxed mb-4">
+              Tanzbare Beats und eingängige Melodien für die große Abschiedsparty.
+            </p>
+
+            
+            <div class="flex gap-3">
+              
+              <a 
+                href="https://open.spotify.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="text-htbw-green hover:text-htbw-pink transition-colors"
+                aria-label="Band Eins auf Spotify (öffnet in neuem Tab)"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                </svg>
+              </a>
+              
+              
+              <a 
+                href="https://youtube.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="text-htbw-green hover:text-htbw-pink transition-colors"
+                aria-label="Band Eins auf YouTube (öffnet in neuem Tab)"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+              </a>
+              
+            </div>
+          </div>
+        </article>
+        
+      
+        
+        <article class="sticker-card" data-animate data-stage-card="waldlichtung">
+          
+          <div class="aspect-square relative overflow-hidden rounded-lg mb-4">
+            <img 
+              src="/assets/images/artists/band-zwei-placeholder.jpg" 
+              alt="Band Zwei Pressefoto"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            >
+            
+          </div>
+
+          
+          <div>
+            <span class="inline-block px-2 py-1 text-xs font-medium bg-htbw-pink/10 text-htbw-pink rounded mb-2">
+              Singer-Songwriter
+            </span>
+            <h3 class="font-heading text-2xl text-htbw-green mb-1">Band Zwei</h3>
+            <p class="text-sm text-htbw-brown/70 mb-3">
+              18:00 Uhr | Waldlichtung
+            </p>
+            <p class="text-htbw-brown text-sm leading-relaxed mb-4">
+              Intime Klänge unter den Bäumen des Bürgerparks.
+            </p>
+
+            
+            <div class="flex gap-3">
+              
+              <a 
+                href="https://open.spotify.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="text-htbw-green hover:text-htbw-pink transition-colors"
+                aria-label="Band Zwei auf Spotify (öffnet in neuem Tab)"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                </svg>
+              </a>
+              
+              
+            </div>
+          </div>
+        </article>
+        
+      
+        
+        <article class="sticker-card" data-animate data-stage-card="waldbuhne">
+          
+          <div class="aspect-square relative overflow-hidden rounded-lg mb-4">
+            <img 
+              src="/assets/images/artists/dj-kollektiv-placeholder.jpg" 
+              alt="DJ Kollektiv am Mischpult"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            >
+            
+          </div>
+
+          
+          <div>
+            <span class="inline-block px-2 py-1 text-xs font-medium bg-htbw-pink/10 text-htbw-pink rounded mb-2">
+              House / Techno
+            </span>
+            <h3 class="font-heading text-2xl text-htbw-green mb-1">DJ Kollektiv</h3>
+            <p class="text-sm text-htbw-brown/70 mb-3">
+              23:00 Uhr | Waldbühne
+            </p>
+            <p class="text-htbw-brown text-sm leading-relaxed mb-4">
+              Die Afterparty im Wald - tanzen bis zum Morgengrauen.
+            </p>
+
+            
+            <div class="flex gap-3">
+              
+              
+            </div>
+          </div>
+        </article>
+        
+      
+        
+        <article class="sticker-card" data-animate data-stage-card="hauptbuhne">
+          
+          <div class="aspect-square relative overflow-hidden rounded-lg mb-4">
+            <img 
+              src="/assets/images/artists/lokale-helden-placeholder.jpg" 
+              alt="Lokale Helden Bandportrait"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            >
+            
+          </div>
+
+          
+          <div>
+            <span class="inline-block px-2 py-1 text-xs font-medium bg-htbw-pink/10 text-htbw-pink rounded mb-2">
+              Bremer Indie
+            </span>
+            <h3 class="font-heading text-2xl text-htbw-green mb-1">Lokale Helden</h3>
+            <p class="text-sm text-htbw-brown/70 mb-3">
+              16:00 Uhr | Hauptbühne
+            </p>
+            <p class="text-htbw-brown text-sm leading-relaxed mb-4">
+              Bremer Musik von Bremer Künstlern - für uns, für euch, für immer.
+            </p>
+
+            
+            <div class="flex gap-3">
+              
+              <a 
+                href="https://open.spotify.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="text-htbw-green hover:text-htbw-pink transition-colors"
+                aria-label="Lokale Helden auf Spotify (öffnet in neuem Tab)"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                </svg>
+              </a>
+              
+              
+              <a 
+                href="https://youtube.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="text-htbw-green hover:text-htbw-pink transition-colors"
+                aria-label="Lokale Helden auf YouTube (öffnet in neuem Tab)"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+              </a>
+              
+            </div>
+          </div>
+        </article>
+        
+      
+    </div>
+
+    
+    <div class="text-center mt-12" data-animate>
+      <a 
+        href="https://lokalemomente.de/htbw" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="btn btn-secondary"
+      >
+        Tickets sichern
+        <span class="sr-only">(öffnet in neuem Tab)</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section class="section bg-htbw-green/5 overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="section-title" data-animate>Festivalatmosphäre</h2>
+    <p class="text-center text-htbw-brown/70 mb-12 max-w-2xl mx-auto" data-animate>
+      Musik, Freundschaft und unvergessliche Momente im Herzen des Bürgerparks.
+    </p>
+    
+    
+    <div class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-3 md:gap-4 auto-rows-[80px] md:auto-rows-[100px]">
+      
+      
+      <div class="col-span-4 md:col-span-4 lg:col-span-5 row-span-3 md:row-span-4 relative group overflow-hidden rounded-2xl bg-htbw-brown/10" data-animate>
+        <img 
+          src="/placeholder.svg?height=400&width=500&text=Festival+Hauptbuhne" 
+          alt="Festivalbesucher bei Sonnenuntergang vor der Hauptbuhne"
+          loading="lazy"
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+        >
+        <div class="absolute inset-0 bg-gradient-to-t from-htbw-green/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <span class="absolute bottom-4 left-4 text-white font-heading text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">Hauptbuhne 2024</span>
+      </div>
+      
+      
+      <div class="col-span-2 md:col-span-2 lg:col-span-3 row-span-2 md:row-span-3 relative group overflow-hidden rounded-2xl sticker-card p-0 bg-htbw-brown/10" data-animate>
+        <img 
+          src="/placeholder.svg?height=300&width=200&text=Lichtshow" 
+          alt="Bunte Lichtinstallation im Waldgebiet"
+          loading="lazy"
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+        >
+      </div>
+      
+      
+      <div class="col-span-2 md:col-span-2 lg:col-span-4 row-span-2 relative group overflow-hidden rounded-2xl bg-htbw-brown/10" data-animate>
+        <img 
+          src="/placeholder.svg?height=200&width=300&text=Publikum" 
+          alt="Publikum bei einem Konzert"
+          loading="lazy"
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+        >
+        <div class="absolute inset-0 bg-htbw-pink/20 mix-blend-multiply"></div>
+      </div>
+      
+      
+      <div class="col-span-2 lg:col-span-2 row-span-2 bg-htbw-pink rounded-2xl flex items-center justify-center p-4" data-animate>
+        <p class="font-heading text-white text-center text-lg md:text-xl">11 Jahre Musik</p>
+      </div>
+      
+      <div class="col-span-2 lg:col-span-2 row-span-2 bg-htbw-green rounded-2xl flex items-center justify-center p-4" data-animate>
+        <p class="font-heading text-white text-center text-lg md:text-xl">1 Familie</p>
+      </div>
+      
+      
+      <div class="col-span-4 md:col-span-4 lg:col-span-7 row-span-2 relative group overflow-hidden rounded-2xl bg-htbw-brown/10" data-animate>
+        <img 
+          src="/placeholder.svg?height=200&width=600&text=Panorama+Festivalgelande" 
+          alt="Panoramablick uber das Festivalgelande"
+          loading="lazy"
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+        >
+      </div>
+      
+      
+      <div class="col-span-4 md:col-span-2 lg:col-span-5 row-span-2 bg-htbw-cream border-2 border-htbw-green/20 rounded-2xl flex items-center justify-center p-6" data-animate>
+        <blockquote class="text-center">
+          <p class="text-htbw-brown italic text-sm md:text-base">&laquo;Das schonste Festival Bremens&raquo;</p>
+          <cite class="text-htbw-green text-xs mt-2 block">- Weser-Kurier</cite>
+        </blockquote>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="section-title" data-animate>Aftermovies</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+      
+      <article class="sticker-card" data-animate>
+        <div class="relative" style="padding-bottom: 56.25%;">
+          
+          <div 
+            class="youtube-placeholder absolute inset-0"
+            data-youtube-id="dQw4w9WgXcQ"
+            data-video-title="Horn to be Wild 2025 - Aftermovie"
+          >
+            <img 
+              src="/assets/images/aftermovies/2025-thumb-placeholder.jpg" 
+              alt="Vorschaubild des Aftermovies 2025 - Festivalgäste beim Tanzen im Sonnenuntergang"
+              loading="lazy"
+              class="absolute inset-0 w-full h-full object-cover rounded-lg"
+            >
+            <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center rounded-lg">
+              <button 
+                type="button"
+                class="w-16 h-16 bg-htbw-pink rounded-full flex items-center justify-center hover:bg-htbw-pink-dark transition-colors mb-3"
+                data-video-trigger
+                data-video-id="dQw4w9WgXcQ"
+                aria-label="Horn to be Wild 2025 - Aftermovie abspielen"
+              >
+                <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </button>
+              <p class="text-white text-sm">Klicken zum Abspielen</p>
+            </div>
+          </div>
+        </div>
+        <h3 class="font-heading text-xl text-htbw-green mt-4">Horn to be Wild 2025 - Aftermovie</h3>
+      </article>
+      
+      <article class="sticker-card" data-animate>
+        <div class="relative" style="padding-bottom: 56.25%;">
+          
+          <div 
+            class="youtube-placeholder absolute inset-0"
+            data-youtube-id="dQw4w9WgXcQ"
+            data-video-title="Horn to be Wild 2024 - Aftermovie"
+          >
+            <img 
+              src="/assets/images/aftermovies/2024-thumb-placeholder.jpg" 
+              alt="Vorschaubild des Aftermovies 2024 - Menschenmenge vor der Hauptbühne"
+              loading="lazy"
+              class="absolute inset-0 w-full h-full object-cover rounded-lg"
+            >
+            <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center rounded-lg">
+              <button 
+                type="button"
+                class="w-16 h-16 bg-htbw-pink rounded-full flex items-center justify-center hover:bg-htbw-pink-dark transition-colors mb-3"
+                data-video-trigger
+                data-video-id="dQw4w9WgXcQ"
+                aria-label="Horn to be Wild 2024 - Aftermovie abspielen"
+              >
+                <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </button>
+              <p class="text-white text-sm">Klicken zum Abspielen</p>
+            </div>
+          </div>
+        </div>
+        <h3 class="font-heading text-xl text-htbw-green mt-4">Horn to be Wild 2024 - Aftermovie</h3>
+      </article>
+      
+      <article class="sticker-card" data-animate>
+        <div class="relative" style="padding-bottom: 56.25%;">
+          
+          <div 
+            class="youtube-placeholder absolute inset-0"
+            data-youtube-id="dQw4w9WgXcQ"
+            data-video-title="Horn to be Wild 2023 - Aftermovie"
+          >
+            <img 
+              src="/assets/images/aftermovies/2023-thumb-placeholder.jpg" 
+              alt="Vorschaubild des Aftermovies 2023 - Festivalgelände im Bürgerpark"
+              loading="lazy"
+              class="absolute inset-0 w-full h-full object-cover rounded-lg"
+            >
+            <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center rounded-lg">
+              <button 
+                type="button"
+                class="w-16 h-16 bg-htbw-pink rounded-full flex items-center justify-center hover:bg-htbw-pink-dark transition-colors mb-3"
+                data-video-trigger
+                data-video-id="dQw4w9WgXcQ"
+                aria-label="Horn to be Wild 2023 - Aftermovie abspielen"
+              >
+                <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </button>
+              <p class="text-white text-sm">Klicken zum Abspielen</p>
+            </div>
+          </div>
+        </div>
+        <h3 class="font-heading text-xl text-htbw-green mt-4">Horn to be Wild 2023 - Aftermovie</h3>
+      </article>
+      
+      <article class="sticker-card" data-animate>
+        <div class="relative" style="padding-bottom: 56.25%;">
+          
+          <div 
+            class="youtube-placeholder absolute inset-0"
+            data-youtube-id="dQw4w9WgXcQ"
+            data-video-title="Horn to be Wild 2022 - Aftermovie"
+          >
+            <img 
+              src="/assets/images/aftermovies/2022-thumb-placeholder.jpg" 
+              alt="Vorschaubild des Aftermovies 2022 - Künstler auf der Waldbühne"
+              loading="lazy"
+              class="absolute inset-0 w-full h-full object-cover rounded-lg"
+            >
+            <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center rounded-lg">
+              <button 
+                type="button"
+                class="w-16 h-16 bg-htbw-pink rounded-full flex items-center justify-center hover:bg-htbw-pink-dark transition-colors mb-3"
+                data-video-trigger
+                data-video-id="dQw4w9WgXcQ"
+                aria-label="Horn to be Wild 2022 - Aftermovie abspielen"
+              >
+                <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </button>
+              <p class="text-white text-sm">Klicken zum Abspielen</p>
+            </div>
+          </div>
+        </div>
+        <h3 class="font-heading text-xl text-htbw-green mt-4">Horn to be Wild 2022 - Aftermovie</h3>
+      </article>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="section bg-htbw-cream">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="section-title" data-animate>Hall of Fame</h2>
+    <p class="text-center text-htbw-brown/70 mb-8 max-w-2xl mx-auto" data-animate>
+      Alle Künstlerinnen und Künstler, die in den letzten Jahren bei uns auf der Bühne standen.
+    </p>
+
+    
+    <div class="flex flex-wrap justify-center gap-2 mb-8" data-year-tabs role="tablist" aria-label="Jahre">
+      
+      
+      <button 
+        class="year-tab active"
+        data-year="2025"
+        role="tab"
+        aria-selected="true"
+      >
+        2025
+      </button>
+      
+      <button 
+        class="year-tab "
+        data-year="2024"
+        role="tab"
+        aria-selected="false"
+      >
+        2024
+      </button>
+      
+      <button 
+        class="year-tab "
+        data-year="2023"
+        role="tab"
+        aria-selected="false"
+      >
+        2023
+      </button>
+      
+      <button 
+        class="year-tab "
+        data-year="2022"
+        role="tab"
+        aria-selected="false"
+      >
+        2022
+      </button>
+      
+    </div>
+
+    
+    
+    <div 
+      class="" 
+      data-year-panel="2025"
+      role="tabpanel"
+      aria-label="Künstler 2025"
+    >
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        
+        <article class="sticker-card text-center" data-animate>
+          <div class="aspect-square overflow-hidden rounded-lg mb-3 relative">
+            <img 
+              src="/assets/images/past-artists/2025-a-placeholder.jpg" 
+              alt="Artist 2025 A auf der Bühne beim Horn to be Wild 2025"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            >
+            
+          </div>
+          <h3 class="font-medium text-htbw-green text-sm">Artist 2025 A</h3>
+        </article>
+        
+        <article class="sticker-card text-center" data-animate>
+          <div class="aspect-square overflow-hidden rounded-lg mb-3 relative">
+            <img 
+              src="/assets/images/past-artists/2025-b-placeholder.jpg" 
+              alt="Artist 2025 B beim Horn to be Wild 2025"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            >
+            
+            <button 
+              type="button"
+              class="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 hover:opacity-100 transition-opacity"
+              data-video-trigger
+              data-video-id="dQw4w9WgXcQ"
+              aria-label="Video von Artist 2025 B aus 2025 ansehen"
+            >
+              <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+            
+          </div>
+          <h3 class="font-medium text-htbw-green text-sm">Artist 2025 B</h3>
+        </article>
+        
+        <article class="sticker-card text-center" data-animate>
+          <div class="aspect-square overflow-hidden rounded-lg mb-3 relative">
+            <img 
+              src="/assets/images/past-artists/2025-c-placeholder.jpg" 
+              alt="Artist 2025 C live Performance 2025"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            >
+            
+          </div>
+          <h3 class="font-medium text-htbw-green text-sm">Artist 2025 C</h3>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div 
+      class="hidden" 
+      data-year-panel="2024"
+      role="tabpanel"
+      aria-label="Künstler 2024"
+    >
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        
+        <article class="sticker-card text-center" data-animate>
+          <div class="aspect-square overflow-hidden rounded-lg mb-3 relative">
+            <img 
+              src="/assets/images/past-artists/2024-a-placeholder.jpg" 
+              alt="Artist 2024 A beim Horn to be Wild 2024"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            >
+            
+          </div>
+          <h3 class="font-medium text-htbw-green text-sm">Artist 2024 A</h3>
+        </article>
+        
+        <article class="sticker-card text-center" data-animate>
+          <div class="aspect-square overflow-hidden rounded-lg mb-3 relative">
+            <img 
+              src="/assets/images/past-artists/2024-b-placeholder.jpg" 
+              alt="Artist 2024 B auf der Hauptbühne 2024"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            >
+            
+            <button 
+              type="button"
+              class="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 hover:opacity-100 transition-opacity"
+              data-video-trigger
+              data-video-id="dQw4w9WgXcQ"
+              aria-label="Video von Artist 2024 B aus 2024 ansehen"
+            >
+              <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+            
+          </div>
+          <h3 class="font-medium text-htbw-green text-sm">Artist 2024 B</h3>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div 
+      class="hidden" 
+      data-year-panel="2023"
+      role="tabpanel"
+      aria-label="Künstler 2023"
+    >
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        
+        <article class="sticker-card text-center" data-animate>
+          <div class="aspect-square overflow-hidden rounded-lg mb-3 relative">
+            <img 
+              src="/assets/images/past-artists/2023-a-placeholder.jpg" 
+              alt="Artist 2023 A beim Horn to be Wild 2023"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            >
+            
+          </div>
+          <h3 class="font-medium text-htbw-green text-sm">Artist 2023 A</h3>
+        </article>
+        
+        <article class="sticker-card text-center" data-animate>
+          <div class="aspect-square overflow-hidden rounded-lg mb-3 relative">
+            <img 
+              src="/assets/images/past-artists/2023-b-placeholder.jpg" 
+              alt="Artist 2023 B Performance beim HTBW 2023"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            >
+            
+          </div>
+          <h3 class="font-medium text-htbw-green text-sm">Artist 2023 B</h3>
+        </article>
+        
+        <article class="sticker-card text-center" data-animate>
+          <div class="aspect-square overflow-hidden rounded-lg mb-3 relative">
+            <img 
+              src="/assets/images/past-artists/2023-c-placeholder.jpg" 
+              alt="Artist 2023 C live im Bürgerpark 2023"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            >
+            
+            <button 
+              type="button"
+              class="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 hover:opacity-100 transition-opacity"
+              data-video-trigger
+              data-video-id="dQw4w9WgXcQ"
+              aria-label="Video von Artist 2023 C aus 2023 ansehen"
+            >
+              <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+            
+          </div>
+          <h3 class="font-medium text-htbw-green text-sm">Artist 2023 C</h3>
+        </article>
+        
+      </div>
+    </div>
+    
+    <div 
+      class="hidden" 
+      data-year-panel="2022"
+      role="tabpanel"
+      aria-label="Künstler 2022"
+    >
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        
+        <article class="sticker-card text-center" data-animate>
+          <div class="aspect-square overflow-hidden rounded-lg mb-3 relative">
+            <img 
+              src="/assets/images/past-artists/2022-a-placeholder.jpg" 
+              alt="Artist 2022 A beim Horn to be Wild 2022"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            >
+            
+          </div>
+          <h3 class="font-medium text-htbw-green text-sm">Artist 2022 A</h3>
+        </article>
+        
+        <article class="sticker-card text-center" data-animate>
+          <div class="aspect-square overflow-hidden rounded-lg mb-3 relative">
+            <img 
+              src="/assets/images/past-artists/2022-b-placeholder.jpg" 
+              alt="Artist 2022 B auf der Bühne 2022"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            >
+            
+          </div>
+          <h3 class="font-medium text-htbw-green text-sm">Artist 2022 B</h3>
+        </article>
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="section-title" data-animate>Festivalgelände</h2>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+      
+      <div class="relative" data-animate>
+        <svg 
+          viewBox="0 0 400 300" 
+          class="w-full h-auto bg-htbw-green/10 rounded-lg"
+          role="img"
+          aria-label="Interaktive Karte des Festivalgeländes im Bürgerpark Bremen"
+        >
+          
+          <rect x="10" y="10" width="380" height="280" fill="#e8e0cc" rx="8"/>
+          
+          
+          <circle cx="50" cy="50" r="15" fill="#215733" opacity="0.3"/>
+          <circle cx="350" cy="250" r="20" fill="#215733" opacity="0.3"/>
+          <circle cx="30" cy="200" r="12" fill="#215733" opacity="0.3"/>
+          <circle cx="370" cy="80" r="18" fill="#215733" opacity="0.3"/>
+          
+          
+          <g 
+            class="map-area cursor-pointer" 
+            data-area-id="area-hauptbuehne"
+            data-area-name="Hauptbühne"
+            data-area-description="Das Herzstück des Festivals - hier treten unsere Headliner auf."
+          >
+            <rect x="150" y="40" width="100" height="60" fill="#f1698c" rx="4"/>
+            <text x="200" y="75" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Hauptbühne</text>
+          </g>
+
+          
+          <g 
+            class="map-area cursor-pointer" 
+            data-area-id="area-waldlichtung"
+            data-area-name="Waldlichtung"
+            data-area-description="Intime Atmosphäre unter den Bäumen für akustische Acts."
+          >
+            <rect x="280" y="120" width="80" height="50" fill="#215733" rx="4"/>
+            <text x="320" y="150" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Waldlichtung</text>
+          </g>
+
+          
+          <g 
+            class="map-area cursor-pointer" 
+            data-area-id="area-waldbuehne"
+            data-area-name="Waldbühne"
+            data-area-description="Die Late-Night Location für elektronische Musik."
+          >
+            <rect x="40" y="120" width="80" height="50" fill="#5c4a3d" rx="4"/>
+            <text x="80" y="150" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Waldbühne</text>
+          </g>
+
+          
+          <g 
+            class="map-area cursor-pointer" 
+            data-area-id="area-food-1"
+            data-area-name="Essensmeile"
+            data-area-description="Regionale und internationale Köstlichkeiten von lokalen Anbietern."
+          >
+            <rect x="150" y="180" width="100" height="40" fill="#8b7355" rx="4"/>
+            <text x="200" y="205" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Essensmeile</text>
+          </g>
+
+          
+          <g 
+            class="map-area cursor-pointer" 
+            data-area-id="area-eingang"
+            data-area-name="Eingang & Kasse"
+            data-area-description="Willkommen beim Horn to be Wild! Hier holt ihr eure Bändchen ab."
+          >
+            <rect x="170" y="250" width="60" height="30" fill="#215733" rx="4"/>
+            <text x="200" y="270" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Eingang</text>
+          </g>
+
+          
+          <g 
+            class="map-area cursor-pointer" 
+            data-area-id="area-fahrrad"
+            data-area-name="Fahrradparkplatz"
+            data-area-description="Kostenloser, bewachter Fahrradparkplatz direkt am Eingang."
+          >
+            <circle cx="120" cy="260" r="20" fill="#f1698c" opacity="0.8"/>
+            <text x="120" y="265" text-anchor="middle" fill="white" font-size="8" font-weight="bold">Fahrrad</text>
+          </g>
+
+          
+          <g 
+            class="map-area cursor-pointer" 
+            data-area-id="area-merch"
+            data-area-name="Merchandise"
+            data-area-description="Erinnerungsstücke und das offizielle HTBW 2026 Abschluss-Shirt."
+          >
+            <circle cx="280" cy="260" r="20" fill="#215733" opacity="0.8"/>
+            <text x="280" y="265" text-anchor="middle" fill="white" font-size="8" font-weight="bold">Merch</text>
+          </g>
+        </svg>
+      </div>
+
+      
+      <div class="lg:sticky lg:top-24" data-animate>
+        <div id="map-info-panel" class="bg-white p-6 rounded-lg shadow-sticker">
+          <h3 class="font-heading text-xl text-htbw-green mb-2">Wähle einen Bereich</h3>
+          <p class="text-htbw-brown">Klicke auf einen Bereich in der Karte, um mehr Informationen zu erhalten.</p>
+        </div>
+
+        
+        <div class="mt-6 p-6 bg-htbw-green/5 rounded-lg">
+          <h3 class="font-heading text-xl text-htbw-green mb-4">Anreise</h3>
+          <ul class="space-y-3 text-htbw-brown">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-htbw-pink shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+              </svg>
+              <span><strong>Straßenbahn:</strong> Linien 4 und 6 bis Haltestelle Bürgerpark</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-htbw-pink shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+              </svg>
+              <span><strong>Fahrrad:</strong> Kostenloser bewachter Parkplatz am Eingang</span>
+            </li>
+          </ul>
+          <a 
+            href="https://maps.google.com/?q=Bürgerpark+Bremen" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 mt-4 text-htbw-green hover:text-htbw-pink transition-colors"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+            In Google Maps öffnen
+            <span class="sr-only">(öffnet in neuem Tab)</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section bg-htbw-green/5">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="section-title" data-animate>Neuigkeiten</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <article class="sticker-card" data-animate>
+        <span class="inline-block px-2 py-1 text-xs font-medium bg-htbw-green/10 text-htbw-green rounded mb-3">
+          Line-up
+        </span>
+        <h3 class="font-heading text-xl text-htbw-green mb-2">
+          <a href="/blog/2026-03-lineup-teaser/" class="hover:text-htbw-pink">Erste Acts für 2026 bestätigt</a>
+        </h3>
+        <p class="text-sm text-htbw-brown/60 mb-3">20. März 2026</p>
+        <p class="text-htbw-brown text-sm leading-relaxed">Das Warten hat ein Ende! Wir verraten euch heute die ersten bestätigten Acts für unser großes Finale.</p>
+      </article>
+      
+      <article class="sticker-card" data-animate>
+        <span class="inline-block px-2 py-1 text-xs font-medium bg-htbw-green/10 text-htbw-green rounded mb-3">
+          Ankündigung
+        </span>
+        <h3 class="font-heading text-xl text-htbw-green mb-2">
+          <a href="/blog/2026-01-ankuendigung/" class="hover:text-htbw-pink">Ein letztes Mal: HTBW 2026 wird das große Finale</a>
+        </h3>
+        <p class="text-sm text-htbw-brown/60 mb-3">15. Januar 2026</p>
+        <p class="text-htbw-brown text-sm leading-relaxed">Nach 11 unvergesslichen Jahren ist es soweit: Die Ausgabe 2026 wird unsere letzte sein. Lasst uns gemeinsam ein unvergessliches Abschiedsfest feiern.</p>
+      </article>
+      
+    </div>
+
+    
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="section-title" data-animate>Unsere Partner</h2>
+    <p class="text-center text-htbw-brown/70 mb-12 max-w-2xl mx-auto" data-animate>
+      Ein großes Dankeschön an alle, die das Festival möglich machen.
+    </p>
+
+    
+    <div class="relative py-8">
+      <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+        
+        <div class="sticker-card p-4 md:p-6" data-animate style="--rotation: -5deg">
+          
+          <img 
+            src="/assets/images/sponsors/hauptsponsor-placeholder.svg" 
+            alt="Logo des Hauptsponsors Bremen"
+            loading="lazy"
+            class="h-12 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+          >
+          
+        </div>
+        
+        <div class="sticker-card p-4 md:p-6" data-animate style="--rotation: -3deg">
+          
+          <a 
+            href="https://example.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="block"
+          >
+            <img 
+              src="/assets/images/sponsors/brauerei-placeholder.svg" 
+              alt="Logo der Bremer Brauerei"
+              loading="lazy"
+              class="h-12 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+            >
+            <span class="sr-only">Bremer Brauerei (öffnet in neuem Tab)</span>
+          </a>
+          
+        </div>
+        
+        <div class="sticker-card p-4 md:p-6" data-animate style="--rotation: -1deg">
+          
+          <a 
+            href="https://example.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="block"
+          >
+            <img 
+              src="/assets/images/sponsors/kulturamt-placeholder.svg" 
+              alt="Logo des Kulturamts Bremen"
+              loading="lazy"
+              class="h-12 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+            >
+            <span class="sr-only">Kulturamt Bremen (öffnet in neuem Tab)</span>
+          </a>
+          
+        </div>
+        
+        <div class="sticker-card p-4 md:p-6" data-animate style="--rotation: 1deg">
+          
+          <img 
+            src="/assets/images/sponsors/partner-placeholder.svg" 
+            alt="Logo des lokalen Partners"
+            loading="lazy"
+            class="h-12 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+          >
+          
+        </div>
+        
+        <div class="sticker-card p-4 md:p-6" data-animate style="--rotation: 3deg">
+          
+          <a 
+            href="https://example.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="block"
+          >
+            <img 
+              src="/assets/images/sponsors/medien-placeholder.svg" 
+              alt="Logo des Medienpartners"
+              loading="lazy"
+              class="h-12 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+            >
+            <span class="sr-only">Medienpartner (öffnet in neuem Tab)</span>
+          </a>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section bg-htbw-pink text-white text-center" data-pre-festival>
+  <div class="max-w-3xl mx-auto" data-animate>
+    <h2 class="font-heading text-3xl md:text-5xl text-white mb-6 text-balance">
+      Sei dabei beim großen Finale!
+    </h2>
+    <p class="text-lg md:text-xl text-white/90 mb-8">
+      Die letzte Ausgabe des Horn to be Wild. Sichere dir jetzt dein Ticket.
+    </p>
+    <a 
+      href="https://lokalemomente.de/htbw" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="btn bg-white text-htbw-pink hover:bg-htbw-cream text-lg px-8 py-4"
+    >
+      Jetzt Ticket sichern
+      <span class="sr-only">(öffnet in neuem Tab)</span>
+    </a>
+  </div>
+</section>
+
+  </main>
+  
+  <footer class="bg-htbw-green text-white py-12 md:py-16">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+      <!-- About Column -->
+      <div>
+        <h2 class="font-heading text-2xl text-white mb-4">Horn to be Wild</h2>
+        <p class="text-white/80 leading-relaxed mb-4">
+          11 Jahre lang haben wir gemeinsam im Bürgerpark gefeiert, getanzt und unvergessliche Momente geschaffen. 2026 wird es Zeit, Abschied zu nehmen - aber...
+        </p>
+        <p class="text-white/60 text-sm">
+          Jugendkulturverein Horn e.V.
+        </p>
+      </div>
+
+      <!-- Contact Column -->
+      <div>
+        <h3 class="font-heading text-xl text-white mb-4">Kontakt</h3>
+        <ul class="space-y-3">
+          <li>
+            <a href="mailto:info@htbw.de" class="text-white/80 hover:text-htbw-pink transition-colors flex items-center gap-2">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+              info@htbw.de
+            </a>
+          </li>
+          <li class="flex items-center gap-4 pt-2">
+            <a href="https://instagram.com/horntobewild" target="_blank" rel="noopener noreferrer" class="text-white/80 hover:text-htbw-pink transition-colors" aria-label="Instagram (öffnet in neuem Tab)">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="https://facebook.com/horntobewild" target="_blank" rel="noopener noreferrer" class="text-white/80 hover:text-htbw-pink transition-colors" aria-label="Facebook (öffnet in neuem Tab)">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://youtube.com/@horntobewild" target="_blank" rel="noopener noreferrer" class="text-white/80 hover:text-htbw-pink transition-colors" aria-label="YouTube (öffnet in neuem Tab)">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Legal Column -->
+      <div>
+        <h3 class="font-heading text-xl text-white mb-4">Rechtliches</h3>
+        <ul class="space-y-2">
+          
+            <li>
+              <a href="/impressum/" class="text-white/80 hover:text-htbw-pink transition-colors">
+                Impressum
+              </a>
+            </li>
+          
+            <li>
+              <a href="/agb/" class="text-white/80 hover:text-htbw-pink transition-colors">
+                AGB &amp; Gewinnspielbedingungen
+              </a>
+            </li>
+          
+            <li>
+              <a href="/datenschutz/" class="text-white/80 hover:text-htbw-pink transition-colors">
+                Datenschutzerklärung
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="mt-12 pt-8 border-t border-white/20 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-white/60 text-sm">
+        &copy; 2026 Jugendkulturverein Horn e.V.. Alle Rechte vorbehalten.
+      </p>
+      <p class="font-heading text-xl text-htbw-pink">Stay Wild.</p>
+    </div>
+  </div>
+</footer>
+
+  <!-- Cookie Consent Banner (GDPR-compliant) -->
+<div id="cookie-banner" class="cookie-banner no-print" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-description">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <div class="flex flex-col md:flex-row items-start md:items-center gap-4">
+      <div class="flex-grow">
+        <h2 id="cookie-title" class="font-heading text-lg mb-1">Cookies & Videos</h2>
+        <p id="cookie-description" class="text-white/80 text-sm leading-relaxed">
+          Wir nutzen YouTube, um euch Videos zu zeigen. Dafür werden Cookies von YouTube gesetzt. 
+          Mit deiner Zustimmung akzeptierst du die 
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="text-white underline hover:text-htbw-pink">Datenschutzbestimmungen von Google</a>.
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-3 shrink-0">
+        <button 
+          type="button"
+          id="cookie-accept"
+          class="btn bg-white text-htbw-green hover:bg-htbw-cream text-sm"
+        >
+          Videos aktivieren
+        </button>
+        <button 
+          type="button"
+          id="cookie-decline"
+          class="btn border border-white/50 text-white hover:bg-white/10 text-sm"
+        >
+          Ablehnen
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Video Modal for YouTube embeds -->
+<div id="video-modal" class="video-modal no-print" role="dialog" aria-modal="true" aria-labelledby="video-modal-title">
+  <div class="relative w-full max-w-4xl">
+    <button 
+      type="button"
+      id="video-modal-close"
+      class="absolute -top-12 right-0 text-white hover:text-htbw-pink transition-colors"
+      aria-label="Video schließen"
+    >
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+    <h2 id="video-modal-title" class="sr-only">Video</h2>
+    <div id="video-container" class="relative bg-black rounded-lg overflow-hidden" style="padding-bottom: 56.25%;">
+      <!-- YouTube iframe will be injected here -->
+    </div>
+  </div>
+</div>
+
+  
+  <!-- JavaScript -->
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

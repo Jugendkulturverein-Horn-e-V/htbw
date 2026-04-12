@@ -1,0 +1,68 @@
+{
+  "categories": [
+    {
+      "name": "Allgemeines",
+      "questions": [
+        {
+          "question": "Wann findet das Festival statt?",
+          "answer": "Das Horn to be Wild 2026 findet am 5. September 2026 im Bürgerpark Bremen statt. Es ist die 11. und letzte Ausgabe unseres Festivals."
+        },
+        {
+          "question": "Warum ist dies die letzte Ausgabe?",
+          "answer": "Nach 11 wunderbaren Jahren haben wir uns entschieden, mit einem großartigen Finale Abschied zu nehmen. Wir möchten aufhören, wenn es am schönsten ist, und euch eine unvergessliche letzte Ausgabe schenken."
+        },
+        {
+          "question": "Wo genau findet das Festival statt?",
+          "answer": "Das Festival findet im Bürgerpark Bremen statt. Die genaue Location innerhalb des Parks wird auf euren Tickets und auf unserer Website angegeben."
+        }
+      ]
+    },
+    {
+      "name": "Tickets",
+      "questions": [
+        {
+          "question": "Wo kann ich Tickets kaufen?",
+          "answer": "Tickets gibt es exklusiv bei unserem Partner Lokale Momente. Klickt einfach auf den Ticket-Button auf unserer Website."
+        },
+        {
+          "question": "Gibt es eine Abendkasse?",
+          "answer": "Ja, sofern noch Tickets verfügbar sind. Wir empfehlen jedoch den Vorverkauf, da die letzte Ausgabe schnell ausverkauft sein könnte."
+        },
+        {
+          "question": "Kann ich mein Ticket zurückgeben?",
+          "answer": "Informationen zur Ticketrückgabe findet ihr in unseren AGB. Grundsätzlich sind Tickets vom Umtausch ausgeschlossen, außer das Festival wird abgesagt."
+        }
+      ]
+    },
+    {
+      "name": "Anreise",
+      "questions": [
+        {
+          "question": "Wie komme ich am besten zum Festival?",
+          "answer": "Wir empfehlen die Anreise mit der Straßenbahn oder dem Fahrrad. Die Linien 4 und 6 halten in der Nähe. Einen großen, bewachten Fahrradparkplatz gibt es direkt am Eingang."
+        },
+        {
+          "question": "Gibt es Parkplätze für Autos?",
+          "answer": "Im Bürgerpark selbst gibt es keine Parkplätze. Bitte nutzt die öffentlichen Parkmöglichkeiten in der Umgebung und kommt mit der Bahn oder dem Rad."
+        }
+      ]
+    },
+    {
+      "name": "Vor Ort",
+      "questions": [
+        {
+          "question": "Darf ich eigene Getränke mitbringen?",
+          "answer": "Nein, eigene Getränke sind nicht erlaubt. Auf dem Festivalgelände gibt es ausreichend Getränkestände mit fairen Preisen."
+        },
+        {
+          "question": "Ist das Festival barrierefrei?",
+          "answer": "Wir bemühen uns um bestmögliche Barrierefreiheit. Barrierefreie Toiletten sind vorhanden. Bei speziellen Bedürfnissen kontaktiert uns bitte vorab unter info@htbw.de."
+        },
+        {
+          "question": "Gibt es ein Alterslimit?",
+          "answer": "Das Festival ist für alle Altersgruppen. Personen unter 16 Jahren müssen von einem Erziehungsberechtigten begleitet werden."
+        }
+      ]
+    }
+  ]
+}

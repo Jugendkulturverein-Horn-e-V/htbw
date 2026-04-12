@@ -1,0 +1,75 @@
+---
+layout: base.njk
+title: Blog
+description: Neuigkeiten und Updates vom Horn to be Wild Festival - Ankündigungen, Berichte und mehr.
+permalink: /blog/
+---
+
+{# Hero Section #}
+<section class="section bg-htbw-green text-white">
+  <div class="max-w-4xl mx-auto text-center">
+    <h1 class="font-heading text-4xl md:text-6xl text-white mb-6" data-animate>Blog</h1>
+    <p class="text-xl text-white/90" data-animate>
+      Neuigkeiten und Updates rund ums Festival.
+    </p>
+  </div>
+</section>
+
+{# Blog Posts Grid #}
+<section class="section">
+  <div class="max-w-5xl mx-auto">
+    {% if collections.posts.length > 0 %}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+      {% for post in collections.posts %}
+      <article class="sticker-card" data-animate>
+        {% if post.data.image %}
+        <div class="aspect-video overflow-hidden rounded-lg mb-4">
+          <img 
+            src="{{ post.data.image }}" 
+            alt="{{ post.data.imageAlt or post.data.title }}"
+            loading="lazy"
+            class="w-full h-full object-cover"
+          >
+        </div>
+        {% endif %}
+        
+        <div class="flex items-center gap-3 mb-3">
+          <span class="inline-block px-2 py-1 text-xs font-medium bg-htbw-green/10 text-htbw-green rounded">
+            {{ post.data.category or 'News' }}
+          </span>
+          <time class="text-sm text-htbw-brown/60" datetime="{{ post.data.date }}">
+            {{ post.data.date | dateFormat }}
+          </time>
+        </div>
+        
+        <h2 class="font-heading text-xl md:text-2xl text-htbw-green mb-3">
+          <a href="{{ post.url }}" class="hover:text-htbw-pink transition-colors">
+            {{ post.data.title }}
+          </a>
+        </h2>
+        
+        <p class="text-htbw-brown leading-relaxed mb-4">
+          {{ post.data.teaser }}
+        </p>
+        
+        <a href="{{ post.url }}" class="text-htbw-pink font-medium hover:text-htbw-pink-dark transition-colors inline-flex items-center gap-1">
+          Weiterlesen
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="text-center py-16">
+      <div class="sticker-card max-w-md mx-auto">
+        <h2 class="font-heading text-2xl text-htbw-green mb-4">Bald geht es los!</h2>
+        <p class="text-htbw-brown">
+          Hier werden bald Neuigkeiten und Updates zum Festival erscheinen. Schau später noch einmal vorbei!
+        </p>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>

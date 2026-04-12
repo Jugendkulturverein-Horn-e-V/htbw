@@ -1,0 +1,661 @@
+---
+layout: base.njk
+title: Ein letztes Mal
+description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikfestivals im Bürgerpark. Sei dabei beim großen Finale!
+---
+
+{# Post-Festival Thank You Banner #}
+<section data-post-festival class="thank-you-banner hidden">
+  <div class="max-w-4xl mx-auto px-4">
+    <h1 class="font-heading text-4xl md:text-6xl mb-6">Danke!</h1>
+    <p class="text-xl md:text-2xl text-white/90 leading-relaxed text-pretty">
+      {{ config.thankYouMessage }}
+    </p>
+  </div>
+</section>
+
+{# Hero Section #}
+<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden" data-pre-festival>
+  {# Watercolor decorations #}
+  <div class="watercolor-blob -top-20 -left-20 w-64 h-64 animate-float" aria-hidden="true">
+    <img src="/assets/images/watercolor/splash-green-1.png" alt="" class="w-full h-full object-contain">
+  </div>
+  <div class="watercolor-blob -bottom-10 -right-10 w-48 h-48 animate-float-slow" aria-hidden="true">
+    <img src="/assets/images/watercolor/splash-pink-1.png" alt="" class="w-full h-full object-contain">
+  </div>
+
+  <div class="relative z-10 text-center px-4 py-16 md:py-24">
+    {# Logo #}
+    <div class="mb-8" data-animate>
+      <img 
+        src="/assets/images/logo/htbw-logo-main.svg" 
+        alt="Horn to be Wild Festival Logo" 
+        class="w-48 md:w-64 h-auto mx-auto"
+      >
+    </div>
+
+    {# Main Headline #}
+    <h1 class="font-heading text-5xl md:text-7xl lg:text-8xl text-htbw-green mb-4 text-balance" data-animate>
+      {{ config.heroHeadline }}
+    </h1>
+
+    <p class="text-xl md:text-2xl text-htbw-brown mb-4" data-animate>
+      {{ config.heroSubline }}
+    </p>
+
+    <p class="text-lg text-htbw-brown/70 mb-8" data-animate>
+      {{ config.festivalDate | dateFormat }} | {{ config.location }}
+    </p>
+
+    {# Countdown Timer #}
+    <div id="countdown" class="countdown mb-12" data-animate aria-live="polite" aria-label="Countdown zum Festival">
+      {# JS will populate this #}
+    </div>
+
+    {# CTA Button #}
+    <div data-animate>
+      <a 
+        href="{{ config.ticketUrl }}" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="btn btn-primary text-lg px-8 py-4"
+      >
+        Jetzt Ticket sichern
+        <span class="sr-only">(öffnet in neuem Tab)</span>
+      </a>
+      <p class="text-sm text-htbw-brown/60 mt-3">
+        Powered by {{ config.ticketPartner }}
+      </p>
+    </div>
+  </div>
+</section>
+
+{# Final Year Message Section #}
+<section class="section bg-htbw-green text-white" data-animate>
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="font-heading text-3xl md:text-4xl text-white mb-6 text-balance">
+      11 Jahre. Unzählige Erinnerungen. Ein letztes Mal.
+    </h2>
+    <p class="text-lg md:text-xl text-white/90 leading-relaxed text-pretty">
+      {{ config.aboutTeaser }}
+    </p>
+  </div>
+</section>
+
+{# Key Info Bar #}
+<section class="py-8 bg-htbw-cream border-y border-htbw-brown/10">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <div class="flex flex-wrap items-center justify-center gap-4 md:gap-8 text-center">
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-htbw-pink" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+        </svg>
+        <span class="font-medium text-htbw-brown">{{ config.festivalDate | dateFormat }}</span>
+      </div>
+      <span class="hidden md:block text-htbw-brown/30">|</span>
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-htbw-pink" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+        </svg>
+        <span class="font-medium text-htbw-brown">{{ config.location }}</span>
+      </div>
+      <span class="hidden md:block text-htbw-brown/30">|</span>
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-htbw-pink" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/>
+        </svg>
+        <span class="font-medium text-htbw-brown">{{ config.edition }}. Ausgabe</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# Lineup Section #}
+<section id="acts" class="section">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="section-title" data-animate>Line-Up {{ config.year }}</h2>
+    
+    {# Stage Filter (if multiple stages) #}
+    {% if lineup.stages.length > 1 %}
+    <div class="flex flex-wrap justify-center gap-2 mb-12" role="tablist" aria-label="Bühnenfilter">
+      <button 
+        class="year-tab active" 
+        role="tab"
+        aria-selected="true"
+        data-stage="all"
+      >
+        Alle
+      </button>
+      {% for stage in lineup.stages %}
+      <button 
+        class="year-tab" 
+        role="tab"
+        aria-selected="false"
+        data-stage="{{ stage.id }}"
+      >
+        {{ stage.name }}
+      </button>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {# Acts Grid #}
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+      {% for act in lineup.acts %}
+        {% if act.visible %}
+        <article class="sticker-card" data-animate data-stage-card="{{ act.stage | slug }}">
+          {# Artist Image #}
+          <div class="aspect-square relative overflow-hidden rounded-lg mb-4">
+            <img 
+              src="{{ act.image }}" 
+              alt="{{ act.alt }}"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            >
+            {% if act.youtubeEmbedId %}
+            <button 
+              type="button"
+              class="absolute inset-0 flex items-center justify-center bg-black/40 hover:bg-black/50 transition-colors"
+              data-video-trigger
+              data-video-id="{{ act.youtubeEmbedId }}"
+              aria-label="Video von {{ act.name }} abspielen"
+            >
+              <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+            {% endif %}
+          </div>
+
+          {# Artist Info #}
+          <div>
+            <span class="inline-block px-2 py-1 text-xs font-medium bg-htbw-pink/10 text-htbw-pink rounded mb-2">
+              {{ act.genre }}
+            </span>
+            <h3 class="font-heading text-2xl text-htbw-green mb-1">{{ act.name }}</h3>
+            <p class="text-sm text-htbw-brown/70 mb-3">
+              {{ act.time }} Uhr | {{ act.stage }}
+            </p>
+            <p class="text-htbw-brown text-sm leading-relaxed mb-4">
+              {{ act.description }}
+            </p>
+
+            {# Links #}
+            <div class="flex gap-3">
+              {% if act.spotifyUrl %}
+              <a 
+                href="{{ act.spotifyUrl }}" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="text-htbw-green hover:text-htbw-pink transition-colors"
+                aria-label="{{ act.name }} auf Spotify (öffnet in neuem Tab)"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                </svg>
+              </a>
+              {% endif %}
+              {% if act.youtubeUrl %}
+              <a 
+                href="{{ act.youtubeUrl }}" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="text-htbw-green hover:text-htbw-pink transition-colors"
+                aria-label="{{ act.name }} auf YouTube (öffnet in neuem Tab)"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+              </a>
+              {% endif %}
+            </div>
+          </div>
+        </article>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    {# Ticket CTA #}
+    <div class="text-center mt-12" data-animate>
+      <a 
+        href="{{ config.ticketUrl }}" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="btn btn-secondary"
+      >
+        Tickets sichern
+        <span class="sr-only">(öffnet in neuem Tab)</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+{# Festival Gallery Section - Creative Masonry Layout #}
+<section class="section bg-htbw-green/5 overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="section-title" data-animate>Festivalatmosphäre</h2>
+    <p class="text-center text-htbw-brown/70 mb-12 max-w-2xl mx-auto" data-animate>
+      Musik, Freundschaft und unvergessliche Momente im Herzen des Bürgerparks.
+    </p>
+    
+    {# Creative Bento Grid Layout #}
+    <div class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-3 md:gap-4 auto-rows-[80px] md:auto-rows-[100px]">
+      
+      {# Large featured image - top left #}
+      <div class="col-span-4 md:col-span-4 lg:col-span-5 row-span-3 md:row-span-4 relative group overflow-hidden rounded-2xl bg-htbw-brown/10" data-animate>
+        <img 
+          src="/placeholder.svg?height=400&width=500&text=Festival+Hauptbuhne" 
+          alt="Festivalbesucher bei Sonnenuntergang vor der Hauptbuhne"
+          loading="lazy"
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+        >
+        <div class="absolute inset-0 bg-gradient-to-t from-htbw-green/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <span class="absolute bottom-4 left-4 text-white font-heading text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">Hauptbuhne 2024</span>
+      </div>
+      
+      {# Vertical tall image #}
+      <div class="col-span-2 md:col-span-2 lg:col-span-3 row-span-2 md:row-span-3 relative group overflow-hidden rounded-2xl sticker-card p-0 bg-htbw-brown/10" data-animate>
+        <img 
+          src="/placeholder.svg?height=300&width=200&text=Lichtshow" 
+          alt="Bunte Lichtinstallation im Waldgebiet"
+          loading="lazy"
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+        >
+      </div>
+      
+      {# Square image with overlay text #}
+      <div class="col-span-2 md:col-span-2 lg:col-span-4 row-span-2 relative group overflow-hidden rounded-2xl bg-htbw-brown/10" data-animate>
+        <img 
+          src="/placeholder.svg?height=200&width=300&text=Publikum" 
+          alt="Publikum bei einem Konzert"
+          loading="lazy"
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+        >
+        <div class="absolute inset-0 bg-htbw-pink/20 mix-blend-multiply"></div>
+      </div>
+      
+      {# Small accent boxes with text #}
+      <div class="col-span-2 lg:col-span-2 row-span-2 bg-htbw-pink rounded-2xl flex items-center justify-center p-4" data-animate>
+        <p class="font-heading text-white text-center text-lg md:text-xl">11 Jahre Musik</p>
+      </div>
+      
+      <div class="col-span-2 lg:col-span-2 row-span-2 bg-htbw-green rounded-2xl flex items-center justify-center p-4" data-animate>
+        <p class="font-heading text-white text-center text-lg md:text-xl">1 Familie</p>
+      </div>
+      
+      {# Wide panorama image #}
+      <div class="col-span-4 md:col-span-4 lg:col-span-7 row-span-2 relative group overflow-hidden rounded-2xl bg-htbw-brown/10" data-animate>
+        <img 
+          src="/placeholder.svg?height=200&width=600&text=Panorama+Festivalgelande" 
+          alt="Panoramablick uber das Festivalgelande"
+          loading="lazy"
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+        >
+      </div>
+      
+      {# Stats/Quote box #}
+      <div class="col-span-4 md:col-span-2 lg:col-span-5 row-span-2 bg-htbw-cream border-2 border-htbw-green/20 rounded-2xl flex items-center justify-center p-6" data-animate>
+        <blockquote class="text-center">
+          <p class="text-htbw-brown italic text-sm md:text-base">&laquo;Das schonste Festival Bremens&raquo;</p>
+          <cite class="text-htbw-green text-xs mt-2 block">- Weser-Kurier</cite>
+        </blockquote>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+{# Aftermovies Section #}
+<section class="section">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="section-title" data-animate>Aftermovies</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+      {% for video in aftermovies.aftermovies %}
+      <article class="sticker-card" data-animate>
+        <div class="relative" style="padding-bottom: 56.25%;">
+          {# YouTube Placeholder - will be replaced if cookies accepted #}
+          <div 
+            class="youtube-placeholder absolute inset-0"
+            data-youtube-id="{{ video.youtubeVideoId }}"
+            data-video-title="{{ video.title }}"
+          >
+            <img 
+              src="{{ video.youtubeThumbnail }}" 
+              alt="{{ video.alt }}"
+              loading="lazy"
+              class="absolute inset-0 w-full h-full object-cover rounded-lg"
+            >
+            <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center rounded-lg">
+              <button 
+                type="button"
+                class="w-16 h-16 bg-htbw-pink rounded-full flex items-center justify-center hover:bg-htbw-pink-dark transition-colors mb-3"
+                data-video-trigger
+                data-video-id="{{ video.youtubeVideoId }}"
+                aria-label="{{ video.title }} abspielen"
+              >
+                <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </button>
+              <p class="text-white text-sm">Klicken zum Abspielen</p>
+            </div>
+          </div>
+        </div>
+        <h3 class="font-heading text-xl text-htbw-green mt-4">{{ video.title }}</h3>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# Past Artists / Slider of Fame Section #}
+<section class="section bg-htbw-cream">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="section-title" data-animate>Hall of Fame</h2>
+    <p class="text-center text-htbw-brown/70 mb-8 max-w-2xl mx-auto" data-animate>
+      Alle Künstlerinnen und Künstler, die in den letzten Jahren bei uns auf der Bühne standen.
+    </p>
+
+    {# Year Tabs #}
+    <div class="flex flex-wrap justify-center gap-2 mb-8" data-year-tabs role="tablist" aria-label="Jahre">
+      {% set years = pastArtists | getYears %}
+      {% for year in years %}
+      <button 
+        class="year-tab {% if loop.first %}active{% endif %}"
+        data-year="{{ year }}"
+        role="tab"
+        aria-selected="{% if loop.first %}true{% else %}false{% endif %}"
+      >
+        {{ year }}
+      </button>
+      {% endfor %}
+    </div>
+
+    {# Year Panels #}
+    {% for year in years %}
+    <div 
+      class="{% if not loop.first %}hidden{% endif %}" 
+      data-year-panel="{{ year }}"
+      role="tabpanel"
+      aria-label="Künstler {{ year }}"
+    >
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        {% for artist in pastArtists[year] %}
+        <article class="sticker-card text-center" data-animate>
+          <div class="aspect-square overflow-hidden rounded-lg mb-3 relative">
+            <img 
+              src="{{ artist.image }}" 
+              alt="{{ artist.alt }}"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            >
+            {% if artist.youtubeVideoId %}
+            <button 
+              type="button"
+              class="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 hover:opacity-100 transition-opacity"
+              data-video-trigger
+              data-video-id="{{ artist.youtubeVideoId }}"
+              aria-label="Video von {{ artist.name }} aus {{ year }} ansehen"
+            >
+              <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+            {% endif %}
+          </div>
+          <h3 class="font-medium text-htbw-green text-sm">{{ artist.name }}</h3>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{# Festival Map Section #}
+<section class="section">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="section-title" data-animate>Festivalgelände</h2>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+      {# Interactive Map SVG #}
+      <div class="relative" data-animate>
+        <svg 
+          viewBox="0 0 400 300" 
+          class="w-full h-auto bg-htbw-green/10 rounded-lg"
+          role="img"
+          aria-label="Interaktive Karte des Festivalgeländes im Bürgerpark Bremen"
+        >
+          {# Simplified festival map - areas clickable #}
+          <rect x="10" y="10" width="380" height="280" fill="#e8e0cc" rx="8"/>
+          
+          {# Trees/Park decoration #}
+          <circle cx="50" cy="50" r="15" fill="#215733" opacity="0.3"/>
+          <circle cx="350" cy="250" r="20" fill="#215733" opacity="0.3"/>
+          <circle cx="30" cy="200" r="12" fill="#215733" opacity="0.3"/>
+          <circle cx="370" cy="80" r="18" fill="#215733" opacity="0.3"/>
+          
+          {# Main Stage #}
+          <g 
+            class="map-area cursor-pointer" 
+            data-area-id="area-hauptbuehne"
+            data-area-name="Hauptbühne"
+            data-area-description="Das Herzstück des Festivals - hier treten unsere Headliner auf."
+          >
+            <rect x="150" y="40" width="100" height="60" fill="#f1698c" rx="4"/>
+            <text x="200" y="75" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Hauptbühne</text>
+          </g>
+
+          {# Forest Stage #}
+          <g 
+            class="map-area cursor-pointer" 
+            data-area-id="area-waldlichtung"
+            data-area-name="Waldlichtung"
+            data-area-description="Intime Atmosphäre unter den Bäumen für akustische Acts."
+          >
+            <rect x="280" y="120" width="80" height="50" fill="#215733" rx="4"/>
+            <text x="320" y="150" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Waldlichtung</text>
+          </g>
+
+          {# Night Stage #}
+          <g 
+            class="map-area cursor-pointer" 
+            data-area-id="area-waldbuehne"
+            data-area-name="Waldbühne"
+            data-area-description="Die Late-Night Location für elektronische Musik."
+          >
+            <rect x="40" y="120" width="80" height="50" fill="#5c4a3d" rx="4"/>
+            <text x="80" y="150" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Waldbühne</text>
+          </g>
+
+          {# Food Area #}
+          <g 
+            class="map-area cursor-pointer" 
+            data-area-id="area-food-1"
+            data-area-name="Essensmeile"
+            data-area-description="Regionale und internationale Köstlichkeiten von lokalen Anbietern."
+          >
+            <rect x="150" y="180" width="100" height="40" fill="#8b7355" rx="4"/>
+            <text x="200" y="205" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Essensmeile</text>
+          </g>
+
+          {# Entrance #}
+          <g 
+            class="map-area cursor-pointer" 
+            data-area-id="area-eingang"
+            data-area-name="Eingang & Kasse"
+            data-area-description="Willkommen beim Horn to be Wild! Hier holt ihr eure Bändchen ab."
+          >
+            <rect x="170" y="250" width="60" height="30" fill="#215733" rx="4"/>
+            <text x="200" y="270" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Eingang</text>
+          </g>
+
+          {# Bike Parking #}
+          <g 
+            class="map-area cursor-pointer" 
+            data-area-id="area-fahrrad"
+            data-area-name="Fahrradparkplatz"
+            data-area-description="Kostenloser, bewachter Fahrradparkplatz direkt am Eingang."
+          >
+            <circle cx="120" cy="260" r="20" fill="#f1698c" opacity="0.8"/>
+            <text x="120" y="265" text-anchor="middle" fill="white" font-size="8" font-weight="bold">Fahrrad</text>
+          </g>
+
+          {# Merch #}
+          <g 
+            class="map-area cursor-pointer" 
+            data-area-id="area-merch"
+            data-area-name="Merchandise"
+            data-area-description="Erinnerungsstücke und das offizielle HTBW 2026 Abschluss-Shirt."
+          >
+            <circle cx="280" cy="260" r="20" fill="#215733" opacity="0.8"/>
+            <text x="280" y="265" text-anchor="middle" fill="white" font-size="8" font-weight="bold">Merch</text>
+          </g>
+        </svg>
+      </div>
+
+      {# Info Panel #}
+      <div class="lg:sticky lg:top-24" data-animate>
+        <div id="map-info-panel" class="bg-white p-6 rounded-lg shadow-sticker">
+          <h3 class="font-heading text-xl text-htbw-green mb-2">Wähle einen Bereich</h3>
+          <p class="text-htbw-brown">Klicke auf einen Bereich in der Karte, um mehr Informationen zu erhalten.</p>
+        </div>
+
+        {# Travel Info #}
+        <div class="mt-6 p-6 bg-htbw-green/5 rounded-lg">
+          <h3 class="font-heading text-xl text-htbw-green mb-4">Anreise</h3>
+          <ul class="space-y-3 text-htbw-brown">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-htbw-pink shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+              </svg>
+              <span><strong>Straßenbahn:</strong> Linien 4 und 6 bis Haltestelle Bürgerpark</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-htbw-pink shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+              </svg>
+              <span><strong>Fahrrad:</strong> Kostenloser bewachter Parkplatz am Eingang</span>
+            </li>
+          </ul>
+          <a 
+            href="{{ map.googleMapsUrl }}" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 mt-4 text-htbw-green hover:text-htbw-pink transition-colors"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+            In Google Maps öffnen
+            <span class="sr-only">(öffnet in neuem Tab)</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# Blog Teaser Section #}
+<section class="section bg-htbw-green/5">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="section-title" data-animate>Neuigkeiten</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {% for post in collections.posts | limit(3) %}
+      <article class="sticker-card" data-animate>
+        <span class="inline-block px-2 py-1 text-xs font-medium bg-htbw-green/10 text-htbw-green rounded mb-3">
+          {{ post.data.category or 'News' }}
+        </span>
+        <h3 class="font-heading text-xl text-htbw-green mb-2">
+          <a href="{{ post.url }}" class="hover:text-htbw-pink">{{ post.data.title }}</a>
+        </h3>
+        <p class="text-sm text-htbw-brown/60 mb-3">{{ post.data.date | dateFormat }}</p>
+        <p class="text-htbw-brown text-sm leading-relaxed">{{ post.data.teaser }}</p>
+      </article>
+      {% else %}
+      <article class="sticker-card" data-animate>
+        <span class="inline-block px-2 py-1 text-xs font-medium bg-htbw-green/10 text-htbw-green rounded mb-3">
+          News
+        </span>
+        <h3 class="font-heading text-xl text-htbw-green mb-2">Bald mehr Neuigkeiten</h3>
+        <p class="text-htbw-brown text-sm leading-relaxed">Hier werden bald Neuigkeiten zum Festival erscheinen.</p>
+      </article>
+      {% endfor %}
+    </div>
+
+    {% if collections.posts.length > 3 %}
+    <div class="text-center mt-8">
+      <a href="/blog/" class="btn btn-outline">
+        Alle Beiträge
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+{# Sponsors Section #}
+<section class="section">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="section-title" data-animate>Unsere Partner</h2>
+    <p class="text-center text-htbw-brown/70 mb-12 max-w-2xl mx-auto" data-animate>
+      Ein großes Dankeschön an alle, die das Festival möglich machen.
+    </p>
+
+    {# Sticker-collection style layout #}
+    <div class="relative py-8">
+      <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+        {% for sponsor in sponsors.sponsors %}
+        <div class="sticker-card p-4 md:p-6" data-animate style="--rotation: {{ loop.index0 * 2 - 5 }}deg">
+          {% if sponsor.url %}
+          <a 
+            href="{{ sponsor.url }}" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="block"
+          >
+            <img 
+              src="{{ sponsor.logo }}" 
+              alt="{{ sponsor.alt }}"
+              loading="lazy"
+              class="h-12 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+            >
+            <span class="sr-only">{{ sponsor.name }} (öffnet in neuem Tab)</span>
+          </a>
+          {% else %}
+          <img 
+            src="{{ sponsor.logo }}" 
+            alt="{{ sponsor.alt }}"
+            loading="lazy"
+            class="h-12 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+          >
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{# Final CTA Section #}
+<section class="section bg-htbw-pink text-white text-center" data-pre-festival>
+  <div class="max-w-3xl mx-auto" data-animate>
+    <h2 class="font-heading text-3xl md:text-5xl text-white mb-6 text-balance">
+      Sei dabei beim großen Finale!
+    </h2>
+    <p class="text-lg md:text-xl text-white/90 mb-8">
+      Die letzte Ausgabe des Horn to be Wild. Sichere dir jetzt dein Ticket.
+    </p>
+    <a 
+      href="{{ config.ticketUrl }}" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="btn bg-white text-htbw-pink hover:bg-htbw-cream text-lg px-8 py-4"
+    >
+      Jetzt Ticket sichern
+      <span class="sr-only">(öffnet in neuem Tab)</span>
+    </a>
+  </div>
+</section>

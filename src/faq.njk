@@ -1,0 +1,73 @@
+---
+layout: base.njk
+title: FAQ
+description: Häufig gestellte Fragen zum Horn to be Wild Festival - Tickets, Anreise, Vor Ort und mehr.
+permalink: /faq/
+---
+
+{# Hero Section #}
+<section class="section bg-htbw-green text-white">
+  <div class="max-w-4xl mx-auto text-center">
+    <h1 class="font-heading text-4xl md:text-6xl text-white mb-6" data-animate>Häufige Fragen</h1>
+    <p class="text-xl text-white/90" data-animate>
+      Alles, was du über das Festival wissen musst.
+    </p>
+  </div>
+</section>
+
+{# FAQ Categories #}
+<section class="section">
+  <div class="max-w-3xl mx-auto">
+    {% for category in faq.categories %}
+    <div class="mb-12" data-animate>
+      <h2 class="font-heading text-2xl md:text-3xl text-htbw-green mb-6">{{ category.name }}</h2>
+      
+      <div class="accordion-group space-y-2">
+        {% for item in category.questions %}
+        <div class="accordion-item sticker-card">
+          <button 
+            type="button"
+            class="accordion-trigger"
+            aria-expanded="false"
+            aria-controls="faq-{{ loop.index }}-{{ category.name | slug }}"
+          >
+            <span class="text-left pr-4">{{ item.question }}</span>
+            <svg class="accordion-icon w-5 h-5 text-htbw-pink shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div 
+            id="faq-{{ loop.index }}-{{ category.name | slug }}"
+            class="accordion-content"
+            role="region"
+          >
+            <div class="pb-4 text-htbw-brown leading-relaxed">
+              {{ item.answer }}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{# Still Questions Section #}
+<section class="section bg-htbw-green/5">
+  <div class="max-w-2xl mx-auto text-center">
+    <h2 class="font-heading text-2xl md:text-3xl text-htbw-green mb-4" data-animate>
+      Noch Fragen?
+    </h2>
+    <p class="text-htbw-brown mb-8" data-animate>
+      Schreib uns einfach eine E-Mail. Wir antworten so schnell wie möglich.
+    </p>
+    <a 
+      href="mailto:{{ config.email }}" 
+      class="btn btn-primary"
+      data-animate
+    >
+      {{ config.email }}
+    </a>
+  </div>
+</section>
