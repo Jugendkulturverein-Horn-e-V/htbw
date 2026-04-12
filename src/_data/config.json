@@ -1,12 +1,12 @@
 {
   "siteName": "Horn to be Wild",
-  "siteDescription": "Das Bremer Musikfestival im Bürgerpark - Die letzte Ausgabe 2026",
+  "siteDescription": "Das Bremer Musikfestival im Rhododendronpark - Die letzte Ausgabe 2026",
   "festivalDate": "2026-09-05",
   "festivalEndDate": "2026-09-06",
-  "location": "Bürgerpark Bremen",
+  "location": "Rhododendronpark Bremen",
   "year": 2026,
   "edition": 11,
-  "ticketUrl": "https://lokalemomente.de/htbw",
+  "ticketUrl": "https://www.lokale-momente.de/bremen/events/horn-to-be-wild-festival-2026-ein-letztes-mal-bbcf1",
   "ticketPartner": "Lokale Momente",
   "email": "info@htbw.de",
   "socialMedia": {
@@ -20,7 +20,12 @@
     { "name": "Über uns", "url": "/ueber-uns/" },
     { "name": "FAQ", "url": "/faq/" },
     { "name": "Blog", "url": "/blog/" },
-    { "name": "Tickets", "url": "https://lokalemomente.de/htbw", "external": true, "highlight": true }
+    {
+      "name": "Tickets",
+      "url": "https://www.lokale-momente.de/bremen/events/horn-to-be-wild-festival-2026-ein-letztes-mal-bbcf1",
+      "external": true,
+      "highlight": true
+    }
   ],
   "footerLinks": [
     { "name": "Impressum", "url": "/impressum/" },
@@ -30,6 +35,6 @@
   "thankYouMessage": "Danke für 11 wilde Jahre! Ihr wart das Herz von Horn to be Wild. Wir sehen uns auf der Tanzfläche des Lebens.",
   "heroHeadline": "Ein letztes Mal",
   "heroSubline": "Die finale Ausgabe des Horn to be Wild Festivals",
-  "aboutTeaser": "11 Jahre lang haben wir gemeinsam im Bürgerpark gefeiert, getanzt und unvergessliche Momente geschaffen. 2026 wird es Zeit, Abschied zu nehmen - aber nicht ohne ein letztes, großartiges Fest.",
+  "aboutTeaser": "11 Jahre lang haben wir gemeinsam im Rhododendronpark gefeiert, getanzt und unvergessliche Momente geschaffen. 2026 wird es Zeit, Abschied zu nehmen - aber nicht ohne ein letztes, großartiges Fest.",
   "organization": "Jugendkulturverein Horn e.V."
 }

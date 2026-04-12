@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: Ein letztes Mal
-description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikfestivals im Bürgerpark. Sei dabei beim großen Finale!
+description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikfestivals im Rhododendronpark. Sei dabei beim großen Finale!
 ---
 
 {# Post-Festival Thank You Banner #}
@@ -18,21 +18,26 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
 <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden" data-pre-festival>
   {# Watercolor decorations #}
   <div class="watercolor-blob -top-20 -left-20 w-64 h-64 animate-float" aria-hidden="true">
-    <img src="/assets/images/watercolor/splash-green-1.png" alt="" class="w-full h-full object-contain">
+    <img src="/assets/images/watercolor/klecks-1-pink.avif" alt="" class="w-full h-full object-contain">
   </div>
   <div class="watercolor-blob -bottom-10 -right-10 w-48 h-48 animate-float-slow" aria-hidden="true">
-    <img src="/assets/images/watercolor/splash-pink-1.png" alt="" class="w-full h-full object-contain">
+    <img src="/assets/images/watercolor/klecks-5-grün.avif" alt="" class="w-full h-full object-contain">
+  </div>
+
+  {# Static decorative blob after hero section #}
+  <div class="absolute inset-0 flex items-center justify-center pointer-events-none -z-10 opacity-30" aria-hidden="true">
+    <img src="/assets/images/watercolor/klecks-5-grün.avif" alt="" class="w-[600px] h-[600px] object-contain max-w-3xl">
   </div>
 
   <div class="relative z-10 text-center px-4 py-16 md:py-24">
-    {# Logo #}
-    <div class="mb-8" data-animate>
+    {# {# Logo #}
+    {# <div class="mb-8" data-animate>
       <img 
-        src="/assets/images/logo/htbw-logo-main.svg" 
+        src="/assets/images/logo/htbw-logo-main.avif" 
         alt="Horn to be Wild Festival Logo" 
         class="w-48 md:w-64 h-auto mx-auto"
       >
-    </div>
+    </div> #}
 
     {# Main Headline #}
     <h1 class="font-heading text-5xl md:text-7xl lg:text-8xl text-htbw-green mb-4 text-balance" data-animate>
@@ -43,7 +48,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
       {{ config.heroSubline }}
     </p>
 
-    <p class="text-lg text-htbw-brown/70 mb-8" data-animate>
+    <p class="text-lg text-htbw-brown mb-8" data-animate>
       {{ config.festivalDate | dateFormat }} | {{ config.location }}
     </p>
 
@@ -59,6 +64,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
         target="_blank" 
         rel="noopener noreferrer"
         class="btn btn-primary text-lg px-8 py-4"
+        title="Ticket sichern (öffnet in neuem Tab)"
       >
         Jetzt Ticket sichern
         <span class="sr-only">(öffnet in neuem Tab)</span>
@@ -174,7 +180,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
               {{ act.genre }}
             </span>
             <h3 class="font-heading text-2xl text-htbw-green mb-1">{{ act.name }}</h3>
-            <p class="text-sm text-htbw-brown/70 mb-3">
+            <p class="text-sm text-htbw-brown mb-3">
               {{ act.time }} Uhr | {{ act.stage }}
             </p>
             <p class="text-htbw-brown text-sm leading-relaxed mb-4">
@@ -235,8 +241,8 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
 <section class="section bg-htbw-green/5 overflow-hidden">
   <div class="max-w-7xl mx-auto">
     <h2 class="section-title" data-animate>Festivalatmosphäre</h2>
-    <p class="text-center text-htbw-brown/70 mb-12 max-w-2xl mx-auto" data-animate>
-      Musik, Freundschaft und unvergessliche Momente im Herzen des Bürgerparks.
+    <p class="text-center text-htbw-brown mb-12 max-w-2xl mx-auto" data-animate>
+      Musik, Freundschaft und unvergessliche Momente im Herzen des Rhododendronparks.
     </p>
     
     {# Creative Bento Grid Layout #}
@@ -354,7 +360,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
 <section class="section bg-htbw-cream">
   <div class="max-w-7xl mx-auto">
     <h2 class="section-title" data-animate>Hall of Fame</h2>
-    <p class="text-center text-htbw-brown/70 mb-8 max-w-2xl mx-auto" data-animate>
+    <p class="text-center text-htbw-brown mb-8 max-w-2xl mx-auto" data-animate>
       Alle Künstlerinnen und Künstler, die in den letzten Jahren bei uns auf der Bühne standen.
     </p>
 
@@ -426,7 +432,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
           viewBox="0 0 400 300" 
           class="w-full h-auto bg-htbw-green/10 rounded-lg"
           role="img"
-          aria-label="Interaktive Karte des Festivalgeländes im Bürgerpark Bremen"
+          aria-label="Interaktive Karte des Festivalgeländes im Rhododendronpark Bremen"
         >
           {# Simplified festival map - areas clickable #}
           <rect x="10" y="10" width="380" height="280" fill="#e8e0cc" rx="8"/>
@@ -531,7 +537,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
               <svg class="w-5 h-5 text-htbw-pink shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
               </svg>
-              <span><strong>Straßenbahn:</strong> Linien 4 und 6 bis Haltestelle Bürgerpark</span>
+              <span><strong>Straßenbahn:</strong> Linien 4 und 6 bis Haltestelle Rhododendronpark</span>
             </li>
             <li class="flex items-start gap-3">
               <svg class="w-5 h-5 text-htbw-pink shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -600,7 +606,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
 <section class="section">
   <div class="max-w-7xl mx-auto">
     <h2 class="section-title" data-animate>Unsere Partner</h2>
-    <p class="text-center text-htbw-brown/70 mb-12 max-w-2xl mx-auto" data-animate>
+    <p class="text-center text-htbw-brown mb-12 max-w-2xl mx-auto" data-animate>
       Ein großes Dankeschön an alle, die das Festival möglich machen.
     </p>
 

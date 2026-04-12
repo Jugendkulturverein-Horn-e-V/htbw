@@ -31,7 +31,7 @@ Die letzte Ausgabe soll die beste werden. Wir planen:
 
 Markiert euch den **5. September 2026** im Kalender. Erzählt euren Freunden davon. Holt euch eure Tickets, sobald sie verfügbar sind.
 
-Lasst uns ein letztes Mal gemeinsam im Bürgerpark tanzen, lachen und Erinnerungen schaffen, die ein Leben lang halten.
+Lasst uns ein letztes Mal gemeinsam im Rhododendronpark tanzen, lachen und Erinnerungen schaffen, die ein Leben lang halten.
 
 **Danke für 11 unvergessliche Jahre.**
 

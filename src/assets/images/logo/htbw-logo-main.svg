@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
-  <circle cx="100" cy="100" r="90" fill="#215733" opacity="0.1"/>
-  <circle cx="100" cy="100" r="70" fill="#f1698c" opacity="0.2"/>
-  <text x="100" y="90" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#215733">HTBW</text>
-  <text x="100" y="115" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#5c4a3d">HORN TO BE WILD</text>
-  <text x="100" y="135" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#f1698c">2026</text>
-</svg>

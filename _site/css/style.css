@@ -568,10 +568,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
   font-family: Frente H1, Georgia, serif;
   --tw-text-opacity: 1;
   color: rgb(33 87 51 / var(--tw-text-opacity, 1));
+  font-weight: 600;
 }
 
 a {
@@ -695,6 +701,8 @@ a:hover {
 .btn-primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(224 77 115 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .btn-secondary {
@@ -990,6 +998,7 @@ header {
   font-family: Frente H1, Georgia, serif;
   font-size: 2.25rem;
   line-height: 2.5rem;
+  font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(241 105 140 / var(--tw-text-opacity, 1));
 }
@@ -1006,7 +1015,8 @@ header {
   line-height: 1.25rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: rgb(92 74 61 / 0.7);
+  --tw-text-opacity: 1;
+  color: rgb(92 74 61 / var(--tw-text-opacity, 1));
 }
 
 @media (min-width: 768px) {
@@ -1026,6 +1036,10 @@ header {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+.pointer-events-none {
+  pointer-events: none;
 }
 
 .visible {
@@ -1098,6 +1112,10 @@ header {
 
 .top-4 {
   top: 1rem;
+}
+
+.-z-10 {
+  z-index: -10;
 }
 
 .z-10 {
@@ -1265,6 +1283,10 @@ header {
   height: 2rem;
 }
 
+.h-\[600px\] {
+  height: 600px;
+}
+
 .h-auto {
   height: auto;
 }
@@ -1315,6 +1337,10 @@ header {
 
 .w-8 {
   width: 2rem;
+}
+
+.w-\[600px\] {
+  width: 600px;
 }
 
 .w-auto {
@@ -1889,6 +1915,10 @@ header {
   opacity: 0;
 }
 
+.opacity-30 {
+  opacity: 0.3;
+}
+
 .mix-blend-multiply {
   mix-blend-mode: multiply;
 }
@@ -1958,10 +1988,11 @@ header {
 /* Self-hosted fonts */
 
 @font-face {
-  font-family: 'Frente H1';
+  font-family: "Frente H1";
 
-  src: url('/assets/fonts/FrenteH1-Regular.woff2') format('woff2'),
-       url('/assets/fonts/FrenteH1-Regular.woff') format('woff');
+  src:
+    url("/assets/fonts/FrenteH1-Regular.woff2") format("woff2"),
+    url("/assets/fonts/FrenteH1-Regular.woff") format("woff");
 
   font-weight: normal;
 
@@ -1971,10 +2002,11 @@ header {
 }
 
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
 
-  src: url('/assets/fonts/Inter-Regular.woff2') format('woff2'),
-       url('/assets/fonts/Inter-Regular.woff') format('woff');
+  src:
+    url("/assets/fonts/Inter_18pt-Regular.woff2") format("woff2"),
+    url("/assets/fonts/Inter_18pt-Regular.woff") format("woff");
 
   font-weight: 400;
 
@@ -1984,10 +2016,11 @@ header {
 }
 
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
 
-  src: url('/assets/fonts/Inter-Medium.woff2') format('woff2'),
-       url('/assets/fonts/Inter-Medium.woff') format('woff');
+  src:
+    url("/assets/fonts/Inter_18pt-Medium.woff2") format("woff2"),
+    url("/assets/fonts/Inter_18pt-Medium.woff") format("woff");
 
   font-weight: 500;
 
@@ -1997,10 +2030,11 @@ header {
 }
 
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
 
-  src: url('/assets/fonts/Inter-SemiBold.woff2') format('woff2'),
-       url('/assets/fonts/Inter-SemiBold.woff') format('woff');
+  src:
+    url("/assets/fonts/Inter_18pt-SemiBold.woff2") format("woff2"),
+    url("/assets/fonts/Inter_18pt-SemiBold.woff") format("woff");
 
   font-weight: 600;
 
@@ -2010,10 +2044,11 @@ header {
 }
 
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
 
-  src: url('/assets/fonts/Inter-Bold.woff2') format('woff2'),
-       url('/assets/fonts/Inter-Bold.woff') format('woff');
+  src:
+    url("/assets/fonts/Inter_18pt-Bold.woff2") format("woff2"),
+    url("/assets/fonts/Inter_18pt-Bold.woff") format("woff");
 
   font-weight: 700;
 
