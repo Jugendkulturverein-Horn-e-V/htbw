@@ -39,5 +39,8 @@
   
   <!-- JavaScript -->
   <script src="/js/main.js" defer></script>
+  <script>
+  window.SITE_CONFIG = {{ config | dump | safe }};
+</script>
 </body>
 </html>

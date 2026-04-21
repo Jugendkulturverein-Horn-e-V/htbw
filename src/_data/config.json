@@ -2,7 +2,7 @@
   "siteName": "Horn to be Wild",
   "siteDescription": "Das Bremer Musikfestival im Rhododendronpark - Die letzte Ausgabe 2026",
   "festivalDate": "2026-09-05",
-  "festivalEndDate": "2026-09-06",
+  "festivalEndDate": "2026-09-05",
   "location": "Rhododendronpark Bremen",
   "year": 2026,
   "edition": 11,
@@ -32,9 +32,11 @@
     { "name": "AGB & Gewinnspielbedingungen", "url": "/agb/" },
     { "name": "Datenschutzerklärung", "url": "/datenschutz/" }
   ],
+  "footerMessage": "Nach 11 unvergesslichen Jahren heißt es:<br><strong>Wir feiern diesen Sommer unser letztes Horn to be Wild.</strong>",
   "thankYouMessage": "Danke für 11 wilde Jahre! Ihr wart das Herz von Horn to be Wild. Wir sehen uns auf der Tanzfläche des Lebens.",
   "heroHeadline": "Ein letztes Mal",
   "heroSubline": "Die finale Ausgabe des Horn to be Wild Festivals",
-  "aboutTeaser": "11 Jahre lang haben wir gemeinsam im Rhododendronpark gefeiert, getanzt und unvergessliche Momente geschaffen. 2026 wird es Zeit, Abschied zu nehmen - aber nicht ohne ein letztes, großartiges Fest.",
-  "organization": "Jugendkulturverein Horn e.V."
+  "aboutTeaser": "Nach 11 unvergesslichen Jahren heißt es:<br><strong>Wir feiern diesen Sommer unser letztes Horn to be Wild.</strong><br><br>Unser Musikfestival lässt den Stadtteil Bremen Horn für ein paar Stunden laut werden! Seit 2015 organisieren wir es ehrenamtlich mit viel Herzblut, um jungen Künstlern und Künstlerinnen eine Bühne zu bieten und einen einzigartigen Tag in Horn zu schaffen. Gäste können nach Belieben vor der Bühne tanzen oder auf Picknickdecken entspannen, das Angebot an den Foodtrucks genießen oder an den Mitmachständen Verschiedenes erleben.",
+  "organization": "Jugendkulturverein Horn e.V.",
+  "finalCTA": "11 Jahre lang haben wir gemeinsam im Rhododendronpark gefeiert, getanzt und unvergessliche Momente geschaffen. 2026 wird es Zeit, Abschied zu nehmen - aber nicht ohne ein letztes, großartiges Fest."
 }

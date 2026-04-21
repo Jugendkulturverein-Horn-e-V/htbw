@@ -60,7 +60,7 @@
   }
 
   body {
-    @apply bg-htbw-cream text-htbw-brown font-body;
+    @apply bg-htbw-cream text-htbw-black font-body;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -204,7 +204,7 @@
   }
 
   .year-tab:not(.active) {
-    @apply bg-htbw-brown/10 text-htbw-brown hover:bg-htbw-brown/20;
+    @apply bg-htbw-brown/10 text-htbw-black hover:bg-htbw-brown/20;
   }
 
   /* Video modal */
@@ -235,7 +235,7 @@
   }
 
   .countdown-label {
-    @apply text-sm md:text-base text-htbw-brown uppercase tracking-wider;
+    @apply text-sm md:text-base text-htbw-black uppercase tracking-wider;
   }
 }
 

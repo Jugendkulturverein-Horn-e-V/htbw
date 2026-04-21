@@ -22,7 +22,7 @@
                 target="_blank" 
                 rel="noopener noreferrer"
                 role="menuitem"
-                class="{% if item.highlight %}btn btn-primary text-sm{% else %}text-htbw-brown hover:text-htbw-green font-medium{% endif %}"
+                class="{% if item.highlight %}btn btn-primary text-sm{% else %}text-htbw-black hover:text-htbw-green font-medium{% endif %}"
               >
                 {{ item.name }}
                 <span class="sr-only">(öffnet in neuem Tab)</span>
@@ -31,7 +31,7 @@
               <a 
                 href="{{ item.url }}" 
                 role="menuitem"
-                class="text-htbw-brown hover:text-htbw-green font-medium{% if page.url == item.url %} text-htbw-green{% endif %}"
+                class="text-htbw-black hover:text-htbw-green font-medium{% if page.url == item.url %} text-htbw-green{% endif %}"
                 {% if item.isAnchor %}data-anchor="true"{% endif %}
               >
                 {{ item.name }}
@@ -104,7 +104,7 @@
 
       <!-- Social Links in Mobile Menu -->
       <div class="mt-auto pt-8 border-t border-htbw-brown/20">
-        <p class="text-sm text-htbw-brown mb-4">Folge uns:</p>
+        <p class="text-sm text-htbw-black mb-4">Folge uns:</p>
         <div class="flex gap-4">
           <a href="{{ config.socialMedia.instagram }}" target="_blank" rel="noopener noreferrer" class="text-htbw-green hover:text-htbw-pink" aria-label="Instagram (öffnet in neuem Tab)">
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

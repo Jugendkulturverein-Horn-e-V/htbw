@@ -5,7 +5,7 @@
       <div>
         <h2 class="font-heading text-2xl text-white mb-4">{{ config.siteName }}</h2>
         <p class="text-white/80 leading-relaxed mb-4">
-          {{ config.aboutTeaser | truncate(150) }}
+          {{ config.footerMessage | safe }}
         </p>
         <p class="text-white/60 text-sm">
           {{ config.organization }}
@@ -64,7 +64,7 @@
       <p class="text-white/60 text-sm">
         &copy; {{ config.year }} {{ config.organization }}. Alle Rechte vorbehalten.
       </p>
-      <p class="font-heading text-xl text-htbw-pink">Stay Wild.</p>
+      <p class="font-heading text-2xl text-htbw-pink font-bold">Stay Wild.</p>
     </div>
   </div>
 </footer>
