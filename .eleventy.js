@@ -63,6 +63,6 @@ module.exports = function (eleventyConfig) {
     templateFormats: ["njk", "md", "html"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
-    pathPrefix: "/htbw/",
+    // pathPrefix: "/htbw/",
   };
 };
