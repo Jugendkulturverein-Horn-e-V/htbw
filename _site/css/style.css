@@ -705,18 +705,6 @@ a:hover {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.btn-secondary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(33 87 51 / var(--tw-bg-opacity, 1));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.btn-secondary:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 69 40 / var(--tw-bg-opacity, 1));
-}
-
 .btn-outline {
   border-width: 2px;
   --tw-border-opacity: 1;
@@ -1066,6 +1054,10 @@ header {
   bottom: -2.5rem;
 }
 
+.-left-10 {
+  left: -2.5rem;
+}
+
 .-left-20 {
   left: -5rem;
 }
@@ -1112,14 +1104,6 @@ header {
 
 .top-4 {
   top: 1rem;
-}
-
-.-left-10 {
-  left: -2.5rem;
-}
-
-.-right-20 {
-  right: -5rem;
 }
 
 .-z-10 {
@@ -1670,10 +1654,6 @@ header {
   background-color: rgb(255 255 255 / 0.2);
 }
 
-.bg-htbw-pink\/5 {
-  background-color: rgb(241 105 140 / 0.05);
-}
-
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -1816,10 +1796,6 @@ header {
 
 .font-heading {
   font-family: Frente H1, Georgia, serif;
-}
-
-.font-body {
-  font-family: Inter, system-ui, sans-serif;
 }
 
 .text-2xl {
