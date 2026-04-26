@@ -20,8 +20,13 @@ jobs:
         with:
           node-version: "20"
 
+      - name: pnpm installieren
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
       - name: Dependencies installieren
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Website bauen
         run: npm run build
