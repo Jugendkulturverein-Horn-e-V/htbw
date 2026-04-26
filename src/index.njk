@@ -28,7 +28,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
 
   {# Static decorative blob after hero section #}
   <div class="absolute inset-0 flex items-center justify-center pointer-events-none -z-10 opacity-30" aria-hidden="true">
-    <img src="{{ '/assets/images/watercolor/klecks-4-grün.avif | url }}" alt="" class="w-[600px] h-[600px] rotate-[-30deg] object-contain max-w-3xl">
+    <img src="{{ '/assets/images/watercolor/klecks-4-grün.avif' | url }}" alt="" class="w-[600px] h-[600px] rotate-[-30deg] object-contain max-w-3xl">
   </div>
 
   <div class="relative z-10 text-center px-4 py-16 md:py-24">
@@ -613,7 +613,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
           {{ post.data.category or 'News' }}
         </span>
         <h3 class="font-heading text-xl text-htbw-green mb-2">
-          <a href="{{ post.url }}" class="hover:text-htbw-pink">{{ post.data.title }}</a>
+          <a href="{{ post.url | url }}" class="hover:text-htbw-pink">{{ post.data.title }}</a>
         </h3>
         <p class="text-sm text-htbw-black/60 mb-3">{{ post.data.date | dateFormat }}</p>
         <p class="text-htbw-black text-sm leading-relaxed">{{ post.data.teaser }}</p>

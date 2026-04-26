@@ -18,7 +18,7 @@
           <li role="none">
             {% if item.external %}
               <a 
-                href="{{ item.url }}" 
+                href="{{ item.url | url }}" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 role="menuitem"
@@ -29,7 +29,7 @@
               </a>
             {% else %}
               <a 
-                href="{{ item.url }}" 
+                href="{{ item.url | url }}" 
                 role="menuitem"
                 class="text-htbw-black hover:text-htbw-green font-medium{% if page.url == item.url %} text-htbw-green{% endif %}"
                 {% if item.isAnchor %}data-anchor="true"{% endif %}
@@ -79,7 +79,7 @@
           <li role="none">
             {% if item.external %}
               <a 
-                href="{{ item.url }}" 
+                href="{{ item.url | url }}" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 role="menuitem"
@@ -90,7 +90,7 @@
               </a>
             {% else %}
               <a 
-                href="{{ item.url }}" 
+                href="{{ item.url | url }}" 
                 role="menuitem"
                 class="block py-3 text-xl font-heading text-htbw-green hover:text-htbw-pink"
                 data-close-menu

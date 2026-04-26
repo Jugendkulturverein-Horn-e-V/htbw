@@ -50,7 +50,7 @@
         <ul class="space-y-2">
           {% for link in config.footerLinks %}
             <li>
-              <a href="{{ link.url }}" class="text-white/80 hover:text-htbw-pink transition-colors">
+              <a href="{{ link.url | url }}" class="text-white/80 hover:text-htbw-pink transition-colors">
                 {{ link.name }}
               </a>
             </li>
@@ -64,7 +64,7 @@
       <p class="text-white/60 text-sm">
         &copy; {{ config.year }} {{ config.organization }}. Alle Rechte vorbehalten.
       </p>
-      <p class="font-heading text-2xl text-htbw-pink font-bold">Stay Wild.</p>
+      <p class="font-heading text-2xl text-htbw-pink font-bold">Stay Wild!</p>
     </div>
   </div>
 </footer>
