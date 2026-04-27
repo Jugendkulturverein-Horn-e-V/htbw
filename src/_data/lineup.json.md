@@ -1,0 +1,82 @@
+```
+{
+  "acts": [
+    {
+      "id": "hauptact-2026",
+      "name": "Headliner 2026",
+      "image": "/assets/images/artists/headliner-placeholder.jpg",
+      "alt": "Headliner 2026 Bandfoto",
+      "genre": "Indie Rock",
+      "time": "22:00",
+      "stage": "Hauptbühne",
+      "description": "Der krönende Abschluss unserer letzten Ausgabe.",
+      "spotifyUrl": null,
+      "youtubeUrl": null,
+      "youtubeEmbedId": null,
+      "visible": false
+    },
+    {
+      "id": "band-eins",
+      "name": "Band Eins",
+      "image": "/assets/images/artists/band-eins-placeholder.jpg",
+      "alt": "Band Eins live auf der Bühne",
+      "genre": "Elektro Pop",
+      "time": "20:00",
+      "stage": "Hauptbühne",
+      "description": "Tanzbare Beats und eingängige Melodien für die große Abschiedsparty.",
+      "spotifyUrl": "https://open.spotify.com",
+      "youtubeUrl": "https://youtube.com",
+      "youtubeEmbedId": null,
+      "visible": true
+    },
+    {
+      "id": "band-zwei",
+      "name": "Band Zwei",
+      "image": "/assets/images/artists/band-zwei-placeholder.jpg",
+      "alt": "Band Zwei Pressefoto",
+      "genre": "Singer-Songwriter",
+      "time": "18:00",
+      "stage": "Waldlichtung",
+      "description": "Intime Klänge unter den Bäumen des Rhododendronparks.",
+      "spotifyUrl": "https://open.spotify.com",
+      "youtubeUrl": null,
+      "youtubeEmbedId": null,
+      "visible": true
+    },
+    {
+      "id": "dj-kollektiv",
+      "name": "DJ Kollektiv",
+      "image": "/assets/images/artists/dj-kollektiv-placeholder.jpg",
+      "alt": "DJ Kollektiv am Mischpult",
+      "genre": "House / Techno",
+      "time": "23:00",
+      "stage": "Waldbühne",
+      "description": "Die Afterparty im Wald - tanzen bis zum Morgengrauen.",
+      "spotifyUrl": null,
+      "youtubeUrl": null,
+      "youtubeEmbedId": null,
+      "visible": true
+    },
+    {
+      "id": "lokale-helden",
+      "name": "Lokale Helden",
+      "image": "/assets/images/artists/lokale-helden-placeholder.jpg",
+      "alt": "Lokale Helden Bandportrait",
+      "genre": "Bremer Indie",
+      "time": "16:00",
+      "stage": "Hauptbühne",
+      "description": "Bremer Musik von Bremer Künstlern - für uns, für euch, für immer.",
+      "spotifyUrl": "https://open.spotify.com",
+      "youtubeUrl": "https://youtube.com",
+      "youtubeEmbedId": null,
+      "visible": true
+    }
+  ],
+  "stages": [
+    { "id": "hauptbuehne", "name": "Hauptbühne" },
+    { "id": "waldlichtung", "name": "Waldlichtung" },
+    { "id": "waldbuehne", "name": "Waldbühne" }
+  ]
+}
+
+```
