@@ -10,6 +10,7 @@ module.exports = {
           "green-dark": "#1a4528",
           pink: "#f1698c",
           "pink-dark": "#e04d73",
+          "pink-light": "#fd6e93",
           brown: "#5c4a3d",
           "brown-light": "#8b7355",
           black: "#2b2b2b",
@@ -26,6 +27,7 @@ module.exports = {
         wiggle: "wiggle 0.5s ease-in-out",
         "fade-in": "fadeIn 0.6s ease-out forwards",
         "slide-up": "slideUp 0.6s ease-out forwards",
+        shake: "shake 0.5s ease-in-out",
       },
       keyframes: {
         float: {
@@ -37,12 +39,19 @@ module.exports = {
           "50%": { transform: "rotate(3deg)" },
         },
         fadeIn: {
-          "0%": { opacity: "0", transform: "translateY(20px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
         },
         slideUp: {
           "0%": { opacity: "0", transform: "translateY(40px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        shake: {
+          "0%, 100%": { transform: "translateX(0)" },
+          "20%": { transform: "translateX(-8px)" },
+          "40%": { transform: "translateX(8px)" },
+          "60%": { transform: "translateX(-6px)" },
+          "80%": { transform: "translateX(6px)" },
         },
       },
       boxShadow: {
@@ -51,5 +60,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
