@@ -8,7 +8,7 @@ permalink: /faq/
 {# Hero Section #}
 <section class="section bg-htbw-green text-white">
   <div class="max-w-4xl mx-auto text-center">
-    <h1 class="font-heading text-4xl md:text-6xl text-white mb-6" data-animate>Häufige Fragen</h1>
+    <h1 class="font-heading text-4xl md:text-6xl text-white mb-6" data-animate>Häufige Fragen 🤔</h1>
     <p class="text-xl text-white/90" data-animate>
       Alles, was du über das Festival wissen musst.
     </p>
@@ -17,6 +17,7 @@ permalink: /faq/
 
 {# FAQ Categories #}
 <section class="section">
+{% set muttizettelUrl = '/assets/files/mutti-zettel.pdf' | url %}
   <div class="max-w-3xl mx-auto">
     {% for category in faq.categories %}
     <div class="mb-12" data-animate>
@@ -42,7 +43,10 @@ permalink: /faq/
             role="region"
           >
             <div class="pb-4 text-htbw-black leading-relaxed">
-              {{ item.answer }}
+              {{ item.answer 
+                | replace("{{ticketUrl}}", config.ticketUrl) 
+                | replace("{{muttizettel}}", muttizettelUrl) 
+                | safe }}
             </div>
           </div>
         </div>
@@ -60,7 +64,7 @@ permalink: /faq/
       Noch Fragen?
     </h2>
     <p class="text-htbw-black mb-8" data-animate>
-      Schreib uns einfach eine E-Mail. Wir antworten so schnell wie möglich.
+      Schreib uns einfach eine E-Mail oder via Instagram. Wir antworten so schnell wie möglich.
     </p>
     <a 
       href="mailto:{{ config.email }}" 

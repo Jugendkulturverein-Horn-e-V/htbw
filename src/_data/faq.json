@@ -14,6 +14,27 @@
         {
           "question": "Wo genau findet das Festival statt?",
           "answer": "Das Festival findet im Rhododendronpark Bremen statt. Die genaue Location innerhalb des Parks wird auf euren Tickets und auf unserer Website angegeben."
+        },
+        {
+          "question": "Verhalten",
+          "answer": "Selbstverständlich hat Gewalt gegen Menschen und Dinge auf dem Festival genau so wenig zu suchen wie Rassismus, Sexismus, Homophobie und sonstige Formen von Respektlosigkeit gegenüber anderen Menschen oder dem Festival an sich. Wer dagegen verstößt fliegt vom Gelände, in extremen Fällen kann es natürlich auch eine Anzeige geben.<br />Solltest du dich unwohl fühlen oder Unterstützung brauchen, wende dich bitte an das Awareness Team, die Security, die Sanitäter oder jedes Teammitglied (erkennbar an den bedruckten T-Shirts)."
+        }
+      ]
+    },
+    {
+      "name": "Veranstalter",
+      "questions": [
+        {
+          "question": "Wer steht hinter dem Festival?",
+          "answer": "Das Non-Profit Festival wird von ehrenamtlichen Jugendlichen und jungen Erwachsenen des Jugendkulturverein Horn e.V. organisiert."
+        },
+        {
+          "question": "Was passiert mit den Einnahmen des Festivals?",
+          "answer": "Von den Einnahmen stecken wir uns nichts in die eigene Tasche, da wir alle ehrenamtlich an dem Projekt arbeiten. Sie dienen lediglich der Refinanzierung der Festivalreihe."
+        },
+        {
+          "question": "Rhododendronpark",
+          "answer": "Auf 46 Hektar Fläche wird nicht nur eine der größten Rhododendron-Sammlungen der Welt gepflegt, hier sind auch der Botanische Garten der Hansestadt und das erste Grüne Science Center Deutschlands, die botanika, zuhause. Seit 2003 ist der Park zudem ein “Garten der Menschenrechte”."
         }
       ]
     },
@@ -22,15 +43,15 @@
       "questions": [
         {
           "question": "Wo kann ich Tickets kaufen?",
-          "answer": "Tickets gibt es exklusiv bei unserem Partner Lokale Momente. Klickt einfach auf den Ticket-Button auf unserer Website."
+          "answer": "Tickets gibt es exklusiv bei unserem Partner Lokale Momente. <a href='{{ticketUrl}}' target='_blank' rel='noopener noreferrer' class='text-htbw-green hover:text-htbw-pink transition-colors'>Link zu unseren Tickets</a>."
         },
         {
           "question": "Gibt es eine Abendkasse?",
           "answer": "Ja, sofern noch Tickets verfügbar sind. Wir empfehlen jedoch den Vorverkauf, da die letzte Ausgabe schnell ausverkauft sein könnte."
         },
         {
-          "question": "Kann ich mein Ticket zurückgeben?",
-          "answer": "Informationen zur Ticketrückgabe findet ihr in unseren AGB. Grundsätzlich sind Tickets vom Umtausch ausgeschlossen, außer das Festival wird abgesagt."
+          "question": "Preisstufen",
+          "answer": "Große Momente beginnen mit eurer Unterstützung! Für uns als Veranstaltende ist es entscheidend, frühzeitig Planungssicherheit zu gewinnen. Wir sind ein ehrenamtlich geplantes Festival, das nur durch eigene Einnahmen und Sponsoring finanziert wird. Alles was wir mit dem Festival einnehmen stecken wir selbst in die Festivalreihe. Frühe Ticketverkäufe helfen uns an mehreren Ecken für euch das beste HTBW Erlebnis zu gestalten! Wir haben eine treue Crowd, die uns jedes Jahr wieder den schönsten Sommertag beschert. Daher möchten wir euch bitten: kauft frühzeitig und helft uns, uns in derVorbereitungszeit sicher zu fühlen! In jeder Preisstufe erwarten euch auch die beliebten 5 Freunde Tickets. Wir danken euch für eure frühe Unterstützung und freuen uns auf euch."
         }
       ]
     },
@@ -39,11 +60,15 @@
       "questions": [
         {
           "question": "Wie komme ich am besten zum Festival?",
-          "answer": "Wir empfehlen die Anreise mit der Straßenbahn oder dem Fahrrad. Die Linien 4 und 6 halten in der Nähe. Einen großen, bewachten Fahrradparkplatz gibt es direkt am Eingang."
+          "answer": "Wir empfehlen die Anreise mit Rad oder Bus und Bahn. Wir werden am Haupteingang (Horner Heerstraße) Fahrradständer für euch aufstellen. Mit Bus und Bahn fahrt ihr zu den Haltestellen Horn (Horner Kirche) oder Bgm. Spitta -Allee und erreicht innerhalb weniger Gehminuten das Gelände, indem ihr euren Ohren folgt."
         },
         {
-          "question": "Gibt es Parkplätze für Autos?",
-          "answer": "Im Rhododendronpark selbst gibt es keine Parkplätze. Bitte nutzt die öffentlichen Parkmöglichkeiten in der Umgebung und kommt mit der Bahn oder dem Rad."
+          "question": "Navigation via Google Maps",
+          "answer": "Hier ist der <a href='https://goo.gl/maps/56i6crYn1xwDJ2DY6' target='_blank' rel='noopener noreferrer' class='text-htbw-green hover:text-htbw-pink transition-colors'> direkte Link zu unserem Standort bei Google</a>, ansonsten kannst du auch 'Horn to be Wild' bei Google Maps eingeben."
+        },
+        {
+          "question": "Parken",
+          "answer": "Als Gäste des Festivals könnt ihr natürlich die Parkplätze des Rhododendron Parks benutzen. Allerdings empfehlen wir euch auf Grund der zentralen Lage mit dem dem Fahrrad oder der Straßenbahn zu kommen. Die Parkplätze sind sehr begrenzt und die Anwohnenden freuen sich, wenn die anliegenden Straßen nicht zugeparkt werden. 😉"
         }
       ]
     },
@@ -52,15 +77,80 @@
       "questions": [
         {
           "question": "Darf ich eigene Getränke mitbringen?",
-          "answer": "Nein, eigene Getränke sind nicht erlaubt. Auf dem Festivalgelände gibt es ausreichend Getränkestände mit fairen Preisen."
+          "answer": "Du darfst bis zu 1l Wasser in einer Plastikflasche mitbringen. Auf dem Gelände gibt es neben der Musik auch noch einige Essens- und Getränke-Stände."
+        },
+        {
+          "question": "Darf ich eigenes Essen mitbringen?",
+          "answer": "Das Mitbringen von Essen ist nicht erlaubt. Auf dem Gelände gibt es neben der Musik auch noch einige Essens- und Getränke-Stände."
         },
         {
           "question": "Ist das Festival barrierefrei?",
-          "answer": "Wir bemühen uns um bestmögliche Barrierefreiheit. Barrierefreie Toiletten sind vorhanden. Bei speziellen Bedürfnissen kontaktiert uns bitte vorab unter info@htbw.de."
+          "answer": "Den Besuch auf unserem Festival möchten wir jedem/r Musikliebhaber/in ermöglichen. Wir geben uns größte Mühe, auch Menschen mit Handicap einen entspannten Aufenthalt zu bieten. Deswegen bieten wir dir die Möglichkeit kostenfrei eine Begleitperson zur Unterstützung mitzubringen. Dies muss allerdings im Schwerbehindertenausweis festgehalten sein. Wir bieten außerdem eine barrierefreie Dixi-Toilette an. Bei speziellen Bedürfnissen kontaktiert uns bitte vorab."
         },
         {
           "question": "Gibt es ein Alterslimit?",
-          "answer": "Das Festival ist für alle Altersgruppen. Personen unter 16 Jahren müssen von einem Erziehungsberechtigten begleitet werden."
+          "answer": "Da die Veranstaltung bis 24:00 Uhr geht, können unter 16-jährige nur mit <a href='{{muttizettel}}' target='_blank' rel='noopener noreferrer' class='text-htbw-green hover:text-htbw-pink transition-colors'>Muttizettel</a> und Begleitperson aufs Festivalgelände. Ab 16 Jahren darf man ohne erwachsene Begleitung auf das Festival. Wie bei anderen Festivals auch wird am Einlass euer Alter kontrolliert und ihr bekommt anschließend ein entsprechendes Festivalbändchen, welches ihr gegebenenfalls beim Alkoholausschank vorzeigen müsst. Denkt also daran neben eurem Ticket auch ein Ausweisdokument mitzunehmen."
+        },
+        {
+          "question": "Ist das Festival für Kinder geeignet?",
+          "answer": "Kinder erhalten bis zum Ende ihres 10. Lebensjahres kostenlosen Eintritt. Ggf. muss ein Nachweis erbracht werden. Der Fokus des Festivals liegt sehr auf der Musik. Wir haben ein kleines Kinderprogramm auf dem Gelände, wie die Hüpfburg der ÖVB Versicherungen. Auf Grund der Lautstärke empfehlen wir,Gehörschutz für die Kids mitzubringen. Wir verleihen leider keinen."
+        },
+        {
+          "question": "Gibt es Sitzgelegenheiten?",
+          "answer": "Wir haben ein paar Palettenbänke und Beachchairs. Klappstühle werden wir nicht stellen und es ist nicht erlaubt, Campingstühle o.ä. mitzubringen. Sehr gerne dürft ihr eine Picknickdecke mitbringen, um es euch im hinteren Bereich des Festivals gemütlich zu machen."
+        },
+        {
+          "question": "Ende der Veranstaltung",
+          "answer": "Nachdem die letzte Band ihre Show beendet hat, könnt ihr zwar noch in Ruhe austrinken und aufessen, jedoch bitten wir euch, das Gelände dann zeitnah zu verlassen. Zum einen müssen wir recht zügig mit dem Abbau beginnen und zum anderen wollen wir uns auch keine Lärmbeschwerden von Anwohnern einhandeln."
+        },
+        {
+          "question": "Erste Hilfe & Sanitäter",
+          "answer": "Während des gesamten Open-Airs stehen Euch für medizinische Sanitäter von den Johannitern zur Verfügung. Falls ihr vor Ort körperliche Probleme habt, euch Verletzungen zuzieht oder eure Sicherheit gefährdet sein sollte, wendet euch bitte an das Sicherheitspersonal, sie werden euch helfen und Kontakt herstellen."
+        },
+        {
+          "question": "Feuer",
+          "answer": "Auf dem gesamten Gelände ist offenes Feuer strengstens verboten. Wir bitten um besondere Rücksicht auf Flora und Fauna."
+        },
+        {
+          "question": "Fotografieren",
+          "answer": "Auf dem Gelände sind professionelle Foto- oder Videoaufnahmen und deshalb auch entsprechende Geräte verboten. Eure Spiegelreflex muss also zuhause bleiben. Aufnahmen mit dem Handy sind aber natürlich gestattet. Nach dem Festival werdet ihre allerdings auch unsere Aufnahmen in der Galerie und in unseren Social Media Kanälen finden."
+        },
+        {
+          "question": "Glasverbot",
+          "answer": "Bitte bringt auf das Gelände keine Glasflaschen mit! Auch wenn Scherben bekanntlich Glück bringen möchte wir keine im Park haben. Außerdem bieten sie als Wurfgeschoss eine zu große Gefahr. Alle Flaschen werden ohne Ersatz am Eingang einkassiert."
+        },
+        {
+          "question": "Sicherheit",
+          "answer": "Falls ihr in Schwierigkeiten geraten solltet ist Sicherheitspersonal vor Ort. Wir hoffen auf einen einwandfreien Ablauf."
+        },
+        {
+          "question": "Unwetter",
+          "answer": "Für unser Festival erhoffen wir uns natürlich bestes Wetter. Auch ein bisschen Regen hat uns noch nie daran gehindert richtig Spaß zu haben. Sollte allerdings während des Festivals oder unmittelbar davor ein schweres Gewitter aufziehen, werden wir euch umgehend über unsere Kommunikationswege warnen und euch bitten sicheren Unterschlupf zu suchen."
+        },
+        {
+          "question": "Kann man campen?",
+          "answer": "Nein, das Festival bietet keine Übernachtungsmöglichkeiten."
+        },
+        {
+          "question": "Waffenverbot",
+          "answer": "Das Mitbringen sämtlicher Waffen oder Wurfgegenstände ist natürlich verboten. Bei schlimmem Verstoß werdet ihr vom Gelände verwiesen. Kleinere Wurfgegenstände können euch am Eingang vom Sicherheitspersonal abgenommen werden."
+        },
+        {
+          "question": "Hunde und andere Haustiere",
+          "answer": "Hunde oder andere Tiere sind auf dem Festivalgelände nicht erlaubt. Es ist auf Grund der Lautstärke für eure Vierbeiner auch besser, daheim zu bleiben."
+        },
+        {
+          "question": "Regenschirme",
+          "answer": "Ihr dürft kleine Taschenregenschirme mitbringen. Lieber wäre es uns aber, wenn ihr Regenjacken oder Regencapes mitbringt, um nicht die Sicht von anderen Gästen zu stören. Ggf. wird unser Team euch bitten, euren Regenschirm zu schließen, wenn dadurch andere Gäste das Festival weniger genießen können."
+        }
+      ]
+    },
+    {
+      "name": "Für Bands",
+      "questions": [
+        {
+          "question": "Bandbewerbung 2026",
+          "answer": "Die Bandbewerbungsphase für dieses Jahr ist beendet. Bewerbungen per Mail müssen wir leider wegen dem erhöhten Aufwand ignorieren."
         }
       ]
     }
