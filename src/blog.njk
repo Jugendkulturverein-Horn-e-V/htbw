@@ -31,6 +31,15 @@ permalink: /blog/
             class="w-full h-full object-cover"
           >
         </div>
+        {% else %}
+        <div class="aspect-video overflow-hidden rounded-lg mb-4 bg-htbw-green/10 flex items-center justify-center">
+          <img
+            src="{{ '/assets/images/logo/htbw-logo-main.avif' | url }}"
+            alt=""
+            aria-hidden="true"
+            class="h-16 w-auto opacity-30"
+          >
+        </div>
         {% endif %}
         
         <div class="flex items-center gap-3 mb-3">
@@ -42,7 +51,7 @@ permalink: /blog/
           </time>
         </div>
         
-        <h2 class="font-heading text-xl md:text-2xl text-htbw-green mb-3">
+        <h2 class="font-body text-xl md:text-2xl text-htbw-green mb-3">
           <a href="{{ post.url }}" class="hover:text-htbw-pink transition-colors">
             {{ post.data.title }}
           </a>
