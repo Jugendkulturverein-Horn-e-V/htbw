@@ -31,8 +31,9 @@
   
   <main id="main-content" class="flex-grow">
     {{ content | safe }}
+    {% include "cta-final.njk" %}
   </main>
-  
+
   {% include "footer.njk" %}
   {% include "cookie-banner.njk" %}
   {% include "video-modal.njk" %}

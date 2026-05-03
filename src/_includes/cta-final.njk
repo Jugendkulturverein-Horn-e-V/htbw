@@ -1,0 +1,20 @@
+{# Final CTA Section #}
+<section class="section bg-htbw-pink text-white text-center" data-pre-festival>
+  <div class="max-w-3xl mx-auto" data-animate>
+    <h2 class="font-heading text-3xl md:text-5xl text-white mb-6 text-balance">
+      Sei dabei beim wilden Finale!
+    </h2>
+    <p class="text-lg md:text-xl text-white/90 mb-8">
+      {{ config.finalCTA | safe }}
+    </p>
+    <a 
+      href="{{ config.ticketUrl }}" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="btn bg-white text-htbw-pink hover:bg-htbw-cream text-lg px-8 py-4"
+    >
+      Jetzt dein Ticket sichern!
+      <span class="sr-only">(öffnet in neuem Tab)</span>
+    </a>
+  </div>
+</section>
