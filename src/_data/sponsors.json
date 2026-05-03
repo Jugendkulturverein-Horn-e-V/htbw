@@ -1,49 +1,158 @@
 {
   "sponsors": [
     {
-      "id": "hauptsponsor",
-      "name": "Hauptsponsor Bremen",
-      "logo": "/assets/images/sponsors/hauptsponsor-placeholder.svg",
-      "alt": "Logo des Hauptsponsors Bremen",
-      "url": null,
-      "tier": "gold"
+      "id": "rhodoPark",
+      "name": "Rhododendron-Park Bremen",
+      "logo": "/assets/images/sponsors/rhodoPark.avif",
+      "alt": "Logo des Rhododendron-Park Bremen",
+      "url": "https://www.rhododendronparkbremen.de/"
     },
     {
-      "id": "sponsor-zwei",
-      "name": "Bremer Brauerei",
-      "logo": "/assets/images/sponsors/brauerei-placeholder.svg",
-      "alt": "Logo der Bremer Brauerei",
-      "url": "https://example.com",
-      "tier": "silver"
+      "id": "övb",
+      "name": "ÖVB",
+      "logo": "/assets/images/sponsors/OeVB.webp",
+      "alt": "Logo der ÖVB Versicherung",
+      "url": "https://www.oevb.de/de"
     },
     {
-      "id": "sponsor-drei",
-      "name": "Kulturamt Bremen",
-      "logo": "/assets/images/sponsors/kulturamt-placeholder.svg",
-      "alt": "Logo des Kulturamts Bremen",
-      "url": "https://example.com",
-      "tier": "silver"
+      "id": "hkk",
+      "name": "hkk Krankenkasse",
+      "logo": "/assets/images/sponsors/hkk.svg",
+      "alt": "Logo der hkk Krankenkasse",
+      "url": "https://www.hkk.de/"
     },
     {
-      "id": "sponsor-vier",
-      "name": "Lokaler Partner",
-      "logo": "/assets/images/sponsors/partner-placeholder.svg",
-      "alt": "Logo des lokalen Partners",
-      "url": null,
-      "tier": "bronze"
+      "id": "swb",
+      "name": "swb",
+      "logo": "/assets/images/sponsors/swb.webp",
+      "alt": "Logo der Stadtwerke Bremen",
+      "url": "https://www.swb.de/"
     },
     {
-      "id": "sponsor-fuenf",
-      "name": "Medienpartner",
-      "logo": "/assets/images/sponsors/medien-placeholder.svg",
-      "alt": "Logo des Medienpartners",
-      "url": "https://example.com",
-      "tier": "bronze"
+      "id": "7things",
+      "name": "7THINGS Hotel und Apartment",
+      "logo": "/assets/images/sponsors/7things.svg",
+      "alt": "Logo des 7THINGS Hotel und Apartment",
+      "url": "https://www.7things.de/"
+    },
+    {
+      "id": "munte",
+      "name": "Hotel Munte",
+      "logo": "/assets/images/sponsors/hotelMunte.webp",
+      "alt": "Logo des Hotel Munte",
+      "url": "https://www.hotel-munte.de/"
+    },
+    {
+      "id": "sinalco",
+      "name": "Sinalco",
+      "logo": "/assets/images/sponsors/Sinalco.avif",
+      "alt": "Logo von Sinalco",
+      "url": "https://sinalco.de/"
+    },
+    {
+      "id": "haakeBeck",
+      "name": "Haake Beck",
+      "logo": "/assets/images/sponsors/haakeBeck.avif",
+      "alt": "Logo von Haake Beck",
+      "url": "https://haake-beck.de/"
+    },
+    {
+      "id": "nork",
+      "name": "Nork",
+      "logo": "/assets/images/sponsors/nork.avif",
+      "alt": "Logo von Nork",
+      "url": "https://thisisnork.com/"
+    },
+    {
+      "id": "sparkasse",
+      "name": "Die Sparkasse Bremen",
+      "logo": "/assets/images/sponsors/sparkasseBremen.avif",
+      "alt": "Logo der Sparkasse Bremen",
+      "url": "https://www.sparkasse-bremen.de/"
+    },
+    {
+      "id": "haakeBeck",
+      "name": "Haake Beck",
+      "logo": "/assets/images/sponsors/haakeBeck.avif",
+      "alt": "Logo von Haake Beck",
+      "url": "https://haake-beck.de/"
+    },
+    {
+      "id": "bremenVier",
+      "name": "BremenVier",
+      "logo": "/assets/images/sponsors/bremen-vier.svg",
+      "alt": "Logo von BremenVier",
+      "url": "https://www.bremenvier.de/"
+    },
+    {
+      "id": "viva",
+      "name": "Viva Con Agua",
+      "logo": "/assets/images/sponsors/viva-con-agua.avif",
+      "alt": "Logo von Wir unterstützen Viva con Agua",
+      "url": "https://www.vivaconagua.org/"
+    },
+    {
+      "id": "lokaleMomente",
+      "name": "Lokale Momente",
+      "logo": "/assets/images/sponsors/lokale-momente.svg",
+      "alt": "Logo von lokale Momente",
+      "url": "https://www.lokale-momente.de/"
+    },
+    {
+      "id": "rausgegangen",
+      "name": "Rausgegangen",
+      "logo": "/assets/images/sponsors/rausgegangen.avif",
+      "alt": "Logo von Rausgegangen",
+      "url": "https://rausgegangen.de/bremen/"
+    },
+    {
+      "id": "hollweg",
+      "name": "Karin und Uwe Hollweg Stiftung",
+      "logo": "/assets/images/sponsors/hollwegStiftung.avif",
+      "alt": "Logo der Karin und Uwe Hollweg Stiftung",
+      "url": "https://hollweg-stiftung.de/"
+    },
+    {
+      "id": "waldemar",
+      "name": "Waldemar Koch Stiftung",
+      "logo": "/assets/images/sponsors/waldemarKochStiftung.svg",
+      "alt": "Logo der Waldemar Koch Stiftung",
+      "url": "https://www.waldemar-koch-stiftung.de/"
+    },
+    {
+      "id": "chs",
+      "name": "CHS Container Group",
+      "logo": "/assets/images/sponsors/chs.avif",
+      "alt": "Logo der CHS Container Group",
+      "url": "https://chs-containergroup.de/"
+    },
+    {
+      "id": "bsag",
+      "name": "BSAG",
+      "logo": "/assets/images/sponsors/bsag.svg",
+      "alt": "Logo der BSAG",
+      "url": "https://www.bsag.de/"
+    },
+    {
+      "id": "naturlichBremen",
+      "name": "Naturlich Bremen 2025",
+      "logo": "/assets/images/sponsors/naturlichBremen.avif",
+      "alt": "Logo von Naturlich Bremen 2025",
+      "url": "https://www.bremen.de/kultur/naturlichbremen-2025"
+    },
+    {
+      "id": "senator",
+      "name": "Der Senator für Kultur",
+      "logo": "/assets/images/sponsors/senatorKultur.avif",
+      "alt": "Logo des Senator für Kultur",
+      "url": "https://www.bremen.de/tourismus/erlebnisse"
+    },
+    {
+      "id": "beirat",
+      "name": "Beirat Horn-Lehe",
+      "logo": "/assets/images/sponsors/beiratHornLehe.avif",
+      "alt": "Logo des Beirats Horn-Lehe",
+      "url": "https://www.kultur.bremen.de/"
     }
-  ],
-  "tiers": {
-    "gold": "Hauptpartner",
-    "silver": "Partner",
-    "bronze": "Unterstützer"
-  }
+  ]
 }
