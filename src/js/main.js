@@ -151,38 +151,94 @@
   }
 
   // =====================
+  // Youtube Videos
+  // =====================
+  function initYouTubeFacades() {
+    const placeholders = document.querySelectorAll("[data-youtube-id]");
+    placeholders.forEach((placeholder) => {
+      // Avoid double-initialising
+      if (placeholder.dataset.facadeReady) return;
+      placeholder.dataset.facadeReady = "true";
+
+      placeholder.style.cursor = "pointer";
+      placeholder.addEventListener("click", function () {
+        loadYouTubeVideo(placeholder);
+      });
+    });
+  }
+
+  function updateVideoPlaceholderHints() {
+    const consent = localStorage.getItem(CONFIG.cookieConsentKey);
+
+    document.querySelectorAll("[data-youtube-id]").forEach((placeholder) => {
+      const playOverlay = placeholder.querySelector(".video-overlay");
+
+      if (!playOverlay) return;
+
+      if (consent === "accepted") {
+        const hint = playOverlay.querySelector(".consent-hint-overlay");
+        if (hint) hint.remove();
+        playOverlay
+          .querySelector(".play-btn-wrapper")
+          ?.classList.remove("hidden");
+      } else {
+        playOverlay.querySelector(".play-btn-wrapper")?.classList.add("hidden");
+
+        if (!playOverlay.querySelector(".consent-hint-overlay")) {
+          const hint = document.createElement("div");
+          hint.className =
+            "consent-hint-overlay flex flex-col items-center justify-center gap-3 p-4 text-center";
+          hint.innerHTML = `
+             <div class="w-12 h-12 rounded-full bg-htbw-pink flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
+              </svg>
+            </div>
+            <p class="text-white text-sm font-medium bg-htbw-pink px-2">YouTube Videos sind deaktiviert</p>
+            <button 
+              type="button"
+              class="consent-hint-trigger text-white text-xs bg-htbw-pink px-2 underline hover:font-bold transition-colors"
+            >
+              Bitte aktiviere Videos in den Datenschutz-Einstellungen.
+            </button>
+          `;
+
+          playOverlay.appendChild(hint);
+
+          hint
+            .querySelector(".consent-hint-trigger")
+            .addEventListener("click", function (e) {
+              e.stopPropagation();
+              const banner = document.getElementById("cookie-banner");
+              if (banner && !banner.classList.contains("visible")) {
+                const toggle = document.getElementById("consent-toggle");
+                toggle
+                  ?.closest("div.mt-6")
+                  ?.scrollIntoView({ behavior: "smooth", block: "center" });
+                toggle?.focus();
+              } else {
+                banner?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "nearest",
+                });
+                banner?.classList.add("visible");
+                void banner?.offsetWidth;
+                banner?.classList.add("animate-shake");
+                banner?.addEventListener(
+                  "animationend",
+                  () => banner.classList.remove("animate-shake"),
+                  { once: true },
+                );
+              }
+            });
+        }
+      }
+    });
+  }
+
+  // =====================
   // Cookie Consent
   // =====================
-  // function initCookieConsent() {
-  //   const banner = document.getElementById("cookie-banner");
-  //   const acceptBtn = document.getElementById("cookie-accept");
-  //   const declineBtn = document.getElementById("cookie-decline");
-
-  //   if (!banner) return;
-
-  //   // Check if consent was already given
-  //   const consent = localStorage.getItem(CONFIG.cookieConsentKey);
-
-  //   if (consent === null) {
-  //     // Show banner after a short delay
-  //     setTimeout(() => {
-  //       banner.classList.add("visible");
-  //     }, 1000);
-  //   } else if (consent === "accepted") {
-  //     loadAllYouTubeVideos();
-  //   }
-
-  //   acceptBtn?.addEventListener("click", function () {
-  //     localStorage.setItem(CONFIG.cookieConsentKey, "accepted");
-  //     banner.classList.remove("visible");
-  //     loadAllYouTubeVideos();
-  //   });
-
-  //   declineBtn?.addEventListener("click", function () {
-  //     localStorage.setItem(CONFIG.cookieConsentKey, "declined");
-  //     banner.classList.remove("visible");
-  //   });
-  // }
 
   // function loadAllYouTubeVideos() {
   //   // Replace all YouTube placeholders with actual embeds
@@ -204,6 +260,35 @@
   //   });
   // }
 
+  // =====================
+  // Shared consent state updater
+  // =====================
+  function applyConsentState(accepted) {
+    // Update YouTube facades/hints
+    if (accepted) {
+      initYouTubeFacades();
+    }
+    updateVideoPlaceholderHints();
+
+    // Update footer toggle UI
+    const toggle = document.getElementById("consent-toggle");
+    const statusLabel = document.getElementById("consent-status-label");
+    if (toggle && statusLabel) {
+      toggle.setAttribute("aria-checked", accepted ? "true" : "false");
+      toggle.classList.toggle("bg-htbw-pink", accepted);
+      toggle.classList.toggle("bg-white/20", !accepted);
+      toggle
+        .querySelector(".consent-toggle-thumb")
+        ?.classList.toggle("translate-x-5", accepted);
+      toggle
+        .querySelector(".consent-toggle-thumb")
+        ?.classList.toggle("translate-x-0", !accepted);
+      statusLabel.textContent = accepted ? "✓ Aktiviert" : "✗ Deaktiviert";
+      statusLabel.classList.toggle("text-htbw-pink", accepted);
+      statusLabel.classList.toggle("text-white/50", !accepted);
+    }
+  }
+
   function initCookieConsent() {
     const banner = document.getElementById("cookie-banner");
     const acceptBtn = document.getElementById("cookie-accept");
@@ -217,33 +302,19 @@
       setTimeout(() => {
         banner.classList.add("visible");
       }, 1000);
-    } else if (consent === "accepted") {
-      initYouTubeFacades(); // just set up facades, don't load iframes
     }
+    applyConsentState(consent === "accepted");
 
     acceptBtn?.addEventListener("click", function () {
       localStorage.setItem(CONFIG.cookieConsentKey, "accepted");
       banner.classList.remove("visible");
-      initYouTubeFacades();
+      applyConsentState(true);
     });
 
     declineBtn?.addEventListener("click", function () {
       localStorage.setItem(CONFIG.cookieConsentKey, "declined");
       banner.classList.remove("visible");
-    });
-  }
-
-  function initYouTubeFacades() {
-    const placeholders = document.querySelectorAll("[data-youtube-id]");
-    placeholders.forEach((placeholder) => {
-      // Avoid double-initialising
-      if (placeholder.dataset.facadeReady) return;
-      placeholder.dataset.facadeReady = "true";
-
-      placeholder.style.cursor = "pointer";
-      placeholder.addEventListener("click", function () {
-        loadYouTubeVideo(placeholder);
-      });
+      applyConsentState(false);
     });
   }
 
@@ -264,6 +335,51 @@
   }
 
   // =====================
+  // Footer Consent Toggle
+  // =====================
+  function initConsentToggle() {
+    const toggle = document.getElementById("consent-toggle");
+    const statusLabel = document.getElementById("consent-status-label");
+
+    if (!toggle || !statusLabel) return;
+
+    function updateToggleUI(accepted) {
+      toggle.setAttribute("aria-checked", accepted ? "true" : "false");
+      toggle.classList.toggle("bg-htbw-pink", accepted);
+      toggle.classList.toggle("bg-white/20", !accepted);
+      toggle
+        .querySelector(".consent-toggle-thumb")
+        .classList.toggle("translate-x-5", accepted);
+      toggle
+        .querySelector(".consent-toggle-thumb")
+        .classList.toggle("translate-x-0", !accepted);
+      statusLabel.textContent = accepted ? "✓ Aktiviert" : "✗ Deaktiviert";
+      statusLabel.classList.toggle("text-htbw-pink", accepted);
+      statusLabel.classList.toggle("text-white/70", !accepted);
+    }
+
+    // Set initial state
+    const consent = localStorage.getItem(CONFIG.cookieConsentKey);
+    updateToggleUI(consent === "accepted");
+
+    toggle.addEventListener("click", function () {
+      const isAccepted =
+        localStorage.getItem(CONFIG.cookieConsentKey) === "accepted";
+
+      if (isAccepted) {
+        localStorage.setItem(CONFIG.cookieConsentKey, "declined");
+        updateToggleUI(false);
+        updateVideoPlaceholderHints();
+      } else {
+        localStorage.setItem(CONFIG.cookieConsentKey, "accepted");
+        updateToggleUI(true);
+        initYouTubeFacades();
+        updateVideoPlaceholderHints();
+      }
+    });
+  }
+
+  // =====================
   // Video Modal
   // =====================
   function initVideoModal() {
@@ -277,6 +393,7 @@
     document.addEventListener("click", function (e) {
       const trigger = e.target.closest("[data-video-trigger]");
       if (!trigger) return;
+      if (trigger.hasAttribute("data-video-inline")) return;
 
       const videoId = trigger.dataset.videoId;
       if (!videoId) return;
@@ -284,9 +401,22 @@
       // Check cookie consent
       const consent = localStorage.getItem(CONFIG.cookieConsentKey);
       if (consent !== "accepted") {
-        // Show cookie banner
         const banner = document.getElementById("cookie-banner");
-        banner?.classList.add("visible");
+        if (banner) {
+          // Scroll banner into view
+          banner.scrollIntoView({ behavior: "smooth", block: "nearest" });
+          // Shake it to draw attention
+          banner.classList.remove("animate-shake");
+          void banner.offsetWidth; // force reflow to restart animation
+          banner.classList.add("animate-shake");
+          banner.addEventListener(
+            "animationend",
+            () => banner.classList.remove("animate-shake"),
+            { once: true },
+          );
+          // Make sure it's visible
+          banner.classList.add("visible");
+        }
         return;
       }
 
@@ -419,7 +549,7 @@
         // Update info panel
         if (infoPanel) {
           infoPanel.innerHTML = `
-            <h3 class="font-heading text-xl text-htbw-green mb-2">${name}</h3>
+            <h3 class="font-body text-xl text-htbw-green mb-2">${name}</h3>
             <p class="text-htbw-black">${description}</p>
           `;
           infoPanel.classList.remove("hidden");
@@ -459,12 +589,14 @@
   // Sticker Card Rotations
   // =====================
   function initStickerCards() {
-    const cards = document.querySelectorAll(".sticker-card");
+    const cards = document.querySelectorAll(
+      ".sticker-card:not([data-rotation-set])",
+    );
 
-    cards.forEach((card, index) => {
-      // Apply random rotation between -3 and 3 degrees
-      const rotation = (Math.random() - 0.5) * 6;
+    cards.forEach((card) => {
+      const rotation = Math.round((Math.random() - 0.5) * 3 * 10) / 10;
       card.style.setProperty("--rotation", `${rotation}deg`);
+      card.dataset.rotationSet = "true";
     });
   }
 
@@ -504,6 +636,7 @@
     initCountdown();
     initPostFestivalMode();
     initCookieConsent();
+    initConsentToggle();
     initVideoModal();
     initAccordion();
     initYearTabs();

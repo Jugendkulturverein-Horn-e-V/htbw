@@ -7,14 +7,14 @@
         <p class="text-white/80 leading-relaxed mb-4">
           {{ config.footerMessage | safe }}
         </p>
-        <p class="text-white/60 text-sm">
+        <p class="text-white/70 text-sm">
           {{ config.organization }}
         </p>
       </div>
 
       <!-- Contact Column -->
       <div>
-        <h3 class="font-heading text-xl text-white mb-4">Kontakt</h3>
+        <h3 class="font-body text-xl text-white mb-4">Kontakt</h3>
         <ul class="space-y-3">
           <li>
             <a href="mailto:{{ config.email }}" class="text-white/80 hover:text-htbw-pink transition-colors flex items-center gap-2">
@@ -24,6 +24,21 @@
               {{ config.email }}
             </a>
           </li>
+          {% if config.pressepoolUrl %}
+          <li>
+            <a 
+              href="{{ config.pressepoolUrl }}" 
+              download
+              class="text-white/80 hover:text-htbw-pink transition-colors flex items-center gap-2"
+            >
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+              </svg>
+              Pressepool herunterladen
+              <span class="text-white/50 text-xs">(ZIP)</span>
+            </a>
+          </li>
+          {% endif %}
           <li class="flex items-center gap-4 pt-2">
             <a href="{{ config.socialMedia.instagram }}" target="_blank" rel="noopener noreferrer" class="text-white/80 hover:text-htbw-pink transition-colors" aria-label="Instagram (öffnet in neuem Tab)">
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -46,7 +61,7 @@
 
       <!-- Legal Column -->
       <div>
-        <h3 class="font-heading text-xl text-white mb-4">Rechtliches</h3>
+        <h3 class="font-body text-xl text-white mb-4">Rechtliches</h3>
         <ul class="space-y-2">
           {% for link in config.footerLinks %}
             <li>
@@ -56,15 +71,45 @@
             </li>
           {% endfor %}
         </ul>
+
+        <!-- Cookie/Video Consent Toggle -->
+        <div class="mt-6 pt-4 border-t border-white/20">
+          <div class="flex items-center justify-between gap-4">
+            <div>
+              <p class="text-white/80 text-sm">YouTube Videos</p>
+              <p id="consent-status-label" class="text-white/70 text-xs mt-0.5">Status wird geladen...</p>
+            </div>
+            <button
+              type="button"
+              id="consent-toggle"
+              role="switch"
+              aria-checked="false"
+              aria-label="YouTube Video Einbettung aktivieren oder deaktivieren"
+              class="relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-htbw-pink focus:ring-offset-2 focus:ring-offset-htbw-green bg-white/20"
+            >
+              <span
+                aria-hidden="true"
+                class="consent-toggle-thumb pointer-events-none inline-block h-5 w-5 rounded-full bg-white shadow transform transition-transform duration-200 translate-x-0"
+              ></span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- Bottom Bar -->
     <div class="mt-12 pt-8 border-t border-white/20 flex flex-col md:flex-row items-center justify-between gap-4">
-      <p class="text-white/60 text-sm">
+      <p class="text-white/70 text-sm">
         &copy; {{ config.year }} {{ config.organization }}. Alle Rechte vorbehalten.
       </p>
-      <p class="font-heading text-2xl text-htbw-pink font-bold">Stay Wild!</p>
+      <p class="font-heading text-2xl text-htbw-pink-light font-bold flex items-center gap-2">
+        Stay Wild!
+        <img
+          src="{{ '/assets/images/logo/pride-flag.svg' | url }}"
+          alt="Pride Flag"
+          class="h-7 w-auto"
+        >
+      </p>
     </div>
   </div>
 </footer>

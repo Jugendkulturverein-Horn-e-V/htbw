@@ -131,7 +131,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
     </div>
 
   <div class="max-w-7xl mx-auto">
-    <h2 class="section-title" data-animate>Line-Up {{ config.year }}</h2>
+    <h2 class="section-title" data-animate>Unser Line-Up {{ config.year }} 🎙️</h2>
     
     {# Stage Filter (if multiple stages) #}
     {% if lineup.stages.length > 1 %}
@@ -235,8 +235,8 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
           {# Backup Image #}
           <div class="aspect-square relative overflow-hidden rounded-lg mb-4">
             <img 
-              src="{{ act.image }}" 
-              alt="{{ act.alt }}"
+              src="{{ '/assets/images/bands/placeholder.avif' | url }}" 
+              alt=""
               loading="lazy"
               class="w-full h-full object-cover"
             >
@@ -272,8 +272,8 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
 {# Festival Gallery Section - Creative Masonry Layout #}
 <section class="section bg-htbw-green/5 overflow-hidden">
   <div class="max-w-7xl mx-auto">
-    <h2 class="section-title" data-animate>Festivalatmosphäre</h2>
-    <p class="text-center text-htbw-black mb-12 max-w-2xl mx-auto" data-animate>
+    <h2 class="section-title" data-animate>Festivalatmosphäre 📸</h2>
+    <p class="text-center text-lg md:text-xl text-htbw-black mb-12 max-w-2xl mx-auto" data-animate>
       Musik, Freundschaft und unvergessliche Momente im Herzen des Rhododendronparks.
     </p>
     
@@ -289,7 +289,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
         >
         <div class="absolute inset-0 bg-gradient-to-t from-htbw-green/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">Hauptbuhne 2024</span>
+        <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">Hauptbühne 2024</span>
       </div>
       
       {# Vertical tall image #}
@@ -337,8 +337,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
       {# Stats/Quote box #}
       <div class="col-span-4 md:col-span-2 lg:col-span-5 row-span-2 bg-htbw-cream border-2 border-htbw-green/20 rounded-2xl flex items-center justify-center p-6" data-animate>
         <blockquote class="text-center">
-          <p class="text-htbw-black italic text-sm md:text-base">&laquo;Super Atmosphäre und tolle Künstler:innen! Ich komme jedes Jahr wieder :)
-&raquo;</p>
+          <p class="text-htbw-black italic text-sm md:text-base">&laquo;Super Atmosphäre und tolle Künstler:innen! Ich komme jedes Jahr wieder :)&raquo;</p>
           <cite class="text-htbw-green text-xs mt-2 block">- Mirja</cite>
         </blockquote>
       </div>
@@ -360,7 +359,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
 
   <div class="max-w-7xl mx-auto">
     <h2 class="section-title" data-animate>Aftermovies 🎥</h2>
-    <p class="text-center text-htbw-black mb-12 max-w-2xl mx-auto" data-animate>
+    <p class="text-center text-lg md:text-xl text-htbw-black mb-12 max-w-2xl mx-auto" data-animate>
       Unser Aftermovie für 2025 ist da! Vielleicht entdeckst du ja jemanden den oder die du kennst 🎬
     </p>
     
@@ -368,7 +367,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
       {% for video in aftermovies.aftermovies %}
       <article class="sticker-card" data-animate>
         <div class="relative" style="padding-bottom: 56.25%;">
-          {# YouTube Placeholder - will be replaced if cookies accepted #}
+          {# YouTube Placeholder - will be replaced after play init #}
           <div 
             class="youtube-placeholder absolute inset-0"
             data-youtube-id="{{ video.youtubeVideoId }}"
@@ -380,19 +379,22 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
               loading="lazy"
               class="absolute inset-0 w-full h-full object-cover rounded-lg"
             >
-            <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center rounded-lg">
-              <button 
-                type="button"
-                class="w-16 h-16 bg-htbw-pink rounded-full flex items-center justify-center hover:bg-htbw-pink-dark transition-colors mb-3"
-                data-video-trigger
-                data-video-id="{{ video.youtubeVideoId }}"
-                aria-label="{{ video.title }} abspielen"
-              >
-                <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M8 5v14l11-7z"/>
-                </svg>
-              </button>
-              <p class="text-white text-sm bg-htbw-pink px-2">Klicken zum Abspielen</p>
+            <div class="video-overlay absolute inset-0 bg-black/40 flex flex-col items-center justify-center rounded-lg">
+              <div class="play-btn-wrapper flex flex-col items-center justify-center gap-3">
+                <button 
+                  type="button"
+                  class="w-16 h-16 bg-htbw-pink rounded-full flex items-center justify-center hover:bg-htbw-pink-dark transition-colors mb-3"
+                  data-video-trigger
+                  data-video-inline
+                  data-video-id="{{ video.youtubeVideoId }}"
+                  aria-label="{{ video.title }} abspielen"
+                >
+                  <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </button>
+                <p class="text-white text-sm bg-htbw-pink px-2">Klicken zum Abspielen</p>
+              </div>
             </div>
           </div>
         </div>
@@ -407,8 +409,8 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
 {# Past Artists / Slider of Fame Section #}
 <section class="section bg-htbw-pink/10">
   <div class="max-w-7xl mx-auto">
-    <h2 class="section-title" data-animate>Hall of Fame</h2>
-    <p class="text-center text-htbw-black mb-8 max-w-2xl mx-auto" data-animate>
+    <h2 class="section-title" data-animate>Unser Slider of Fame ✨</h2>
+    <p class="text-center text-lg md:text-xl text-htbw-black mb-8 max-w-2xl mx-auto" data-animate>
       Alle Künstlerinnen und Künstler, die in den letzten Jahren bei uns auf der Bühne standen.
     </p>
 
@@ -479,8 +481,11 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
   </div>
 
   <div class="max-w-7xl mx-auto">
-    <h2 class="section-title" data-animate>Festivalgelände</h2>
-    
+    <h2 class="section-title" data-animate>Festivalgelände 🗺️</h2>
+    <p class="text-center text-lg md:text-xl text-htbw-black mb-8 max-w-2xl mx-auto" data-animate>
+      Wo sind welche Stände? Und die Toiletten? Hier findest du es heraus!
+    </p>
+
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
       {# Interactive Map SVG #}
       <div class="relative" data-animate>
@@ -587,19 +592,19 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
 
         {# Travel Info #}
         <div class="mt-6 p-6 bg-htbw-green/5 rounded-lg">
-          <h3 class="font-body text-xl text-htbw-green mb-4">Anreise</h3>
+          <h3 class="font-body text-xl text-htbw-green mb-4">Anfahrt</h3>
           <ul class="space-y-3 text-htbw-black">
             <li class="flex items-start gap-3">
               <svg class="w-5 h-5 text-htbw-pink shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
               </svg>
-              <span><strong>Straßenbahn:</strong> Linien 4 und 6 bis Haltestelle Rhododendronpark</span>
+              <span><strong>Bus + Bahn:</strong> Haltestelle Horn (Horner Kirche) oder Bgm. Spitta -Allee</span>
             </li>
             <li class="flex items-start gap-3">
               <svg class="w-5 h-5 text-htbw-pink shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
               </svg>
-              <span><strong>Fahrrad:</strong> Kostenloser bewachter Parkplatz am Eingang</span>
+              <span><strong>Fahrrad:</strong> Zusätzliche Fahrradständer am Eingang (Horner Heerstraße)</span>
             </li>
           </ul>
           <a 
@@ -623,19 +628,59 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
 {# Blog Teaser Section #}
 <section class="section bg-htbw-green/5">
   <div class="max-w-7xl mx-auto">
-    <h2 class="section-title" data-animate>Neuigkeiten</h2>
+    <h2 class="section-title" data-animate>Wie passen 🦄, ♻ und 🎉zusammen?</h2>
+    <p class="text-center text-lg md:text-xl text-htbw-black mb-8 max-w-2xl mx-auto" data-animate>
+      In unseren Blog-Post gibt es nicht nur Informationen zum Festival, sondern auch noch viele Einblicke in die Organisation.
+    </p>
     
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       {% for post in collections.posts | limit(3) %}
       <article class="sticker-card" data-animate>
-        <span class="inline-block px-2 py-1 text-xs font-medium bg-htbw-green/10 text-htbw-green rounded mb-3">
-          {{ post.data.category or 'News' }}
-        </span>
-        <h3 class="font-body text-xl text-htbw-green mb-2">
-          <a href="{{ post.url | url }}" class="hover:text-htbw-pink">{{ post.data.title }}</a>
-        </h3>
-        <p class="text-sm text-htbw-black/60 mb-3">{{ post.data.date | dateFormat }}</p>
-        <p class="text-htbw-black text-sm leading-relaxed">{{ post.data.teaser }}</p>
+        {% if post.data.image %}
+        <div class="aspect-video overflow-hidden rounded-lg mb-4">
+          <img 
+            src="{{ post.data.image }}" 
+            alt="{{ post.data.imageAlt or post.data.title }}"
+            loading="lazy"
+            class="w-full h-full object-cover"
+          >
+        </div>
+        {% else %}
+        <div class="aspect-video overflow-hidden rounded-lg mb-4 bg-htbw-green/10 flex items-center justify-center">
+          <img
+            src="{{ '/assets/images/logo/htbw-logo-main.avif' | url }}"
+            alt=""
+            aria-hidden="true"
+            class="h-16 w-auto opacity-30"
+          >
+        </div>
+        {% endif %}
+        
+        <div class="flex items-center gap-3 mb-3">
+          <span class="inline-block px-2 py-1 text-xs font-medium bg-htbw-green/10 text-htbw-green rounded">
+            {{ post.data.category or 'News' }}
+          </span>
+          <time class="text-sm text-htbw-black/60" datetime="{{ post.data.date }}">
+            {{ post.data.date | dateFormat }}
+          </time>
+        </div>
+        
+        <h2 class="font-body text-xl md:text-2xl text-htbw-green mb-3">
+          <a href="{{ post.url }}" class="hover:text-htbw-pink transition-colors">
+            {{ post.data.title }}
+          </a>
+        </h2>
+        
+        <p class="text-htbw-black leading-relaxed mb-4">
+          {{ post.data.teaser }}
+        </p>
+        
+        <a href="{{ post.url }}" class="text-htbw-pink font-medium hover:text-htbw-pink-dark transition-colors inline-flex items-center gap-1">
+          Weiterlesen
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
       </article>
       {% else %}
       <article class="sticker-card" data-animate>
@@ -651,7 +696,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
     {% if collections.posts.length > 3 %}
     <div class="text-center mt-8">
       <a href="{{ '/blog/' | url }}" class="btn btn-outline">
-        Alle Beiträge
+        Alle weiteren Blog-Posts findest du hier
       </a>
     </div>
     {% endif %}
@@ -669,28 +714,29 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
   </div>
 
   <div class="max-w-7xl mx-auto">
-    <h2 class="section-title" data-animate>Unsere Partner</h2>
-    <p class="text-center text-htbw-black mb-12 max-w-2xl mx-auto" data-animate>
-      Ein großes Dankeschön an alle, die das Festival möglich machen.
+    <h2 class="section-title" data-animate>Unsere Unterstützer</h2>
+    <p class="text-center text-lg md:text-xl text-htbw-black mb-12 max-w-2xl mx-auto" data-animate>
+      ... ohne die das Festival nicht möglich wäre!<br />Einen großen Dank an Euch 💚
     </p>
 
     {# Sticker-collection style layout #}
     <div class="relative py-8">
       <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12">
         {% for sponsor in sponsors.sponsors %}
-        <div class="sticker-card p-4 md:p-6" data-animate style="--rotation: {{ loop.index0 * 2 - 5 }}deg">
+        <div class="sticker-card p-4 md:p-6" data-animate>
           {% if sponsor.url %}
           <a 
             href="{{ sponsor.url }}" 
             target="_blank" 
             rel="noopener noreferrer"
             class="block"
+            title="{{ sponsor.name }} (öffnet in neuem Tab)"
           >
             <img 
               src="{{ sponsor.logo }}" 
               alt="{{ sponsor.alt }}"
               loading="lazy"
-              class="h-12 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+              class="h-12 md:h-16 w-auto transition-all duration-300"
             >
             <span class="sr-only">{{ sponsor.name }} (öffnet in neuem Tab)</span>
           </a>
@@ -706,26 +752,5 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
         {% endfor %}
       </div>
     </div>
-  </div>
-</section>
-
-{# Final CTA Section #}
-<section class="section bg-htbw-pink text-white text-center" data-pre-festival>
-  <div class="max-w-3xl mx-auto" data-animate>
-    <h2 class="font-heading text-3xl md:text-5xl text-white mb-6 text-balance">
-      Sei dabei beim wilden Finale!
-    </h2>
-    <p class="text-lg md:text-xl text-white/90 mb-8">
-      {{ config.finalCTA | safe }}
-    </p>
-    <a 
-      href="{{ config.ticketUrl }}" 
-      target="_blank" 
-      rel="noopener noreferrer"
-      class="btn bg-white text-htbw-pink hover:bg-htbw-cream text-lg px-8 py-4"
-    >
-      Jetzt dein Ticket sichern!
-      <span class="sr-only">(öffnet in neuem Tab)</span>
-    </a>
   </div>
 </section>
