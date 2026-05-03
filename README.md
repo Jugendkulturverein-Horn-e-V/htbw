@@ -9,6 +9,7 @@ Offizielle Website für die 11. und letzte Ausgabe des Horn to be Wild Festivals
 - [ ] Slider of Fame
 - [ ] Festival Karte
 - [ ] Sponsoren aktualisieren (bereits bestehende migriert)
+- [ ] AGB, Impressum, Datenschutz
 
 ## 🛠️ Tech Stack
 
