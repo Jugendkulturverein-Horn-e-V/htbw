@@ -85,7 +85,8 @@
   /* Sticker card effect */
   .sticker-card {
     @apply bg-white rounded-lg p-4 shadow-sticker transition-all duration-300;
-    transform: rotate(var(--rotation, -1deg));
+    transform: rotate(var(--rotation, 0deg));
+    will-change: transform;
   }
 
   .sticker-card:hover {
@@ -99,7 +100,7 @@
   }
 
   .btn-primary {
-    @apply bg-htbw-pink text-white hover:bg-htbw-pink-dark hover:text-white;
+    @apply bg-htbw-pink-dark text-white hover:bg-htbw-pink hover:text-white;
   }
 
   .btn-secondary {
@@ -281,7 +282,8 @@
     transform: none;
   }
 
-  .watercolor-blob {
+  .watercolor-blob,
+  .shake {
     animation: none !important;
   }
 }
