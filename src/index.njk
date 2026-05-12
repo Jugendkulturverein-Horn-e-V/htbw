@@ -158,7 +158,8 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
     {% endif %}
 
     {# Acts Grid #}
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+    {% set visibleActs = lineup.acts | selectattr("visible") | list %}
+    <div class="grid gap-6 md:gap-8 {{ 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3' if visibleActs | length > 0 else 'grid-cols-1 max-w-96 mx-auto' }}">
       {% for act in lineup.acts %}
         {% if act.visible %}
         <article class="sticker-card" data-animate data-stage-card="{{ act.stage | slug }}">
@@ -213,9 +214,9 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
                 </svg>
               </a>
               {% endif %}
-              {% if act.youtubeUrl %}
+              {% if act.youtubeEmbedId %}
               <a 
-                href="{{ act.youtubeUrl }}" 
+                href="https://www.youtube.com/watch?v={{ act.youtubeEmbedId }}"
                 target="_blank" 
                 rel="noopener noreferrer"
                 class="text-htbw-green hover:text-htbw-pink transition-colors"
@@ -252,8 +253,8 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
         </article>
       {% endfor %}
     </div>
+
     {# Ticket CTA #}
-    {# CTA Button #}
     <div class="text-center mt-12" data-animate>
       <a 
         href="{{ config.ticketUrl }}" 
@@ -440,7 +441,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
         {% for artist in pastArtists[year] %}
         <article class="sticker-card text-center" data-animate>
-          <div class="aspect-square overflow-hidden rounded-lg mb-3 relative">
+          <div class="overflow-hidden mb-3 relative">
             <img 
               src="{{ artist.image }}" 
               alt="{{ artist.alt }}"
