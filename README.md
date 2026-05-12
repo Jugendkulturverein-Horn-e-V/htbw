@@ -4,12 +4,12 @@ Offizielle Website für die 11. und letzte Ausgabe des Horn to be Wild Festivals
 
 ## Todos
 
-- [ ] Blog Beiträge migrieren
+- [x] Blog Beiträge migrieren
 - [ ] Mehr Bilder
-- [ ] Slider of Fame
+- [x] Slider of Fame
 - [ ] Festival Karte
 - [ ] Sponsoren aktualisieren (bereits bestehende migriert)
-- [ ] AGB, Impressum, Datenschutz
+- [x] AGB, Impressum, Datenschutz
 
 ## 🛠️ Tech Stack
 
@@ -24,7 +24,7 @@ Offizielle Website für die 11. und letzte Ausgabe des Horn to be Wild Festivals
 ### Voraussetzungen
 
 - Node.js (v18 oder höher)
-- npm
+- npm oder pnpm
 
 ### Installation
 
