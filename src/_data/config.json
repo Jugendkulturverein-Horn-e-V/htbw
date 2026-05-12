@@ -10,9 +10,9 @@
   "ticketPartner": "Lokale Momente",
   "email": "kontakt@horntobewild-festival.de",
   "socialMedia": {
-    "instagram": "https://instagram.com/horntobewild",
-    "facebook": "https://facebook.com/horntobewild",
-    "youtube": "https://youtube.com/@horntobewild"
+    "instagram": "https://instagram.com/horntobewildfestival",
+    "facebook": "https://facebook.com/horntobewild.festival",
+    "youtube": "https://youtube.com/channel/UCa-TAPbKBZhfbe7IFR4sLwA"
   },
   "navigation": [
     { "name": "Home", "url": "/", "isHome": true },
