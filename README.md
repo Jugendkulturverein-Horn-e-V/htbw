@@ -10,6 +10,23 @@ Offizielle Website für die 11. und letzte Ausgabe des Horn to be Wild Festivals
 - [ ] Festival Karte
 - [ ] Sponsoren aktualisieren (bereits bestehende migriert)
 - [x] AGB, Impressum, Datenschutz
+- [x] Plausible
+- [ ] Responsive Images
+- [ ] fetchpriority=high should be applied
+- [ ] fonts are loaded chained via the css -> improve to load font on top lever
+- [ ] minify CSS
+- [ ] use of deprecated APIs?
+
+```
+htbw.de 1st party
+SharedStorage main.js:1
+`StorageType.persistent` is deprecated. Please use standardized `navigator.storage` instead. main.js:1
+Fledge
+```
+
+- [ ] Links do not have descriptive Text (Blog Post - Weiterlesen)
+- [x] Open Graph Image
+- [ ] Google Event [Schema JSON](#google-event-schema)
 
 ## 🛠️ Tech Stack
 
@@ -190,6 +207,14 @@ Nach dem `festivalEndDate` wechselt die Website automatisch in den Post-Festival
 - Farbkontraste geprüft (Accessibility Insights for Web)
 - Reduced Motion wird respektiert
 - Keyboard-Navigation unterstützt
+
+---
+
+## Google Event Schema
+
+Verwendet, damit Google das Event direkt anzeigen kann und nicht nur den Unternehmensaccount.
+
+Um das Schema leicht zu erstellen kann der Schema Markup Generator [https://technicalseo.com/tools/schema-markup-generator/](https://technicalseo.com/tools/schema-markup-generator/) verwendet werden.
 
 ---
 
