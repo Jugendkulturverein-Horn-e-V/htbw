@@ -7,7 +7,7 @@
     "dev": "concurrently \"npm:watch:css\" \"npm:watch:11ty\"",
     "start": "concurrently \"npm:watch:css\" \"npm:watch:11ty\"",
     "build": "npm run build:css && npx @11ty/eleventy",
-    "build:css": "npx tailwindcss -i ./src/css/style.css -o ./_site/css/style.css",
+    "build:css": "npx tailwindcss -i ./src/css/style.css -o ./_site/css/style.css --minify",
     "watch:css": "npx tailwindcss -i ./src/css/style.css -o ./_site/css/style.css --watch",
     "watch:11ty": "npx @11ty/eleventy --serve --watch --port=3000"
   },
