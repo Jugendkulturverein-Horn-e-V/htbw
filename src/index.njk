@@ -4,10 +4,6 @@ title: Ein letztes Mal
 description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikfestivals im Rhododendronpark. Sei dabei beim großen Finale!
 ---
 
-{% block preloads %}
-<link rel="preload" href="{{ '/assets/images/watercolor/klecks-4-grün.avif' | url }}" as="image" fetchpriority="high">
-{% endblock %}
-
 {# Post-Festival Thank You Banner #}
 <section id="thankYou" data-post-festival class="thank-you-banner hidden">
   <div class="max-w-4xl mx-auto px-4">
@@ -32,7 +28,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
 
   {# Static decorative blob after hero section #}
   <div class="absolute inset-0 flex items-center justify-center pointer-events-none -z-10 opacity-30" aria-hidden="true">
-    <img src="{{ '/assets/images/watercolor/klecks-4-grün.avif' | url }}" alt="" class="w-[600px] h-[600px] rotate-[-30deg] object-contain max-w-3xl">
+    {% image "./src/assets/images/watercolor/klecks-4-grün.avif", "", "(min-width: 1024px) 600px, 100vw", "w-[600px] h-[600px] rotate-[-30deg] object-contain max-w-3xl", true %}
   </div>
 
   <div class="relative z-10 text-center px-4 py-16 md:py-24">
@@ -168,12 +164,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
         <article class="sticker-card" data-animate data-stage-card="{{ act.stage | slug }}">
           {# Artist Image #}
           <div class="aspect-square relative overflow-hidden rounded-lg mb-4">
-            <img 
-              src="{{ act.image }}" 
-              alt="{{ act.alt }}"
-              loading="lazy"
-              class="w-full h-full object-cover"
-            >
+            {% image act.image, act.alt, "(min-width: 1280px) 33vw, (min-width: 640px) 50vw, 100vw", "w-full h-full object-cover" %}
             {% if act.youtubeEmbedId %}
             <button 
               type="button"
@@ -235,7 +226,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
         </article>
         {% endif %}
       {% else %}
-      <article class="sticker-card" data-animate data-stage-card="{{ act.stage | slug }}">
+      <article class="sticker-card" data-animate>
           {# Backup Image #}
           <div class="aspect-square relative overflow-hidden rounded-lg mb-4">
             <img 
@@ -285,34 +276,19 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
       
       {# Large featured image - top left #}
       <div class="col-span-4 md:col-span-4 lg:col-span-5 row-span-3 md:row-span-4 relative group overflow-hidden rounded-2xl bg-htbw-brown/10" data-animate>
-        <img 
-          src="{{ '/assets/images/gallery/HTBW22_146.avif' | url }}" 
-          alt="Festivalbesucher bei Sonnenuntergang vor der Hauptbuhne"
-          loading="lazy"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-        >
+        {% image "./src/assets/images/gallery/HTBW22_146.avif", "Festivalbesucher bei Sonnenuntergang vor der Hauptbühne", "(min-width: 1280px) 500px, (min-width: 768px) 50vw, 100vw", "w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" %}
         <div class="absolute inset-0 bg-gradient-to-t from-htbw-green/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">Hauptbühne 2024</span>
       </div>
       
       {# Vertical tall image #}
       <div class="col-span-2 md:col-span-2 lg:col-span-3 row-span-2 md:row-span-3 relative group overflow-hidden rounded-2xl sticker-card p-0 bg-htbw-brown/10" data-animate>
-        <img 
-          src="{{ '/assets/images/gallery/HTBW22_17.avif' | url }}" 
-          alt="Bunte Lichtinstallation im Waldgebiet"
-          loading="lazy"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-        >
+        {% image "./src/assets/images/gallery/HTBW22_17.avif", "Bunte Lichtinstallation im Waldgebiet", "(min-width: 1280px) 300px, 25vw", "w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" %}
       </div>
       
       {# Square image with overlay text #}
       <div class="col-span-2 md:col-span-2 lg:col-span-4 row-span-2 lg:row-span-4 relative group overflow-hidden rounded-2xl bg-htbw-brown/10" data-animate>
-        <img 
-          src="{{ '/assets/images/gallery/crowd.webp' | url }}" 
-          alt="Publikum bei einem Konzert"
-          loading="lazy"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-        >
+        {% image "./src/assets/images/gallery/crowd.webp", "Publikum bei einem Konzert", "(min-width: 1280px) 400px, 25vw", "w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" %}
         {# <div class="absolute inset-0 bg-htbw-pink/20 mix-blend-multiply">2023</div> #}
       </div>
       
@@ -327,12 +303,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
       
       {# Wide panorama image #}
       <div class="col-span-4 md:col-span-4 lg:col-span-7 row-span-2 relative group overflow-hidden rounded-2xl bg-htbw-brown/10" data-animate>
-        <img 
-          src="{{ '/assets/images/gallery/Antiheld-BG.webp' | url }}" 
-          alt="Band Antiheld auf der Bühne stehend, Blick Richtung Publikum, Konfetti Regen"
-          loading="lazy"
-          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-        >
+         {% image "./src/assets/images/gallery/Antiheld-BG.webp", "Band Antiheld auf der Bühne stehend, Blick Richtung Publikum, Konfetti Regen", "(min-width: 1280px) 700px, (min-width: 768px) 66vw, 100vw", "w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" %}
         <div class="absolute inset-0 bg-gradient-to-t from-htbw-green/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">Antiheld</span>
       </div>
@@ -376,12 +347,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
             data-youtube-id="{{ video.youtubeVideoId }}"
             data-video-title="{{ video.title }}"
           >
-            <img 
-              src="{{ video.youtubeThumbnail }}" 
-              alt="{{ video.alt }}"
-              loading="lazy"
-              class="absolute inset-0 w-full h-full object-cover rounded-lg"
-            >
+            {% image video.youtubeThumbnail, video.alt, "(min-width: 768px) 50vw, 100vw", "absolute inset-0 w-full h-full object-cover rounded-lg" %}
             <div class="video-overlay absolute inset-0 bg-black/40 flex flex-col items-center justify-center rounded-lg">
               <div class="play-btn-wrapper flex flex-col items-center justify-center gap-3">
                 <button 
@@ -444,12 +410,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
         {% for artist in pastArtists[year] %}
         <article class="sticker-card text-center" data-animate>
           <div class="overflow-hidden mb-3 relative">
-            <img 
-              src="{{ artist.image }}" 
-              alt="{{ artist.alt }}"
-              loading="lazy"
-              class="w-full h-full object-cover"
-            >
+              {% image artist.image, artist.alt, "(min-width: 1280px) 20vw, (min-width: 768px) 25vw, 50vw", "w-full h-full object-cover" %}
             {% if artist.youtubeVideoId %}
             <button 
               type="button"
@@ -667,12 +628,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
       <article class="sticker-card" data-animate>
         {% if post.data.image %}
         <div class="aspect-video overflow-hidden rounded-lg mb-4">
-          <img 
-            src="{{ post.data.image }}" 
-            alt="{{ post.data.imageAlt or post.data.title }}"
-            loading="lazy"
-            class="w-full h-full object-cover"
-          >
+          {% image post.data.image, post.data.imageAlt or post.data.title, "(min-width: 768px) 33vw, 100vw", "w-full h-full object-cover" %}
         </div>
         {% else %}
         <div class="aspect-video overflow-hidden rounded-lg mb-4 bg-htbw-green/10 flex items-center justify-center">
@@ -761,12 +717,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
             class="block"
             aria-label="{{ sponsor.name }} Website besuchen (öffnet in neuem Tab)"
           >
-            <img 
-              src="{{ sponsor.logo }}" 
-              alt="{{ sponsor.alt }}"
-              loading="lazy"
-              class="h-12 md:h-16 w-auto transition-all duration-300"
-            >
+            {% image sponsor.logo, sponsor.alt, "200px", "h-12 md:h-16 w-auto transition-all duration-300" %}
           </a>
           {% else %}
           <img 

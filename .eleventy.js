@@ -1,8 +1,52 @@
+const Image = require("@11ty/eleventy-img");
+const path = require("path");
+
+async function imageShortcode(
+  src,
+  alt,
+  sizes = "100vw",
+  cls = "",
+  eager = false,
+) {
+  // URL-Pfad zu lokalem Pfad konvertieren
+  const localSrc = src.startsWith("/") ? `./src${src}` : src;
+
+  // SVGs direkt zurückgeben
+  if (localSrc.endsWith(".svg")) {
+    return `<img src="${src}" alt="${alt}" class="${cls}" loading="${eager ? "eager" : "lazy"}" decoding="async">`;
+  }
+
+  const metadata = await Image(localSrc, {
+    widths: [200, 400, 800, 1200, 1600],
+    formats: ["avif", "webp", "jpeg"],
+    outputDir: "./_site/assets/images/generated/",
+    urlPath: "/assets/images/generated/",
+    cacheOptions: {
+      duration: "1d",
+      type: "fs",
+    },
+  });
+
+  const imageAttributes = {
+    alt,
+    sizes,
+    class: cls,
+    loading: eager ? "eager" : "lazy",
+    decoding: "async",
+    ...(eager && { fetchpriority: "high" }),
+  };
+
+  return Image.generateHTML(metadata, imageAttributes);
+}
+
 module.exports = function (eleventyConfig) {
   // Pass through static assets
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/js");
   // CSS is processed by Tailwind separately, not passed through
+
+  // Responsive image shortcode
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 
   // Add date filter for blog posts
   eleventyConfig.addFilter("dateFormat", function (date) {

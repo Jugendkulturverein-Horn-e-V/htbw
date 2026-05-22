@@ -11,22 +11,15 @@ Offizielle Website für die 11. und letzte Ausgabe des Horn to be Wild Festivals
 - [ ] Sponsoren aktualisieren (bereits bestehende migriert)
 - [x] AGB, Impressum, Datenschutz
 - [x] Plausible
-- [ ] Responsive Images
-- [ ] fetchpriority=high should be applied
-- [ ] fonts are loaded chained via the css -> improve to load font on top lever
-- [ ] minify CSS
-- [ ] use of deprecated APIs?
-
-```
-htbw.de 1st party
-SharedStorage main.js:1
-`StorageType.persistent` is deprecated. Please use standardized `navigator.storage` instead. main.js:1
-Fledge
-```
-
-- [ ] Links do not have descriptive Text (Blog Post - Weiterlesen)
+- [x] Responsive Images
+- [x] fetchpriority=high should be applied
+- [x] fonts are loaded chained via the css -> improve to load font on top lever
+  - are already pre-loaded chained warning is for not that much used font versions (semibold/bold)
+- [x] minify CSS
+- [x] Links do not have descriptive Text (Blog Post - Weiterlesen)
 - [x] Open Graph Image
-- [ ] Google Event [Schema JSON](#google-event-schema)
+- [x] Google Event [Schema JSON](#google-event-schema)
+- [x] IDs der Sections
 
 ## 🛠️ Tech Stack
 
