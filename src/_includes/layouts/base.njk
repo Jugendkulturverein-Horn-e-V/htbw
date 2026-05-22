@@ -24,6 +24,10 @@
   <link rel="preload" href="{{ '/assets/fonts/Inter_18pt-Regular.woff2' | url }}" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="{{ '/assets/fonts/Inter_18pt-Medium.woff2' | url }}" as="font" type="font/woff2" crossorigin>
   
+
+  <!-- Page-specific preloads -->
+  {% block preloads %}{% endblock %}
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
 
@@ -94,7 +98,6 @@
     }]
   }
   </script>
-
 </head>
 <body class="min-h-screen flex flex-col">
   {% include "header.njk" %}

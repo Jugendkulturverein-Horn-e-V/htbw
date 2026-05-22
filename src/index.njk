@@ -4,6 +4,10 @@ title: Ein letztes Mal
 description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikfestivals im Rhododendronpark. Sei dabei beim großen Finale!
 ---
 
+{% block preloads %}
+<link rel="preload" href="{{ '/assets/images/watercolor/klecks-4-grün.avif' | url }}" as="image" fetchpriority="high">
+{% endblock %}
+
 {# Post-Festival Thank You Banner #}
 <section id="thankYou" data-post-festival class="thank-you-banner hidden">
   <div class="max-w-4xl mx-auto px-4">
