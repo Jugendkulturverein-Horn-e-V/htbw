@@ -66,14 +66,13 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
         target="_blank" 
         rel="noopener noreferrer"
         class="btn btn-primary text-lg px-8 py-4"
-        title="Ticket sichern (öffnet in neuem Tab)"
+        aria-label="Ticket-Shop öffnen (öffnet in neuem Tab)"
       >
         Jetzt dein Ticket sichern!
-        <span class="sr-only">(öffnet in neuem Tab)</span>
       </a>
       <p class="text-sm text-htbw-black mt-3">
         Powered by <strong><a href="{{ config.ticketUrl }}" target="_blank" 
-        rel="noopener noreferrer" title="Öffnet {{ config.ticketPartner }} Website in neuem Tab" class="underline hover:text-htbw-pink transition-colors">{{ config.ticketPartner }}</a></strong>
+        rel="noopener noreferrer" aria-label="{{ config.ticketPartner }} Website öffnen (öffnet in neuem Tab)" class="underline hover:text-htbw-pink transition-colors">{{ config.ticketPartner }}</a></strong>
       </p>
     </div>
   </div>
@@ -261,10 +260,9 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
         target="_blank" 
         rel="noopener noreferrer"
         class="btn btn-primary text-lg px-8 py-4"
-        title="Ticket sichern (öffnet in neuem Tab)"
+        aria-label="Ticket-Shop öffnen (öffnet in neuem Tab)"
       >
         Jetzt dein Ticket sichern!
-        <span class="sr-only">(öffnet in neuem Tab)</span>
       </a>
     </div>
   </div>
@@ -702,7 +700,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
           {{ post.data.teaser }}
         </p>
         
-        <a href="{{ post.url }}" class="text-htbw-pink font-medium hover:text-htbw-pink-dark transition-colors inline-flex items-center gap-1">
+        <a href="{{ post.url }}" aria-label="Blogbeitrag zu {{ post.data.title }} lesen" class="text-htbw-pink font-medium hover:text-htbw-pink-dark transition-colors inline-flex items-center gap-1">
           Weiterlesen
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -722,7 +720,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
 
     {% if collections.posts.length > 3 %}
     <div class="text-center mt-8">
-      <a href="{{ '/blog/' | url }}" class="btn btn-outline">
+      <a href="{{ '/blog/' | url }}" aria-label="Alle Blog-Posts ansehen" class="btn btn-outline">
         Alle weiteren Blog-Posts findest du hier
       </a>
     </div>
@@ -757,7 +755,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
             target="_blank" 
             rel="noopener noreferrer"
             class="block"
-            title="{{ sponsor.name }} (öffnet in neuem Tab)"
+            aria-label="{{ sponsor.name }} Website besuchen (öffnet in neuem Tab)"
           >
             <img 
               src="{{ sponsor.logo }}" 
@@ -765,7 +763,6 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
               loading="lazy"
               class="h-12 md:h-16 w-auto transition-all duration-300"
             >
-            <span class="sr-only">{{ sponsor.name }} (öffnet in neuem Tab)</span>
           </a>
           {% else %}
           <img 
