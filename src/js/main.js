@@ -629,6 +629,27 @@
   }
 
   // =====================
+  // Act Description Toggle
+  // =====================
+  function initDescriptionToggles() {
+    document.querySelectorAll("[data-act-description]").forEach((container) => {
+      const toggle = container.querySelector(".description-toggle");
+      if (!toggle) return;
+
+      toggle.addEventListener("click", function () {
+        const short = container.querySelector(".description-short");
+        const full = container.querySelector(".description-full");
+        const isExpanded = this.getAttribute("aria-expanded") === "true";
+
+        short.classList.toggle("hidden", !isExpanded);
+        full.classList.toggle("hidden", isExpanded);
+        this.setAttribute("aria-expanded", !isExpanded);
+        this.textContent = isExpanded ? "Mehr lesen ↓" : "Weniger ↑";
+      });
+    });
+  }
+
+  // =====================
   // Initialize All
   // =====================
   function init() {
@@ -644,6 +665,7 @@
     initScrollAnimations();
     initStickerCards();
     initSmoothScroll();
+    initDescriptionToggles();
   }
 
   // Run on DOM ready
