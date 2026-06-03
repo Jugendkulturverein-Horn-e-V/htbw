@@ -1,4 +1,22 @@
 {
-  "acts": [],
+  "acts": [
+    {
+      "id": "cordoba78",
+      "name": "Cordoba78",
+      "image": "/assets/images/bands/2026/Cordoba78.avif",
+      "alt": "Cordoba78: Fünf Bandmitglieder auf Promotionplakat mit grünem und magentafarbenem Aquarell-Design",
+      "genre": "Zwischen Indie bis Pop und kathartischem Größenwahn",
+      "time": null,
+      "stage": null,
+      "description": "Mit Fußball hat es nichts zu tun, und doch erinnert die Atmosphäre bei Cordoba78 an das Wunder von Córdoba 1978: hundertprozentige Hingabe in einem einzigen Moment, alles gemeinsam zu fühlen, zu weinen, zu schreien, zu explodieren. So lebt Cordoba78 ihre Musik. Ganz ohne Hass und präpotente Hooligans, dafür mit Liedern über Wut, Liebe, Überforderung und das kurze Glück dazwischen, überzeugen sie auf der Bühne. Das Besondere ist ihr Sound, der zwischen Indie und Pop liegt, mit röhrender Blues-Gitarre, Soul-Klavier und Stadion-Melancholie verseht ist. Ihre emotionale, ehrliche Musik regt nicht nur zum Mitschreien und Nachdenken an, sondern auch zum Tanzen. Mit ihrem neuen Song „Der Himmel brennt in Europa“ haben sie Ende 2025 einen großen politischen Hit veröffentlicht, der nun 2026 die Release-Welle vorantreiben soll, auf die wir uns sehr auf dem HTBW 2026 freuen werden.",
+      "spotifyUrl": "https://open.spotify.com/intl-de/artist/2GNQkf6PWF0octGR2XzpQt",
+      "youtubeUrl": "https://www.youtube.com/@cordoba.achtundsiebzig",
+      "websiteUrl": "https://www.cordoba78.com/",
+      "instagramUrl": "https://www.instagram.com/cordoba.achtundsiebzig/",
+      "bandcampUrl": null,
+      "youtubeEmbedId": "9QKSMT4hVvQ",
+      "visible": true
+    }
+  ],
   "stages": []
 }
