@@ -163,7 +163,7 @@ description: Horn to be Wild 2026 - Die 11. und letzte Ausgabe des Bremer Musikf
         {% if act.visible %}
         <article class="sticker-card" data-animate data-stage-card="{{ act.stage | slug }}">
           {# Artist Image #}
-          <div class="aspect-square relative overflow-hidden rounded-lg mb-4">
+          <div class="aspect-[4/5] relative overflow-hidden rounded-lg mb-4">
             {% image act.image, act.alt, "(min-width: 1280px) 33vw, (min-width: 640px) 50vw, 100vw", "w-full h-full object-cover" %}
             {% if act.youtubeEmbedId %}
             <button 
