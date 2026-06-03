@@ -12,6 +12,9 @@
       "description": "Der krönende Abschluss unserer letzten Ausgabe.",
       "spotifyUrl": null,
       "youtubeUrl": null,
+      "websiteUrl": null,
+      "instagramUrl": null,
+      "bandcampUrl": null,
       "youtubeEmbedId": null,
       "visible": false
     },
