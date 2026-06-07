@@ -16,6 +16,23 @@
       "bandcampUrl": null,
       "youtubeEmbedId": "9QKSMT4hVvQ",
       "visible": true
+    },
+    {
+      "id": "frytz",
+      "name": "frytz",
+      "image": "/assets/images/bands/2026/frytz.avif",
+      "alt": "frytz: Künstler in schwarz-weiß gestreifter Kleidung auf Promotionplakat mit grünem und magentafarbenem Aquarell-Design",
+      "genre": "Indie Deutsch Rap",
+      "time": null,
+      "stage": null,
+      "description": "",
+      "spotifyUrl": "https://open.spotify.com/intl-de/artist/4hX2AmJ9iZiXYA2Zx1vtBO",
+      "youtubeUrl": "https://www.youtube.com/@frytz_official",
+      "websiteUrl": "https://frytzfrytzfrytz.com/",
+      "instagramUrl": "https://www.instagram.com/frytzfrytzfrytz/",
+      "bandcampUrl": null,
+      "youtubeEmbedId": null,
+      "visible": true
     }
   ],
   "stages": []
