@@ -5,7 +5,7 @@ Offizielle Website für die 11. und letzte Ausgabe des Horn to be Wild Festivals
 ## Todos
 
 - [x] Blog Beiträge migrieren
-- [ ] Mehr Bilder
+- [x] Mehr Bilder
 - [x] Slider of Fame
 - [ ] Festival Karte
 - [ ] Sponsoren aktualisieren (bereits bestehende migriert)
@@ -40,12 +40,16 @@ Offizielle Website für die 11. und letzte Ausgabe des Horn to be Wild Festivals
 
 ```bash
 npm install
+# oder
+pnpm i
 ```
 
 ### Entwicklungsserver starten
 
 ```bash
-npm start
+npm run dev
+# oder
+pnpm dev
 ```
 
 Die Website ist dann unter `http://localhost:3000` erreichbar.
@@ -54,6 +58,8 @@ Die Website ist dann unter `http://localhost:3000` erreichbar.
 
 ```bash
 npm run build
+# oder
+pnpm build
 ```
 
 ---
@@ -62,15 +68,15 @@ npm run build
 
 ```
 src/
-├── _data/              # Globale Datendateien
-│   ├── config.json     # Hauptkonfiguration (Datum, Links, Texte)
-│   ├── lineup.json     # Acts & Bühnen
-│   ├── aftermovies.json
-│   ├── pastArtists.json
-│   ├── sponsors.json
-│   └── map.json
+├── _data/                # Globale Datendateien
+│   ├── config.json       # Hauptkonfiguration (Datum, Links, Texte)
+│   ├── lineup.json       # Acts & Bühnen
+│   ├── aftermovies.json  # Aftermovies
+│   ├── pastArtists.json  # Slider of Fame
+│   ├── sponsors.json     # Sponsoren
+│   └── map.json          # POI Informationen
 ├── _includes/
-│   ├── layouts/        # Basis-Layouts
+│   ├── layouts/          # Basis-Layouts
 │   │   ├── base.njk
 │   │   └── blog-post.njk
 │   ├── header.njk
@@ -82,7 +88,7 @@ src/
 │   ├── fonts/
 │   ├── images/
 │   └── ...
-├── blog/               # Blog-Posts als Markdown
+├── blog/                 # Blog-Posts als Markdown
 ├── css/
 │   └── style.css
 ├── js/
