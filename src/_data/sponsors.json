@@ -71,13 +71,6 @@
       "url": "https://www.sparkasse-bremen.de/"
     },
     {
-      "id": "haakeBeck",
-      "name": "Haake Beck",
-      "logo": "/assets/images/sponsors/haakeBeck.avif",
-      "alt": "Logo von Haake Beck",
-      "url": "https://haake-beck.de/"
-    },
-    {
       "id": "bremenVier",
       "name": "BremenVier",
       "logo": "/assets/images/sponsors/bremen-vier.svg",
@@ -127,6 +120,13 @@
       "url": "https://chs-containergroup.de/"
     },
     {
+      "id": "thor",
+      "name": "THOR",
+      "logo": "/assets/images/sponsors/thor.avif",
+      "alt": "Logo der THOR Nature Tech Services",
+      "url": "https://thor-bremen.de/"
+    },
+    {
       "id": "bsag",
       "name": "BSAG",
       "logo": "/assets/images/sponsors/bsag.svg",
@@ -134,11 +134,11 @@
       "url": "https://www.bsag.de/"
     },
     {
-      "id": "naturlichBremen",
-      "name": "Naturlich Bremen 2025",
-      "logo": "/assets/images/sponsors/naturlichBremen.avif",
-      "alt": "Logo von Naturlich Bremen 2025",
-      "url": "https://www.bremen.de/kultur/naturlichbremen-2025"
+      "id": "musicWorks",
+      "name": "Musicworks",
+      "logo": "/assets/images/sponsors/musicWorks.avif",
+      "alt": "Logo von Musicworks",
+      "url": "https://musicworks.de/"
     },
     {
       "id": "senator",
