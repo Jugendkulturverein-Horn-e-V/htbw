@@ -117,7 +117,7 @@
   }
 
   .section-title {
-    @apply text-3xl md:text-5xl mb-8 text-center;
+    @apply text-5xl md:text-5xl mb-8 text-center;
   }
 
   /* Watercolor blob decorations */
