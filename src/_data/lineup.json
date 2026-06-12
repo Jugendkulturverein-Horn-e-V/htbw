@@ -33,6 +33,23 @@
       "bandcampUrl": null,
       "youtubeEmbedId": "wiA-urMHLug",
       "visible": true
+    },
+    {
+      "id": "alennaRose",
+      "name": "Alenna Rose",
+      "image": "/assets/images/bands/2026/AlennaRose.avif",
+      "alt": "Alenna Rose: Künstlerin mit rötlichen Haaren in schwarzer Lederjacke auf Promotionplakat mit grünem, schwarzem und magentafarbenem Aquarell-Design",
+      "genre": "Indie-Rock mit Haltung",
+      "time": null,
+      "stage": null,
+      "description": "Alenna Rose steht für Indie-Rock mit Haltung. Frech, selbstironisch und mit einem klaren Blick auf das, was schiefläuft, treffen ihre Texte genau den Nerv der Zeit - direkt, ehrlich und stets mit einem fetten Grinsen im Gesicht. Auf der Bühne gibt es keine Sekunde Stillstand: Gemeinsam mit ihrer Band liefert die Newcomerin einen energiegeladenen Livesound, der direkt ins Herz und in die Beine geht. Nachdem sie bereits auf Festivals wie dem Hurricane und dem Reeperbahn Festival gespielt und als Support für Alex Mofa Gang und Remote Bondage überzeugt hat, ist Alenna Rose bereit für den nächsten Festivalsommer. Wir freuen uns besonders auf Alenna, da sie bereits mit ihrer ehemaligen Band LENNA einen phänomenalen Opener Slot beim Horn to be Wild 2022 hingelegt hat und nun mit ihrem Soloprojekt bereits zum dritten Mal bei uns auf der swb Bühne stehen darf.",
+      "spotifyUrl": "https://open.spotify.com/artist/5AjLT1y5pI2bR0OhDU6fF0",
+      "youtubeUrl": "https://www.youtube.com/@alennaroseee",
+      "websiteUrl": "https://www.alennarose.de/",
+      "instagramUrl": "https://www.instagram.com/alennarose/",
+      "bandcampUrl": null,
+      "youtubeEmbedId": "o-JMqDzAYac",
+      "visible": true
     }
   ],
   "stages": []
