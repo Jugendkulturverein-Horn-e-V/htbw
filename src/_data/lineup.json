@@ -50,6 +50,23 @@
       "bandcampUrl": null,
       "youtubeEmbedId": "o-JMqDzAYac",
       "visible": true
+    },
+    {
+      "id": "orcah",
+      "name": "Orcah",
+      "image": "/assets/images/bands/2026/orcah.avif",
+      "alt": "Orcah: Vier Bandmitglieder vor einem gebogenen blauen Hintergrund auf Promotionplakat mit grünem, schwarzem und magentafarbenem Aquarell-Design",
+      "genre": "Gefühlvolle Harmonien und ehrliche Texte",
+      "time": null,
+      "stage": null,
+      "description": "Hinter Orcah verbergen sich gefühlvolle Harmonien und ehrliche Texte, die nichts beschönigen und nichts verstecken. In ihren Songs wird verarbeitet, was das Leben mit sich bringt: romantisches Scheitern, die Vergänglichkeit von Freundschaften und die eigenen inneren Widersprüche. Begleitet von sanften Gitarrenklängen, treibenden Rhythmen und einem feinen Gespür für kluge Melodien entsteht eine musikalische Reise durch die Höhen und Tiefen des Menschseins. Mal berührend und nachdenklich, mal leicht und tanzbar. Orcah lädt das Publikum zum Mitfühlen, Mitsingen und Mitgehen ein. Wir freuen uns auf die Band aus Bremen!",
+      "spotifyUrl": "https://open.spotify.com/intl-de/artist/6hq04XF0eS21X38qcwFFbb",
+      "youtubeUrl": "https://www.youtube.com/@Orcamith",
+      "websiteUrl": null,
+      "instagramUrl": "https://www.instagram.com/_orcah_/",
+      "bandcampUrl": null,
+      "youtubeEmbedId": "YCi-F6XKStU",
+      "visible": true
     }
   ],
   "stages": []
