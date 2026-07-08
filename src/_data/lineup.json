@@ -67,6 +67,23 @@
       "bandcampUrl": null,
       "youtubeEmbedId": "YCi-F6XKStU",
       "visible": true
+    },
+    {
+      "id": "carli",
+      "name": "CARLI",
+      "image": "/assets/images/bands/2026/carli.avif",
+      "alt": "CARLI: Carli Sängering vor einem weißen Hintergrund in einem Leder Outfit auf Promotionplakat mit grünem, schwarzem und magentafarbenem Aquarell-Design",
+      "genre": "Kraftvoll und rebellisch - Indie, Pop und Rock",
+      "time": null,
+      "stage": null,
+      "description": "CARLI steht für ehrliche Songs, eine markante Stimme und einen Sound, der Indie, Pop und Rock mühelos miteinander verbindet. Mal kraftvoll und rebellisch, mal verletzlich und nachdenklich, aber immer mit einer klaren Haltung und jeder Menge Persönlichkeit. Ihre Musik erzählt von Liebe, Aufbruch, Sehnsucht und dem Chaos der Zwanziger - ungefiltert und kompromisslos. Mit ihrer aktuellen Single „Pinocchio“ zeigt CARLI ihre rockige Seite und beweist, dass sie gekommen ist, um gehört zu werden. Nach gefeierten Auftritten beim Reeperbahn Festival und Support-Shows für Paula Engels, JAS und Rosmarin macht sie nun auch bei uns Halt. Freut euch auf eingängige Gitarren, mitreißende Energie und eine Künstlerin, die das Publikum vom ersten Moment an mitnimmt.",
+      "spotifyUrl": "https://open.spotify.com/intl-de/artist/669JFUZgZaJ9uuBT7cGpU6",
+      "youtubeUrl": "https://www.youtube.com/@itsplayboicarli",
+      "websiteUrl": null,
+      "instagramUrl": "https://www.instagram.com/itsplayboicarli/",
+      "bandcampUrl": null,
+      "youtubeEmbedId": "YAsmUFHxthw",
+      "visible": true
     }
   ],
   "stages": []
