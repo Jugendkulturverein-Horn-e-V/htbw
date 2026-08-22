@@ -84,8 +84,12 @@
           "answer": "Das Mitbringen von Essen ist nicht erlaubt. Auf dem Gelände gibt es neben der Musik auch noch einige Essens- und Getränke-Stände."
         },
         {
+          "question": "Gibt es wieder eine Happy Hour?",
+          "answer": "Ja, wie die letzten Jahre auch, gibt es an unserer eigenen Palettenbar wieder eine Happy Hour bis 17Uhr."
+        },
+        {
           "question": "Ist das Festival barrierefrei?",
-          "answer": "Den Besuch auf unserem Festival möchten wir jedem/r Musikliebhaber/in ermöglichen. Wir geben uns größte Mühe, auch Menschen mit Handicap einen entspannten Aufenthalt zu bieten. Deswegen bieten wir dir die Möglichkeit kostenfrei eine Begleitperson zur Unterstützung mitzubringen. Dies muss allerdings im Schwerbehindertenausweis festgehalten sein. Wir bieten außerdem eine barrierefreie Dixi-Toilette an. Bei speziellen Bedürfnissen kontaktiert uns bitte vorab."
+          "answer": "Den Besuch auf unserem Festival möchten wir jedem/r Musikliebhaber/in ermöglichen. Wir geben uns größte Mühe, auch Menschen mit Handicap einen entspannten Aufenthalt zu bieten. Deswegen bieten wir dir die Möglichkeit kostenfrei eine Begleitperson zur Unterstützung mitzubringen. Dies muss allerdings im Schwerbehindertenausweis festgehalten sein. Wir bieten außerdem eine barrierefreie Dixi-Toilette an. Des Weiteren haben wir dieses Jahr auch wieder ein Hörunterstützungssystem am Start, bitte kontaktiere uns einfach vorab. Bei speziellen Bedürfnissen kontaktiert uns bitte vorab."
         },
         {
           "question": "Gibt es ein Alterslimit?",
