@@ -1,7 +1,7 @@
 ---
 layout: blog-post.njk
 title: Das Food & Drinks Line-Up 2026
-date: 2025-06-01
+date: 2026-08-21
 teaser: Hier kommt das Food und Drink Line-Up für das 11. und finale Horn to be Wild Festival. Schaut vorbei und entdeckt eure neuen Lieblingsstände!
 category: Ankündigung
 image: /assets/images/blog/bar.avif
