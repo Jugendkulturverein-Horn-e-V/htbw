@@ -8,7 +8,7 @@
 
   // Configuration
   const CONFIG = {
-    festivalDate: new Date(window.SITE_CONFIG.festivalDate + "T12:00:00"),
+    festivalDate: new Date(window.SITE_CONFIG.festivalDate + "T15:00:00"),
     festivalEndDate: new Date(window.SITE_CONFIG.festivalEndDate + "T23:59:59"),
     cookieConsentKey: "htbw_youtube_consent",
     reducedMotion: window.matchMedia("(prefers-reduced-motion: reduce)")
